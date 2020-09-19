@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Res Package">
-      <UniqueIdentifier>{6c8bf401-7264-40d8-8bd1-37ebd3adc87f}</UniqueIdentifier>
+      <UniqueIdentifier>{2cce7f4d-9e06-4f97-a82b-1832a2a8562c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main">
-      <UniqueIdentifier>{60206f42-1bc7-4ac0-a8ec-702536b0ea45}</UniqueIdentifier>
+      <UniqueIdentifier>{74be4daa-6f21-4009-92aa-20ba173ae416}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

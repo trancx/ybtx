@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CPieceGroupEditCtrl.h"
 #include "PieceGroupEditCtrl/CPieceGroupEditImp.h"
+#include "dthelp.h"
 
 #define PieceGroupEditImp ((CPieceGroupEditImp*)GetCoreCtrl())
 

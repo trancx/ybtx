@@ -6,6 +6,7 @@
 #include "CShadowMatrixBuilder.h"
 #include "CRenderGroup.h"
 #include "TraceHelper.h"
+#include "CColor.inl"
 
 const DWORD CShadowMapFilter::st_ShadowMapVSID = MakeSysVS_ID(SSI_SHADOW_MAP);
 const DWORD CShadowMapFilter::st_ShadowMapPSID = MakeSysPS_ID(SSI_SHADOW_MAP);

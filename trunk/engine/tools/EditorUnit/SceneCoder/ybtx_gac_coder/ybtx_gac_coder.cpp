@@ -13,6 +13,7 @@
 #include "CEditTerrainNode.h"
 #include "CEditLogicData.h"
 #include "CVertexDeclaration.h"
+#include "CEditDataScene.h"
 
 CYbtxGacCoder::CYbtxGacCoder( CDataScene* pScene )
 : CSceneManagerClient(pScene->GetSceneName(), pScene->GetTreeScene(),NULL,0,0,0)

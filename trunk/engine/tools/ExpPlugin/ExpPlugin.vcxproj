@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -7,10 +7,6 @@
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Template|Win32">
-      <Configuration>Template</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
@@ -22,11 +18,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -43,22 +41,17 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
@@ -95,12 +88,13 @@
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
       <ImportLibrary>$(OutDir)ExpPlugin.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command />
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -117,8 +111,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -136,18 +129,26 @@
       <ModuleDefinitionFile>.\ExpPlugin.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
       <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
       <ImportLibrary>$(OutDir)ExpPlugin.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command />
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BoneFix.cpp" />
     <ClCompile Include="CheckList.cpp" />
+    <ClCompile Include="CPluginDataSources.cpp" />
+    <ClCompile Include="CPluginIndexBuffer.cpp" />
+    <ClCompile Include="CPluginMeshBase.cpp" />
+    <ClCompile Include="CPluginSkeletalMesh.cpp" />
+    <ClCompile Include="CPluginStaticMesh.cpp" />
+    <ClCompile Include="CPluginVertexAniMesh.cpp" />
+    <ClCompile Include="CPluginVertexBuffer.cpp" />
     <ClCompile Include="CSkeInfoDlg.cpp" />
     <ClCompile Include="ExpPlugin.cpp" />
     <ClCompile Include="GLobD3d.cpp" />
@@ -160,19 +161,19 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="CPluginDataSources.cpp" />
-    <ClCompile Include="CPluginIndexBuffer.cpp" />
-    <ClCompile Include="CPluginVertexBuffer.cpp" />
-    <ClCompile Include="CPluginMeshBase.cpp" />
-    <ClCompile Include="CPluginSkeletalMesh.cpp" />
-    <ClCompile Include="CPluginStaticMesh.cpp" />
-    <ClCompile Include="CPluginVertexAniMesh.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BoneFix.h" />
     <ClInclude Include="BonesPro.h" />
     <ClInclude Include="CFourCC.h" />
     <ClInclude Include="CheckList.h" />
+    <ClInclude Include="CPluginDataSources.h" />
+    <ClInclude Include="CPluginIndexBuffer.h" />
+    <ClInclude Include="CPluginMeshBase.h" />
+    <ClInclude Include="CPluginSkeletalMesh.h" />
+    <ClInclude Include="CPluginStaticMesh.h" />
+    <ClInclude Include="CPluginVertexAniMesh.h" />
+    <ClInclude Include="CPluginVertexBuffer.h" />
     <ClInclude Include="CSkeInfoDlg.h" />
     <ClInclude Include="Ctl3d.h" />
     <ClInclude Include="Exp.h" />
@@ -185,24 +186,19 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SoftClothDlg.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="CPluginDataSources.h" />
-    <ClInclude Include="CPluginIndexBuffer.h" />
-    <ClInclude Include="CPluginVertexBuffer.h" />
-    <ClInclude Include="CPluginMeshBase.h" />
-    <ClInclude Include="CPluginSkeletalMesh.h" />
-    <ClInclude Include="CPluginStaticMesh.h" />
-    <ClInclude Include="CPluginVertexAniMesh.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ExpPlugin.def" />
-    <None Include="res\ExpPlugin.rc2" />
     <None Include="BoneFix.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
-    <None Include="ReadMe.txt" />
+    <None Include="ExpPlugin.def" />
+    <None Include="res\ExpPlugin.rc2" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ExpPlugin.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Common\Common.vcxproj">

@@ -6,43 +6,43 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
     </Filter>
     <Filter Include="CLREffectEditor">
-      <UniqueIdentifier>{fb210be2-902a-40d1-b08e-fcccc6bdb7d9}</UniqueIdentifier>
+      <UniqueIdentifier>{98494dd1-26d8-45a3-a865-d24f89f78009}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLREffectEditor\EditorCLRForm">
-      <UniqueIdentifier>{ef178aed-47b0-4107-9a90-5f6e74d8b233}</UniqueIdentifier>
+      <UniqueIdentifier>{17d256a2-99a3-400a-8a48-1de8f8cf3cb7}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLREffectEditor\EditorImp">
-      <UniqueIdentifier>{fd092550-f00e-456f-bc38-cdd6d6524afa}</UniqueIdentifier>
+      <UniqueIdentifier>{1272482e-80fd-483f-a881-2ca773d64aa7}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLREffectEditor\EditorMain">
-      <UniqueIdentifier>{26992160-5a1b-45b0-8c15-63a854c8c231}</UniqueIdentifier>
+      <UniqueIdentifier>{30b5a927-98bc-4bc8-98e0-46b082a2100c}</UniqueIdentifier>
     </Filter>
     <Filter Include="CLREffectEditor\EditorMisc">
-      <UniqueIdentifier>{a95ec8a1-c381-48b2-881b-f0f69fa3175e}</UniqueIdentifier>
+      <UniqueIdentifier>{e4625883-28b4-4f6a-a4fb-c102b1a9f491}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\bitmap1.bmp">
+    <Image Include="res\bitmap1.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\EffectEditor.ico">
+    </Image>
+    <Image Include="res\EffectEditor.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\FX.ico">
+    </Image>
+    <Image Include="res\FX.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\FXGroupNor.ico">
+    </Image>
+    <Image Include="res\FXGroupNor.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\FXGroupSel.ico">
+    </Image>
+    <Image Include="res\FXGroupSel.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\FXRoot.ico">
+    </Image>
+    <Image Include="res\FXRoot.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\grid.bmp">
+    </Image>
+    <Image Include="res\grid.bmp">
       <Filter>Resource Files</Filter>
-    </None>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CLREffectEditor.rc">

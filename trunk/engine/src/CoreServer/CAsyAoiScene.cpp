@@ -38,7 +38,7 @@ CAsyAoiScene::CAsyAoiScene(const char* szSyncAoiFileName,uint32 uScale,
 					 , m_mapAoiDimScene(10)
 #endif
 {
-	ms_mapIdToAsyScene.insert(make_pair<uint32, CAsyAoiScene*>(m_uId, this));
+	ms_mapIdToAsyScene.insert(make_pair(m_uId, this));
 
 
 	CDimensionInfo::MapDimensionInfo::const_iterator iter = DimInfo->GetDimensionInfo().begin();

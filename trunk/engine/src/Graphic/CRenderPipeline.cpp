@@ -9,6 +9,8 @@
 #include "CGraphic.h"
 #include "BaseHelper.h"
 #include "TSqrAllocator.inl"
+#include "CColor.inl"
+#include "CColor4.inl"
 
 CRenderPipeline::CRenderPipeline()
 		:// m_isShowFps(false)

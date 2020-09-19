@@ -6,200 +6,199 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="EditorCtrl">
-      <UniqueIdentifier>{695a1c7e-9405-45f7-9ce8-b4b18319700c}</UniqueIdentifier>
+      <UniqueIdentifier>{0a67927a-d09e-47b6-b8c2-b1405c818bfa}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\PathSet">
-      <UniqueIdentifier>{3afd81cc-ce17-4cc4-b1fd-4fcef43d2592}</UniqueIdentifier>
+      <UniqueIdentifier>{313b5d67-8292-446b-a8b7-1de205311c73}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\VideoSetting">
-      <UniqueIdentifier>{ebf1eb70-f6b4-49f9-86fb-316b52fc1c03}</UniqueIdentifier>
+      <UniqueIdentifier>{cdc1ab08-e30a-471e-b5d5-5b60848720a5}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\SceneState">
-      <UniqueIdentifier>{f74591ff-78de-42a1-832a-aac712b7ae6e}</UniqueIdentifier>
+      <UniqueIdentifier>{33cfc520-779d-4692-80c5-a6cfaa81f78d}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\BasicView">
-      <UniqueIdentifier>{9fe46d80-5bfa-4bd0-97e4-d286260f6e2a}</UniqueIdentifier>
+      <UniqueIdentifier>{deb4174a-cf17-4e03-8d89-bc052f2e472f}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\PortraitView">
-      <UniqueIdentifier>{86177cb7-aded-404d-ba32-af218ae15647}</UniqueIdentifier>
+      <UniqueIdentifier>{0b581653-6b2e-4f1a-8ac3-a36a036ca1bf}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\ReadPkg">
-      <UniqueIdentifier>{dc891d64-4b5e-41f5-9534-0b164ef682c5}</UniqueIdentifier>
+      <UniqueIdentifier>{c0a77fa6-de7a-4f92-835a-6601f441d4c3}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\Log">
-      <UniqueIdentifier>{82ce791a-f97e-4b1d-bf10-0c53dc1b0514}</UniqueIdentifier>
+      <UniqueIdentifier>{1e40b0f5-11fd-40cd-aef4-4962ef16fe7e}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\FProcess">
-      <UniqueIdentifier>{ccd3797f-a2bb-4ed0-bb20-3a4672072aea}</UniqueIdentifier>
+      <UniqueIdentifier>{b410e4e7-b7bb-4a5b-8714-df6243c4e550}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\KeyFrame">
-      <UniqueIdentifier>{9e0a1537-7831-493e-8f0c-cb895cc6d3f4}</UniqueIdentifier>
+      <UniqueIdentifier>{f542e376-ed44-447a-baf2-7af14cb47daa}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\GroundSpeed">
-      <UniqueIdentifier>{249bb46e-f567-43e3-9b34-d66511c3f5f6}</UniqueIdentifier>
+      <UniqueIdentifier>{2c750fd0-8df1-4fc7-ad96-afceffe48c6c}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\FrameScale">
-      <UniqueIdentifier>{2ebd32f9-2503-4e2a-a769-4ec7f7143ba5}</UniqueIdentifier>
+      <UniqueIdentifier>{848be76f-d64b-49a3-9b44-e0b32cab7a88}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\LightParameter">
-      <UniqueIdentifier>{8978400c-892b-4a76-ab32-e0dbd70212dd}</UniqueIdentifier>
+      <UniqueIdentifier>{e5c41019-6fb0-4504-8502-f2acff5671ba}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\FogParameter">
-      <UniqueIdentifier>{f233c5cc-d836-4b3f-a333-b4fd8ff3634e}</UniqueIdentifier>
+      <UniqueIdentifier>{5e257a7c-20a8-490b-a61b-84dbc6bb343e}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\Color">
-      <UniqueIdentifier>{9e119187-5a17-4692-9d33-560511ccb2b8}</UniqueIdentifier>
+      <UniqueIdentifier>{933e7137-0aba-4f4c-a5b4-ced7d091c79f}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\ProgressEx">
-      <UniqueIdentifier>{a65cd424-dc0f-4cae-b436-932d7e3c202c}</UniqueIdentifier>
+      <UniqueIdentifier>{e919060f-db50-4796-aa8e-eff040d2e74c}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\HDRSetting">
-      <UniqueIdentifier>{13f2e4a3-d135-410f-ba1d-8ad8924f0d69}</UniqueIdentifier>
+      <UniqueIdentifier>{dfbfb4c5-79b9-4710-baa8-d9945f76c707}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\PickColor">
-      <UniqueIdentifier>{9b584e53-64a2-4733-9605-9182f9eacc5a}</UniqueIdentifier>
+      <UniqueIdentifier>{9a11ae46-d3b1-4d9b-8945-96a022571a6c}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\EffectCtrl">
-      <UniqueIdentifier>{22cd850b-67b4-4d53-b7f2-e057f514b377}</UniqueIdentifier>
+      <UniqueIdentifier>{8633163a-529f-48fb-9471-8bb18259a6c3}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\EffectCtrl\EfxFileCtrl">
-      <UniqueIdentifier>{bb017acc-d6f3-4cb6-8a5b-5780e8e69c9d}</UniqueIdentifier>
+      <UniqueIdentifier>{bafd8c40-21de-40f3-b68b-ea8a70e2f0db}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\EffectCtrl\EfxEditPropCtrl">
-      <UniqueIdentifier>{f9b01607-3f5a-4bd0-a745-e332dbe8d616}</UniqueIdentifier>
+      <UniqueIdentifier>{893b9884-e6cd-44cf-9e2f-06f1803bb6f0}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\EffectCtrl\EfxTrack">
-      <UniqueIdentifier>{0501dbdb-af53-4cc4-ad42-37fe772af56a}</UniqueIdentifier>
+      <UniqueIdentifier>{429774c7-2cd5-4f0b-a9f4-5376dca39e5c}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\EffectCtrl\EfxKeyUint">
-      <UniqueIdentifier>{9ad93bfb-764b-4e54-849a-b53ef48318c7}</UniqueIdentifier>
+      <UniqueIdentifier>{c119500a-3d6a-4e8e-ba3c-65fe8d9b32b0}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\MapEffectCtrl">
-      <UniqueIdentifier>{76d2ed3e-4e55-44ed-af8d-2a56c8f8e94c}</UniqueIdentifier>
+      <UniqueIdentifier>{5998c4ba-a820-46ca-b2f3-8ddd8fe2dc16}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\AnimationGroupEditCtrl">
-      <UniqueIdentifier>{736b5a8e-e3ee-475b-bbeb-00fb286772b6}</UniqueIdentifier>
+      <UniqueIdentifier>{0a54556f-ba63-4220-9916-0a6c6e5444b3}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\PieceUnitEditCtrl">
-      <UniqueIdentifier>{202678fc-7036-4f43-a7ed-70422940faef}</UniqueIdentifier>
+      <UniqueIdentifier>{0322ce23-66fe-49d3-a962-7b9b1b47d5a7}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\PieceGroupEditCtrl">
-      <UniqueIdentifier>{29616d6f-48b2-4afe-ac95-cfdd21bee5dd}</UniqueIdentifier>
+      <UniqueIdentifier>{1d118725-ce64-41c8-baaa-3ae514e5772a}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\AutoPropToCtrl">
-      <UniqueIdentifier>{e4c5a47b-4d10-40a6-bcfc-0281a063c2a1}</UniqueIdentifier>
+      <UniqueIdentifier>{c4bfb4ba-5edd-45df-a013-ed13ff621345}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\AutoPropToCtrl\Element">
-      <UniqueIdentifier>{36626a53-d3e2-4a71-8735-7d5c68b3cf7f}</UniqueIdentifier>
+      <UniqueIdentifier>{f5613ebd-137a-467f-a760-140ffc43a3e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\BoneList">
-      <UniqueIdentifier>{1be4f875-978d-458a-aa43-f67f46ae8d3f}</UniqueIdentifier>
+      <UniqueIdentifier>{388768a6-82c8-4d13-8faa-e58979f58dd5}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\LightView">
-      <UniqueIdentifier>{2ecd757c-8893-43b8-9e09-949d55d6f3b1}</UniqueIdentifier>
+      <UniqueIdentifier>{7a338c11-561b-4b45-a4da-f60b6af0d17b}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\PropCtrl">
-      <UniqueIdentifier>{294aee6e-6643-4c8d-b85e-f098cfe025ae}</UniqueIdentifier>
+      <UniqueIdentifier>{4814597f-d9e7-41c7-bd0e-057fe07f5aa6}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\BoneBoxList">
-      <UniqueIdentifier>{2f242b1f-c5fd-4304-909f-02bab8236851}</UniqueIdentifier>
+      <UniqueIdentifier>{39654c7a-b56d-4c8b-a17e-9f0a43066198}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\BoneBoxEdit">
-      <UniqueIdentifier>{4ca68c3c-4562-40bd-943b-d72e621590ab}</UniqueIdentifier>
+      <UniqueIdentifier>{fd1dbbe0-397e-426d-bb97-81934b69bd8e}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorCtrl\ColorAnimCtrl">
-      <UniqueIdentifier>{29422a2e-fab9-4170-9378-8c86d5ce6b43}</UniqueIdentifier>
+      <UniqueIdentifier>{94d347d6-1cca-4edb-a487-b2fbed8a9b8e}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorDlg">
-      <UniqueIdentifier>{b2ec423b-4395-4f16-a9ff-5f2bc7943513}</UniqueIdentifier>
+      <UniqueIdentifier>{ccfc5ed1-96a5-49ce-bcef-efc6a80b3bc9}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorDlg\PathSet">
-      <UniqueIdentifier>{73c6598e-c3f2-4da8-aaf7-31d3238114fe}</UniqueIdentifier>
+      <UniqueIdentifier>{12e5848b-bcba-4c5d-a57f-aede54371ee1}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorDlg\VideoSet">
-      <UniqueIdentifier>{5a2ad307-2d25-4e4e-af34-a049047d9b5a}</UniqueIdentifier>
+      <UniqueIdentifier>{42342a2b-7133-40d1-a8cb-7de6fd70e770}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorDlg\FProcess">
-      <UniqueIdentifier>{a033d056-90bb-48bf-b3e0-18947d0b481d}</UniqueIdentifier>
+      <UniqueIdentifier>{2b621097-4b67-48d4-85f8-7178d64b2d2e}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorComponent">
-      <UniqueIdentifier>{d7ce731b-a861-4eb7-b15c-7393cd3655eb}</UniqueIdentifier>
+      <UniqueIdentifier>{f3ceb593-d537-47f7-93f7-e06d14d7e00e}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorComponent\CameraCom">
-      <UniqueIdentifier>{88463868-f222-46a0-964e-209d447b9038}</UniqueIdentifier>
+      <UniqueIdentifier>{26e9dbe5-f30f-43e1-8cef-3b537ea7e78e}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorComponent\BoundingBoxCom">
-      <UniqueIdentifier>{29bbfb1e-af6f-407c-99d4-79e4ba65e54a}</UniqueIdentifier>
+      <UniqueIdentifier>{41aed585-4828-4a8f-9952-5c3144fde0ed}</UniqueIdentifier>
     </Filter>
     <Filter Include="EditorComponent\SkeletonCom">
-      <UniqueIdentifier>{2ada519b-78c0-4ad6-abd7-9fffd8b09fd0}</UniqueIdentifier>
+      <UniqueIdentifier>{1e621546-48f4-49c9-880f-ab76401f792b}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor">
-      <UniqueIdentifier>{84b8b30e-e3dc-4e74-93ff-28a2289e3a26}</UniqueIdentifier>
+      <UniqueIdentifier>{c7e349cb-428f-4e58-a687-f948aec5266e}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\BasicView">
-      <UniqueIdentifier>{86313bbb-36d5-4ec4-8119-f0d5aaf5940a}</UniqueIdentifier>
+      <UniqueIdentifier>{7b41fe8b-6409-42d1-8908-fd7c7b3cc2a7}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\GridView">
-      <UniqueIdentifier>{e3af15cb-1a43-4483-b642-71a4a5d36567}</UniqueIdentifier>
+      <UniqueIdentifier>{7feb7007-3c83-4cbe-99a7-0e5c4f4beabe}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\RecordView">
-      <UniqueIdentifier>{aba21e60-6f5f-4b10-8ecf-87f5ba9900bc}</UniqueIdentifier>
+      <UniqueIdentifier>{cc2a2e25-bdf8-41ea-b015-315d57f6890e}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\SetView">
-      <UniqueIdentifier>{62d113f0-b2a2-46a4-98da-60ea2a910672}</UniqueIdentifier>
+      <UniqueIdentifier>{59a9b634-3e99-4cbf-bb6f-8828dc1e0130}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\TileView">
-      <UniqueIdentifier>{ddd00ec1-4c1c-4af7-a20a-33eacb8fd98e}</UniqueIdentifier>
+      <UniqueIdentifier>{a1499be6-1422-4a7a-8f95-04d675e0265b}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\TextureView">
-      <UniqueIdentifier>{eae62225-fb28-44f0-bde0-869846e95120}</UniqueIdentifier>
+      <UniqueIdentifier>{6190b8bc-2f36-468f-bf52-5ca2ebcc0f29}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\NewDlg">
-      <UniqueIdentifier>{477c0183-dbaa-4bc4-919d-5c82b17e18bc}</UniqueIdentifier>
+      <UniqueIdentifier>{c3d7653c-315e-4300-8566-3f7eb08ba54f}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\NewMapView">
-      <UniqueIdentifier>{2125187e-c241-40c8-b9aa-8f2a70c05c68}</UniqueIdentifier>
+      <UniqueIdentifier>{0f3be90d-405d-4dec-b14a-bc96f0d6e4fe}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\ExternMapView">
-      <UniqueIdentifier>{4915e5d2-ea6e-4506-9923-366de87bab01}</UniqueIdentifier>
+      <UniqueIdentifier>{7f9bfb6d-e58c-4cba-9d16-e08bc0d25d67}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\BlockView">
-      <UniqueIdentifier>{89a11048-d039-4a9a-81ac-293780f7a04b}</UniqueIdentifier>
+      <UniqueIdentifier>{d7537fe4-8df3-4636-bb7f-9200904b3bce}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\AudioView">
-      <UniqueIdentifier>{dff5f357-0de5-4736-8d28-34437c372804}</UniqueIdentifier>
+      <UniqueIdentifier>{98a59c1f-3ae0-4a14-a5f9-6b5bd8f5305c}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\AudioView\CueList">
-      <UniqueIdentifier>{9e6c162b-ea0b-41bf-b0b5-2c3954d19fa4}</UniqueIdentifier>
+      <UniqueIdentifier>{f6df7310-e799-4ce8-8a0d-1ee4877aee7b}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\AudioView\AmbientAudio">
-      <UniqueIdentifier>{3be15ee6-a065-49bb-9dcb-4ad21895ed38}</UniqueIdentifier>
+      <UniqueIdentifier>{21e390d7-842c-40a5-912f-7e3ad7838922}</UniqueIdentifier>
     </Filter>
     <Filter Include="MapEditor\LightEffectView">
-      <UniqueIdentifier>{65c4ec86-ff3c-4d8d-baf4-27f13a1ee908}</UniqueIdentifier>
+      <UniqueIdentifier>{cedafb7d-a452-4e98-bd87-8a52d3a701e7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Helper">
-      <UniqueIdentifier>{e06073c5-9d23-4b3d-95c2-5d4993507324}</UniqueIdentifier>
+      <UniqueIdentifier>{71528ce4-76d1-4086-a54f-10a471fb2534}</UniqueIdentifier>
     </Filter>
     <Filter Include="Helper\BasicProp">
-      <UniqueIdentifier>{d025cd18-cdf4-4084-b9f9-d0ce201c0517}</UniqueIdentifier>
+      <UniqueIdentifier>{428802a5-d14f-46d5-a816-cab312265b74}</UniqueIdentifier>
     </Filter>
     <Filter Include="Utility">
-      <UniqueIdentifier>{227786ce-06be-4fbc-b7c9-d427edbee254}</UniqueIdentifier>
+      <UniqueIdentifier>{1aed5830-bf14-46c9-9f06-250e8f5c7349}</UniqueIdentifier>
     </Filter>
     <Filter Include="TEST">
-      <UniqueIdentifier>{e9957334-7b5c-4e33-b4b2-0d4d4c700bfe}</UniqueIdentifier>
+      <UniqueIdentifier>{3d0ace73-3bee-4e1a-af31-488a6593d3e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="TEST\UITest">
-      <UniqueIdentifier>{f328dcdf-0755-433a-aaf2-c47956c61f91}</UniqueIdentifier>
+      <UniqueIdentifier>{93650b02-9f34-4309-a30a-34609e685a8f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.ico">
+    <Image Include="app.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -727,79 +726,19 @@
     <ClInclude Include="Stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PathSetCtrl\CPathSetCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VideoSetCtrl\CVideoSettingCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SceneStateCtrl\CSceneStateCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewCtrl\CViewCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PortraitViewCtrl\CPortraitViewCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReadPkgViewCtrl\CReadPkgCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LogCtrl\CLogCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FProcessCtrl\CFProcessCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KeyFrameCtrl\CKeyFrameCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GroundSpeedCtrl\CGroundSpeedCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrameScaleCtrl\CFrameScaleCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LightParameterCtrl\CLightParameterCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FogParameterCtrl\CFogParameterCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ColorCtrl\CColorCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProcessCtrlEx\CProcessCtrlEx.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HDRSettingCtrl\CHDRSettingCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PickColorCtrl\CPowerColorPickerCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CEfxFileCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CEfxEditProp.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EffectTrack\CEfxTrackCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EffectKeyUint\CEfxKeyUintCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MapEffectCtrl\CMapEffectCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="AnimationGroupEditCtrl\CAnimationGroupEditCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="PieceUnitEditCtrl\CPieceUnitEditCtrl.resx">
+    <EmbeddedResource Include="AudioView\AmbientAudioCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="PieceGroupEditCtrl\CPieceGroupEditCtrl.resx">
+    <EmbeddedResource Include="AudioView\AudioViewCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioView\CueListCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="AutoPropToCtrl\AutoDataUintCtrl.resx">
@@ -841,31 +780,121 @@
     <EmbeddedResource Include="BaseDataCtrl\Vector3MapCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="BoneListCtrl\CBoneListCtrl.resx">
+    <EmbeddedResource Include="BasicPanelCtrl\CBasicPanel.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="LightViewCtrl\CLightView.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PropCtrl\CPropCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BoneBoxListCtrl\CBoneBoxListCtrl.resx">
+    <EmbeddedResource Include="BlockViewCtrl\CBlockViewCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="BoneBoxEditCtrl\CBoneBoxEditCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="BoneBoxListCtrl\CBoneBoxListCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoneListCtrl\CBoneListCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEfxEditProp.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEfxFileCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
     <EmbeddedResource Include="ColorAnimCtrl\CColorAnimCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorCtrl\CColorCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectKeyUint\CEfxKeyUintCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectTrack\CEfxTrackCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExMapCtrl\CExMapCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FogParameterCtrl\CFogParameterCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProcessCtrl\CFProcessCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProcessDlg\CFProcessDlg.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameScaleCtrl\CFrameScaleCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPanelCtrl\CGridPanel.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroundSpeedCtrl\CGroundSpeedCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HDRSettingCtrl\CHDRSettingCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyFrameCtrl\CKeyFrameCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightEffect\CLightEffectPanel.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightParameterCtrl\CLightParameterCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightViewCtrl\CLightView.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogCtrl\CLogCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapEffectCtrl\CMapEffectCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMapCtrl\CNewMapCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMapDlg\CNewMapDlg.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathSetCtrl\CPathSetCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="PathSetDlg\CPathSetDlg.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="VideoSetDlg\CVideoSetDlg.resx">
+    <EmbeddedResource Include="PickColorCtrl\CPowerColorPickerCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="FProcessDlg\CFProcessDlg.resx">
+    <EmbeddedResource Include="PieceGroupEditCtrl\CPieceGroupEditCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PieceUnitEditCtrl\CPieceUnitEditCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PortraitViewCtrl\CPortraitViewCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessCtrlEx\CProcessCtrlEx.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropCtrl\CPropCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadPkgViewCtrl\CReadPkgCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordCtrl\CRecordPanel.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SceneStateCtrl\CSceneStateCtrl.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetViewCtrl\CSetViewCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="SkeletonPropCom\SaveControl.resx">
@@ -874,49 +903,22 @@
     <EmbeddedResource Include="SkeletonPropCom\SizeControl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="BasicPanelCtrl\CBasicPanel.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GridPanelCtrl\CGridPanel.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RecordCtrl\CRecordPanel.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SetViewCtrl\CSetViewCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TileViewCtrl\CTileViewCtrl.resx">
+    <EmbeddedResource Include="TestCtrl\CTestUI.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="TextureViewCtrl\CTextureViewCltr.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewMapDlg\CNewMapDlg.resx">
+    <EmbeddedResource Include="TileViewCtrl\CTileViewCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewMapCtrl\CNewMapCtrl.resx">
+    <EmbeddedResource Include="VideoSetCtrl\CVideoSettingCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExMapCtrl\CExMapCtrl.resx">
+    <EmbeddedResource Include="VideoSetDlg\CVideoSetDlg.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="BlockViewCtrl\CBlockViewCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AudioView\AudioViewCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AudioView\CueListCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AudioView\AmbientAudioCtrl.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LightEffect\CLightEffectPanel.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestCtrl\CTestUI.resx">
+    <EmbeddedResource Include="ViewCtrl\CViewCtrl.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

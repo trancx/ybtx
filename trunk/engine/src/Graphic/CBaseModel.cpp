@@ -8,6 +8,7 @@
 #include "CodeCvs.h"
 #include "TSqrAllocator.inl"
 #include "IModelHandler.h"
+#include "CColor.inl"
 const DWORD CBaseModel::st_ModelType = 'MODL';
 
 CBaseModel::CBaseModel(ILogicHandler* pHandler)

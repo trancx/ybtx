@@ -12,7 +12,7 @@
 #include <streams.h>
 #include "Casyncio.h"
 #include "Casyncrdr.h"
-
+#include "amfilter.h"
 #include <initguid.h>
 
 // c553f2c0-1529-11d0-b4d1-00805f6cbbea

@@ -22,6 +22,8 @@ using namespace sqr;
 
 #include "resource.h"
 
+#include "CColor.inl"
+#include "CColor4.inl"
 
 
 std::string LoadResString( WORD ID );

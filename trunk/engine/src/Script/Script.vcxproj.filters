@@ -6,33 +6,36 @@
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="lua\lua">
-      <UniqueIdentifier>{76f78dc7-aa91-4ccf-8bf3-014fc775ba26}</UniqueIdentifier>
+      <UniqueIdentifier>{30561f8d-5cbf-4fce-9967-9b43027f640a}</UniqueIdentifier>
     </Filter>
     <Filter Include="lua\lua\c">
-      <UniqueIdentifier>{38f75f65-5db1-47b2-9c7c-0e08b85da74d}</UniqueIdentifier>
+      <UniqueIdentifier>{305cb4b2-ffaa-4f18-b48b-24519da3e048}</UniqueIdentifier>
       <Extensions>*.c</Extensions>
     </Filter>
     <Filter Include="lua\lua\h">
-      <UniqueIdentifier>{c32f2a3f-4650-4232-979c-6cc15f4434c5}</UniqueIdentifier>
+      <UniqueIdentifier>{d9fabaf0-416e-48ea-bf7d-0fe7d337b101}</UniqueIdentifier>
       <Extensions>*.h</Extensions>
     </Filter>
     <Filter Include="lua\profiler">
-      <UniqueIdentifier>{932db8b4-4394-489f-85b2-74f67f3a96d0}</UniqueIdentifier>
+      <UniqueIdentifier>{c09294d8-96f2-4e99-ba98-7eba54a72886}</UniqueIdentifier>
     </Filter>
     <Filter Include="Debuger">
-      <UniqueIdentifier>{232d1fa0-d93d-4910-9035-8e140c1f3740}</UniqueIdentifier>
+      <UniqueIdentifier>{f62f6504-68ef-4e1e-b9dc-38913d96e5a0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Serial">
-      <UniqueIdentifier>{682271c8-635c-4e8b-9f13-adca77523da4}</UniqueIdentifier>
+      <UniqueIdentifier>{38b91084-5d54-405c-80f3-c4191c5d4ef9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Test">
-      <UniqueIdentifier>{f59628bb-934d-4191-9415-66a5eff47d85}</UniqueIdentifier>
+      <UniqueIdentifier>{1c87c9bb-cdf7-4745-b57e-515e0a1c2aea}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{c26f8df2-9be0-484f-b805-81a46e9ec6c1}</UniqueIdentifier>
+      <UniqueIdentifier>{604758cf-de99-4819-b8b6-cc9489b5d092}</UniqueIdentifier>
     </Filter>
     <Filter Include="Register">
-      <UniqueIdentifier>{067353fc-2c21-4c37-8a1f-548f84fc39b0}</UniqueIdentifier>
+      <UniqueIdentifier>{fa1daf18-45cb-48e1-818a-83162534fc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profiler">
+      <UniqueIdentifier>{a99c0328-dc53-4ad3-8b7b-3bc9ee62336c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -244,7 +247,7 @@
       <Filter>Register</Filter>
     </ClCompile>
     <ClCompile Include="CCallBackProfiler.cpp">
-      <Filter>lua\profiler</Filter>
+      <Filter>Profiler</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -474,7 +477,7 @@
       <Filter>Register</Filter>
     </ClInclude>
     <ClInclude Include="..\..\sdk\inc\CCallBackProfiler.h">
-      <Filter>lua\profiler</Filter>
+      <Filter>Profiler</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

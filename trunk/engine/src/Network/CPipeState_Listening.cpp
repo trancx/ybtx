@@ -63,7 +63,7 @@ int CPipeState_Listening::CreateBindedSocket(SOCKET& SocketOut,const CAddress& A
 	saiAddress.sin_family = AF_INET;
 
 	//bind
-	if( bind( Socket,reinterpret_cast<sockaddr*>( &saiAddress) , sizeof(sockaddr) ) )
+	if(::bind( Socket,reinterpret_cast<sockaddr*>( &saiAddress) , sizeof(sockaddr) ) )
 	{
 		closesocket(Socket);
 		return SocketGetLastError();

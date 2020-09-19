@@ -8,6 +8,7 @@ using namespace System::Data;
 using namespace System::Drawing;
 using namespace System::Design;
 #include "CContextCom.h"
+#include "CEditContext.h"
 //This is the base class of all the controls in Clr dll;
 
 namespace sqr_tools

@@ -27,6 +27,12 @@ namespace sqr
 			return true;
 		}
 
+		template <class U>
+		inline bool operator!=(const TVariantJobAllocator<U>& ano)const
+		{
+			return false;
+		}
+
 		inline TVariantJobAllocator();
 		inline pointer allocate(size_type sz);
 		inline void deallocate(pointer p, size_type /*n*/);

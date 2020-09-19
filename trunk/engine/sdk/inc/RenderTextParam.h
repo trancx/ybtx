@@ -1,5 +1,5 @@
 #pragma once
-#include "CColor.h"
+#include "CColor.inl"
 #include "CVector3.h"
 #include "CRectangle.h"
 #include "CGraphicMallocObject.h"

@@ -12,6 +12,7 @@ string CPathSetImp::st_szCtrlType = "PathBrowser";
 DEF_SINGLE_UI_IMP(CPathSetImp);
 CPathSetImp::CPathSetImp(void)
 {
+	
 	Clear();
 	TiXmlNode* pConfig_xml = CEditorConfig::GetInst()->GetEditorConfig(st_szCtrlType);
 	for( TiXmlNode* pNode = pConfig_xml->FirstChild("Path"); pNode; pNode = pNode->NextSibling("Path") )
@@ -23,6 +24,7 @@ CPathSetImp::CPathSetImp(void)
 			AddPath(strText);
 		}
 	}
+	
 }
 
 CPathSetImp::~CPathSetImp(void)

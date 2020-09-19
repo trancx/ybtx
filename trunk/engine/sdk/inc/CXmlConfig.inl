@@ -22,7 +22,7 @@ namespace sqr
 template<typename NumberType>
 inline NumberType CStrToValue(const char* szText)
 {
-	if( is_pointer<NumberType>::value )
+	if (sqr::is_pointer<NumberType>::value)
 		GenErr("Don't get pointer value from CXmlConfig except <const char*> !");
 	return NumberType( atol(szText) );
 }

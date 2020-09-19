@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="连接">
-      <UniqueIdentifier>{acddbb5c-0860-4b3e-bbee-947f29d35e70}</UniqueIdentifier>
+      <UniqueIdentifier>{8e1d1797-8bfb-4bba-b3c5-52fb5018404c}</UniqueIdentifier>
     </Filter>
     <Filter Include="框架">
-      <UniqueIdentifier>{7e7a6643-9424-4adf-aee1-82e8d407733b}</UniqueIdentifier>
+      <UniqueIdentifier>{119cb783-eb1c-496f-aab6-33871c665229}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

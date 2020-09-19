@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "SQRFlashWnd.h"
 #include "CFlashPlayer.h"
+#include <Windows.h>
 
 DYNAMIC_CREATE_WND( SQRFlashWnd, SQRWnd )
 

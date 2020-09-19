@@ -14,10 +14,10 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="CallBack">
-      <UniqueIdentifier>{e47419ab-298f-404e-8818-3ddcc732b51a}</UniqueIdentifier>
+      <UniqueIdentifier>{a1a9ccb9-f441-448b-a72e-2030bc27634f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{603e4443-bba9-490f-a3eb-bff474f0ac3c}</UniqueIdentifier>
+      <UniqueIdentifier>{e6c6b999-6bf1-40cd-9a5f-39850d1dfda4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -186,17 +186,21 @@
     </Manifest>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\Ybtx.ico">
+    <Image Include="res\Ybtx.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\Ybtx.rc2">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Ybtx.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Ybtx.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

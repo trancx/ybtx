@@ -2,13 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Public">
-      <UniqueIdentifier>{b98ab8f8-1774-4596-b546-5584411aa821}</UniqueIdentifier>
+      <UniqueIdentifier>{f66617f1-7ff5-41ac-a954-720714cad40b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Private">
-      <UniqueIdentifier>{606cd90a-e053-406c-9264-6ac522cc8389}</UniqueIdentifier>
+      <UniqueIdentifier>{a7d24715-e1fd-4989-980a-c01a0fe6fea1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Private\RenderAdapter">
-      <UniqueIdentifier>{1ce3b448-13b0-48ee-8163-7515348a222c}</UniqueIdentifier>
+      <UniqueIdentifier>{25daf649-2778-4f05-b320-df682fbf2b94}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +34,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

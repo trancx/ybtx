@@ -2,46 +2,49 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="lua">
-      <UniqueIdentifier>{87dfbee4-5ea0-47ff-a936-4cf6a6e8b635}</UniqueIdentifier>
+      <UniqueIdentifier>{e3bbaaf4-2b7f-467b-94c9-ace65712fe90}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能">
-      <UniqueIdentifier>{15cd8175-3ca9-4108-980e-998e32b707d0}</UniqueIdentifier>
+      <UniqueIdentifier>{98f273b7-9a3d-4c35-ae15-11f6d81233dd}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\效果">
-      <UniqueIdentifier>{e4137faa-7046-4553-bd70-e3bbbad4ffb4}</UniqueIdentifier>
+      <UniqueIdentifier>{b41adf9e-a131-4a36-885c-6ab614eb9be6}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\公共">
-      <UniqueIdentifier>{bcb4a7a9-5f57-4b0c-b32e-e6e90c7f0e96}</UniqueIdentifier>
+      <UniqueIdentifier>{0bee94e5-cc68-4c62-9722-abf77b812cd9}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\状态">
-      <UniqueIdentifier>{3e134a21-00b0-4850-8aed-cbbe0917977f}</UniqueIdentifier>
+      <UniqueIdentifier>{a2c60344-cb0d-42e4-849c-2326ee5b45b0}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\魔法">
-      <UniqueIdentifier>{ad3cdd7e-83d6-47b5-a1ab-a5d12825cb96}</UniqueIdentifier>
+      <UniqueIdentifier>{01ec18c9-dcc9-4de6-8776-dfb4dcf39219}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\流程">
-      <UniqueIdentifier>{a09d118a-f749-4221-a7fa-52ddef3cdac9}</UniqueIdentifier>
+      <UniqueIdentifier>{77303804-a9e2-4122-91fa-eaf470ea3b80}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\普攻">
-      <UniqueIdentifier>{b53dd3bf-1db4-427c-b557-3224f947e060}</UniqueIdentifier>
+      <UniqueIdentifier>{72a62691-ce49-45ea-8dcb-010a11d1e0c2}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\技能">
-      <UniqueIdentifier>{6537d03a-8e38-41d0-8cdf-bf8c6678e005}</UniqueIdentifier>
+      <UniqueIdentifier>{dff7b67d-a414-43fc-bc21-048dbec6bb95}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\天赋">
-      <UniqueIdentifier>{98c2e564-9cfd-43e5-9337-248d997e9027}</UniqueIdentifier>
+      <UniqueIdentifier>{74f9ee19-c09c-49a8-938c-91f2271849ff}</UniqueIdentifier>
     </Filter>
     <Filter Include="技能\属性">
-      <UniqueIdentifier>{0e58296c-7b2e-4807-8f70-ac3e0db426be}</UniqueIdentifier>
+      <UniqueIdentifier>{17f9b687-82e0-4311-9979-e8226530d5e5}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC">
-      <UniqueIdentifier>{a22e6349-624e-4101-a6ed-20cbf0fda594}</UniqueIdentifier>
+      <UniqueIdentifier>{252b5341-762c-4479-9c56-8d0bb00254ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公共">
+      <UniqueIdentifier>{84318e12-09ea-49ee-8b47-bd0c26db14c4}</UniqueIdentifier>
     </Filter>
     <Filter Include="界面">
-      <UniqueIdentifier>{213074b6-14fe-47ff-96ab-0d8aa6dbb4df}</UniqueIdentifier>
+      <UniqueIdentifier>{3b495f68-1c11-4b9e-a170-6d72111652cf}</UniqueIdentifier>
     </Filter>
     <Filter Include="框架">
-      <UniqueIdentifier>{9490e2ef-be6f-4c14-8f48-9c28a8cbd6eb}</UniqueIdentifier>
+      <UniqueIdentifier>{c2f97a35-261e-437c-990c-c091df728e79}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -177,7 +180,7 @@
       <Filter>NPC</Filter>
     </ClCompile>
     <ClCompile Include="CCfgBaseCheck.cpp">
-      <Filter>技能\公共</Filter>
+      <Filter>公共</Filter>
     </ClCompile>
     <ClCompile Include="CCfgBloodCheck.cpp">
       <Filter>界面</Filter>
@@ -293,7 +296,7 @@
       <Filter>NPC</Filter>
     </ClInclude>
     <ClInclude Include="CCfgBaseCheck.h">
-      <Filter>技能\公共</Filter>
+      <Filter>公共</Filter>
     </ClInclude>
     <ClInclude Include="CCfgBloodCheck.h">
       <Filter>界面</Filter>

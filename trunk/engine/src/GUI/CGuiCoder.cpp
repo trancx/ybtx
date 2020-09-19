@@ -9,6 +9,7 @@
 #include "StringHelper.h"
 #include "Memory.h"
 #include "CFontCfg.h"
+#include "TSqrAllocator.inl"
 
 #define string_size_check(sz, maxsz) \
 	if( (sz) > (maxsz) ) \

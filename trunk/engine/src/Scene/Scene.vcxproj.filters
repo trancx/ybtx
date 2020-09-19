@@ -2,100 +2,100 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="场景框架">
-      <UniqueIdentifier>{79b43e60-820f-4489-9bcd-1ef950902ab3}</UniqueIdentifier>
+      <UniqueIdentifier>{23f3e4c0-5dd9-4e91-86de-d3ad4f873d0c}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\Utility">
-      <UniqueIdentifier>{68e83bdf-d890-4e2e-b55b-7d514305c23e}</UniqueIdentifier>
+      <UniqueIdentifier>{9e1166a5-4e2a-48a6-9119-6284f6140d66}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement">
-      <UniqueIdentifier>{ce3d96ed-b4ba-462c-9276-2c480a0efa26}</UniqueIdentifier>
+      <UniqueIdentifier>{43ae3682-1e1f-4bfd-9112-a14fc89f6869}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\Water">
-      <UniqueIdentifier>{2725e8ca-7f7e-4a85-af15-48b2c7c28112}</UniqueIdentifier>
+      <UniqueIdentifier>{3dadc85a-d5a6-45af-a658-7f5cde6ffd74}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\Water\Coder">
-      <UniqueIdentifier>{c83e08e1-bac1-495a-a107-71efc5dbff97}</UniqueIdentifier>
+      <UniqueIdentifier>{c8d79445-1ad6-4001-b61a-5feed1f69fe2}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\Terrain">
-      <UniqueIdentifier>{de3dcf54-2481-41ec-88a1-b9871f6b46e2}</UniqueIdentifier>
+      <UniqueIdentifier>{651e0350-0696-4557-942e-a8566d2f11ee}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\Terrain\Coder">
-      <UniqueIdentifier>{af037d27-e421-47d8-aaa1-10c94d683f5a}</UniqueIdentifier>
+      <UniqueIdentifier>{dab8c976-cd83-440b-ae22-db210316d3e4}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\Sky">
-      <UniqueIdentifier>{9147715d-408d-4c3a-8869-f34f285b5ee1}</UniqueIdentifier>
+      <UniqueIdentifier>{800a9745-2d55-4775-a1a4-75e63481c2fc}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\Sky\Coder">
-      <UniqueIdentifier>{8496d271-f82e-48ab-a2e7-2a31129c9048}</UniqueIdentifier>
+      <UniqueIdentifier>{a2ec7098-7464-4e31-ac52-187b0f5b41d3}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\Logic">
-      <UniqueIdentifier>{684b6fb4-f3a4-470f-a02c-350a7da918b7}</UniqueIdentifier>
+      <UniqueIdentifier>{1059dd50-f33b-4596-8249-00929733f650}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\Logic\Coder">
-      <UniqueIdentifier>{921b2f79-f559-46d9-a840-1df2bd739c4b}</UniqueIdentifier>
+      <UniqueIdentifier>{2fa2d94d-4001-44ae-9acd-0cb05b94e9f1}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\场景管理">
-      <UniqueIdentifier>{d305afb0-b87d-4591-9c76-6b1646452b81}</UniqueIdentifier>
+      <UniqueIdentifier>{5b2dfbd5-ce88-4680-864c-891d6a3a992c}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\场景管理\四叉树">
-      <UniqueIdentifier>{06b10c98-1e7d-4e85-bed7-957b14a1ac6a}</UniqueIdentifier>
+      <UniqueIdentifier>{3d109944-3bd5-4ecc-acd4-f58c7fe5f57f}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneElement\场景管理\八叉树">
-      <UniqueIdentifier>{e071fc84-9971-4c4d-ada4-298bbe65d7e2}</UniqueIdentifier>
+      <UniqueIdentifier>{e86f2a86-2d6a-4966-9d1a-7246795cd939}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\Controller">
-      <UniqueIdentifier>{0949a086-cdf1-477c-8f07-ff2c374c3e04}</UniqueIdentifier>
+      <UniqueIdentifier>{83963da2-a6cb-4cca-a150-33d9fb6b8138}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\Controller\CameraController">
-      <UniqueIdentifier>{37d74f6f-f2b1-471e-a8f2-62a67397ecd6}</UniqueIdentifier>
+      <UniqueIdentifier>{bb5c2ec3-2431-436b-a7ac-5d278b4ebd93}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\CModelEx">
-      <UniqueIdentifier>{b5ab1b77-12fe-412e-aadc-1fdafa94c34d}</UniqueIdentifier>
+      <UniqueIdentifier>{f8712823-71ef-41f9-aee1-fa51f52aab05}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\Config">
-      <UniqueIdentifier>{6a565d2c-3942-434d-8f2f-92a0fb1c050f}</UniqueIdentifier>
+      <UniqueIdentifier>{cb239eb4-d9ea-46a1-824a-f3a1719cf055}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景框架\SceneMain">
-      <UniqueIdentifier>{0c0c79d4-99a4-4274-9beb-31995c3336ae}</UniqueIdentifier>
+      <UniqueIdentifier>{b492207c-e338-43b1-9dea-3f3760153246}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景渲染">
-      <UniqueIdentifier>{fa706fab-2761-438b-9e21-c7111ebc970e}</UniqueIdentifier>
+      <UniqueIdentifier>{4be04ad3-dbc9-4652-9869-628d583009e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景渲染\Dialog">
-      <UniqueIdentifier>{c69cfe41-fbf6-404a-8b99-ac5d0f1c5ad0}</UniqueIdentifier>
+      <UniqueIdentifier>{8eead068-620e-4e30-bfdf-e17e1cbae608}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景渲染\SceneObject">
-      <UniqueIdentifier>{503b1cd7-7ba3-47aa-a343-c936154e1cb3}</UniqueIdentifier>
+      <UniqueIdentifier>{e6b5b135-5527-4041-8aad-ae6825c3a68e}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景渲染\Query">
-      <UniqueIdentifier>{9f6cf11d-6116-4504-994f-ad4b6102a4db}</UniqueIdentifier>
+      <UniqueIdentifier>{1a09411f-2092-42f0-840f-f229191123c9}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景渲染\RegionEffect">
-      <UniqueIdentifier>{fd76a65d-c3b0-4ecd-b546-0dd822c34373}</UniqueIdentifier>
+      <UniqueIdentifier>{9364dc51-4c60-42f8-82c0-2dc2011b1976}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景数据">
-      <UniqueIdentifier>{c4babc6b-c42d-43b6-925d-54d6c9470ad6}</UniqueIdentifier>
+      <UniqueIdentifier>{c33789f3-8f66-485b-872e-856fd6f22847}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景数据\Coder">
-      <UniqueIdentifier>{28c6e4f6-510b-4fe2-9a7e-6397e3406ff9}</UniqueIdentifier>
+      <UniqueIdentifier>{e2c96566-731f-4328-a27f-a7dc8b5cb62a}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景数据\DataLoader">
-      <UniqueIdentifier>{60b0690f-55f6-424e-b5c3-d84c930b79d5}</UniqueIdentifier>
+      <UniqueIdentifier>{a8c9c739-3f5a-4158-852a-beb8a61f1158}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景数据\DataLoader\CSceneManagerClient">
-      <UniqueIdentifier>{4ddd9e8f-d747-4b65-9c3e-e62c524cae1e}</UniqueIdentifier>
+      <UniqueIdentifier>{118460a5-c8d2-4391-b42a-2fe9784f141e}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景数据\DataLoader\CSceneManagerClient\SceneCoder">
-      <UniqueIdentifier>{3ac0fdc2-04d9-4153-9eae-37e04e504a7b}</UniqueIdentifier>
+      <UniqueIdentifier>{860ae22b-c814-4c8a-b909-3b660a4ee092}</UniqueIdentifier>
     </Filter>
     <Filter Include="调试信息">
-      <UniqueIdentifier>{50c28412-2ce6-446c-8664-0b10caf27173}</UniqueIdentifier>
+      <UniqueIdentifier>{cd08004f-97a5-4c62-a5a2-7d631e099872}</UniqueIdentifier>
     </Filter>
     <Filter Include="多国语言">
-      <UniqueIdentifier>{501f3227-27b2-4abd-b7fc-8af7a6d1cbdb}</UniqueIdentifier>
+      <UniqueIdentifier>{e70a93e4-e4ee-4650-9904-afe046ef9b79}</UniqueIdentifier>
     </Filter>
     <Filter Include="资源加载">
-      <UniqueIdentifier>{0eb693a6-f3f3-4cad-a9d1-64e5a5445148}</UniqueIdentifier>
+      <UniqueIdentifier>{76fb27dd-6ba1-4e30-aa53-5877c6cbe5bc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -19,6 +19,7 @@
 #include "CGraphic.h"
 
 #include "StringHelper.h"
+#include "CColor.inl"
 namespace sqr
 {
 

@@ -3,6 +3,7 @@
 #include "tinyxml/tinyxml.h"
 #include "ExpHelper.h"
 #include "BaseHelper.h"
+#include <windows.h>
 
 CXmlSiblingElemIter::CXmlSiblingElemIter()
 {

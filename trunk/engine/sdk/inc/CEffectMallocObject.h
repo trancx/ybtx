@@ -1,6 +1,4 @@
 #pragma once
-#include "TSqrAllocObject.h"
-#include "TSqrAllocator.h"
 #include <fstream>
 #include <string>
 #include <vector>
@@ -9,6 +7,8 @@
 #include <queue>
 #include <map>
 #include <set>
+#include "TSqrAllocator.inl"
+#include "TSqrAllocObject.inl"
 
 namespace sqr
 {

@@ -12,8 +12,10 @@
 #define  GTR_HIGH	5
 #define  GTR_LOW	6
 
+#define _WIN32_WINNT 0x0500
+#define WINDOWS_LEAN_AND_MEAN
 #define _WINSOCKAPI_
-#include "Base.h"
+#include <Windows.h>
 #include <sstream>
 #include <list>
 #include <vector>
@@ -22,13 +24,18 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <Windows.h>
-#include "BaseTypes.h"
-namespace sqr_tools{}
+#include <stack>
+#include <set>
+#include <hash_set>
+using namespace stdext;
 using namespace std;
+#include "BaseTypes.h"
+#include "Base.h"
+
+namespace sqr_tools {}
+
 using namespace sqr_tools;
 using namespace sqr;
-
 #ifdef _UNICODE
 #if defined _M_IX86
 #pragma comment(linker,"/manifestdependency:\"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='x86' publicKeyToken='6595b64144ccf1df' language='*'\"")

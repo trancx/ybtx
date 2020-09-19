@@ -102,6 +102,7 @@ int CPackage::Load(CPackage** ppPkg, const wchar_t *szName)
 
 int CPackage::OpenFile( void** ppFileOut, const wchar_t * szName, bool bBinary )
 {
+	printf("ready to load file %ls\n", szName);
 	*ppFileOut = 0;
 
 #ifdef _WIN32

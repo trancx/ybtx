@@ -37,7 +37,7 @@ int32	SQRDialog::DestroyWnd()
 
 	while(itr != itrend)
 	{
-		SafeRelease(*itr);
+		(*itr)->Release();
 		++itr;
 	}
 	return SQRWnd::DestroyWnd();
@@ -627,7 +627,7 @@ void SQRDialog::Draw()
 			{
 				if ( (*itr)->IsValid() )
 				{
-					SafeRelease((*itr));
+					(*itr)->Release();
 					m_TexMap.erase(itr++);
 				}
 				else

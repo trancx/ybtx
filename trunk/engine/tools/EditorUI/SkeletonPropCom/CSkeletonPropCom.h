@@ -12,7 +12,7 @@ namespace sqr_tools
 		{
 			return System::Drawing::Design::UITypeEditorEditStyle::DropDown;
 		}
-		virtual System::Object^ EditValue(System::ComponentModel::ITypeDescriptorContext^ context, IServiceProvider^ provider, System::Object^ value) override
+		virtual System::Object^ EditValue(System::ComponentModel::ITypeDescriptorContext^ context, System::IServiceProvider^ provider, System::Object^ value) override
 		{
 			System::Windows::Forms::Design::IWindowsFormsEditorService^ wfes = (System::Windows::Forms::Design::IWindowsFormsEditorService^)provider->GetService(System::Windows::Forms::Design::IWindowsFormsEditorService::typeid);
 			if (wfes)
@@ -34,7 +34,7 @@ namespace sqr_tools
 		{
 			return System::Drawing::Design::UITypeEditorEditStyle::DropDown;
 		}
-		virtual System::Object^ EditValue(System::ComponentModel::ITypeDescriptorContext^ context, IServiceProvider^ provider, System::Object^ value) override
+		virtual System::Object^ EditValue(System::ComponentModel::ITypeDescriptorContext^ context, System::IServiceProvider^ provider, System::Object^ value) override
 		{
 			System::Windows::Forms::Design::IWindowsFormsEditorService^ wfes = (System::Windows::Forms::Design::IWindowsFormsEditorService^)provider->GetService(System::Windows::Forms::Design::IWindowsFormsEditorService::typeid);
 			if (wfes)

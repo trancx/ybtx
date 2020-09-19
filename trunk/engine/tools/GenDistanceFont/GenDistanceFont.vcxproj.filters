@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Math">
-      <UniqueIdentifier>{e323ee22-f2ad-4794-9494-e33943d516e8}</UniqueIdentifier>
+      <UniqueIdentifier>{cad6b17c-18be-47d2-aac3-a465f6e33573}</UniqueIdentifier>
     </Filter>
     <Filter Include="MiscHelper">
-      <UniqueIdentifier>{1068025f-c912-455f-a615-5b079bbf4a55}</UniqueIdentifier>
+      <UniqueIdentifier>{e0e0e99c-34a9-4cee-b167-e17e5c3954bf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

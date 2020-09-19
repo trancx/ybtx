@@ -2,43 +2,43 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Stack">
-      <UniqueIdentifier>{75df880d-a4fe-4d40-98d8-65f55518a8fb}</UniqueIdentifier>
+      <UniqueIdentifier>{9173fc7e-44b8-4f07-9a16-4b64ec035e4b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Memory">
-      <UniqueIdentifier>{86de8158-ee9f-46d4-9a77-5df74d15d8d0}</UniqueIdentifier>
+      <UniqueIdentifier>{15b84cb5-5b91-4670-ac98-46d3c860827e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Memory\多线程">
-      <UniqueIdentifier>{43f29182-7192-458a-b1db-fcb2582ab2cc}</UniqueIdentifier>
+      <UniqueIdentifier>{aa7aca59-1a69-41fb-bdd1-a49e8604b9b1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Memory\分配器">
-      <UniqueIdentifier>{cf166b32-d8fd-4975-a140-813ab4df02a1}</UniqueIdentifier>
+      <UniqueIdentifier>{f6fab7ce-ffcb-4b5c-870e-7f47f8efc813}</UniqueIdentifier>
     </Filter>
     <Filter Include="Memory\分配器\dlmalloc">
-      <UniqueIdentifier>{91bc3304-20ff-4d97-a6a1-be7961a01dc1}</UniqueIdentifier>
+      <UniqueIdentifier>{6706e457-a132-4dcf-a56e-f2ad498f3ad8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Error">
-      <UniqueIdentifier>{706a264c-4b3e-429a-8610-9b3dca1089e1}</UniqueIdentifier>
+      <UniqueIdentifier>{8d769b1e-2af9-4d55-87c6-ea43ba5e7967}</UniqueIdentifier>
     </Filter>
     <Filter Include="Time">
-      <UniqueIdentifier>{ea33a6be-3086-4093-87d0-c174754c23a4}</UniqueIdentifier>
+      <UniqueIdentifier>{87aa4a39-c810-4d83-9746-54825064e7a1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Utf">
-      <UniqueIdentifier>{69310478-6c3f-4b4f-9f35-5e9694bc23fa}</UniqueIdentifier>
+      <UniqueIdentifier>{6945dece-f276-4b05-a48f-42e92df90150}</UniqueIdentifier>
     </Filter>
     <Filter Include="Guid">
-      <UniqueIdentifier>{7df37f67-3c7a-41a2-9f3e-b952d1b5b098}</UniqueIdentifier>
+      <UniqueIdentifier>{747e5e61-b0cb-4c2d-85f5-141c02430826}</UniqueIdentifier>
     </Filter>
     <Filter Include="Xml">
-      <UniqueIdentifier>{c3ef35d8-205b-4751-9fab-fb9ae0695663}</UniqueIdentifier>
+      <UniqueIdentifier>{a8cc4e02-d6b7-4082-99da-cf8affd24131}</UniqueIdentifier>
     </Filter>
     <Filter Include="Thread">
-      <UniqueIdentifier>{141a72eb-5a66-4051-854d-73e0eab4296f}</UniqueIdentifier>
+      <UniqueIdentifier>{8c915aec-9667-4280-8fdc-11afe6bccd00}</UniqueIdentifier>
     </Filter>
     <Filter Include="Base">
-      <UniqueIdentifier>{74482861-e06f-4efa-900f-d75237a3eab3}</UniqueIdentifier>
+      <UniqueIdentifier>{8ed5212f-af67-4598-8ee7-45d3404816e5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Script">
-      <UniqueIdentifier>{81a8c413-9676-4a14-92cc-61d1f014de98}</UniqueIdentifier>
+      <UniqueIdentifier>{cd773637-bc42-4ae1-bd82-41558fe80574}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -14,14 +14,17 @@
     <ProjectGuid>{84CF8906-3CD6-4604-A4B9-5B08BF6B371C}</ProjectGuid>
     <RootNamespace>CoreStress</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>false</WholeProgramOptimization>
   </PropertyGroup>
@@ -36,17 +39,15 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -85,29 +86,29 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CConnMgrStress.cpp" />
-    <ClCompile Include="CConnStress.cpp" />
     <ClCompile Include="CAppConfigStress.cpp" />
     <ClCompile Include="CAppStress.cpp" />
+    <ClCompile Include="CConnMgrStress.cpp" />
+    <ClCompile Include="CConnStress.cpp" />
+    <ClCompile Include="CCoreObjectStress.cpp" />
+    <ClCompile Include="CTimeSystemStress.cpp" />
     <ClCompile Include="CTraitsStress.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="CCoreObjectStress.cpp" />
-    <ClCompile Include="CTimeSystemStress.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\sdk\inc\CConnMgrStress.h" />
-    <ClInclude Include="..\..\sdk\inc\CConnStress.h" />
-    <ClInclude Include="..\..\sdk\inc\IConnMgrStressHandler.h" />
     <ClInclude Include="..\..\sdk\inc\CAppConfigStress.h" />
     <ClInclude Include="..\..\sdk\inc\CAppStress.h" />
+    <ClInclude Include="..\..\sdk\inc\CConnMgrStress.h" />
+    <ClInclude Include="..\..\sdk\inc\CConnStress.h" />
+    <ClInclude Include="..\..\sdk\inc\CCoreObjectStress.h" />
     <ClInclude Include="..\..\sdk\inc\CTraitsStress.h" />
     <ClInclude Include="..\..\sdk\inc\IAppStressHandler.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="..\..\sdk\inc\CCoreObjectStress.h" />
+    <ClInclude Include="..\..\sdk\inc\IConnMgrStressHandler.h" />
     <ClInclude Include="CTimeSystemStress.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CConnStress.inl" />

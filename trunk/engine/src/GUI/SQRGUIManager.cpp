@@ -1900,6 +1900,7 @@ HCURSOR SQRGUIManager::LoadCursorRes( const char* sCurFile )
 		sprintf( szBuf, "%d", sCurFile );
 		szCursorFile = szBuf;
 	}
+	printf("start to load cursor file at %s\n", szCursorFile);
 
 	UIMap<UIString, HCURSOR>::iterator it = m_CursorRes.find( szCursorFile );
 	if ( it == m_CursorRes.end() )

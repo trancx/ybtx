@@ -32,9 +32,9 @@ namespace sqr_tools
 		return nodeToColor(ColorAnimNode(1.0f - color.R/255.0f, 1.0f - color.G/255.0f, 1.0f - color.B/255.0f, 1.0f));
 	}
 
-	Rectangle getCtrlPointRect( const PointF& point )
+	System::Drawing::Rectangle getCtrlPointRect( const PointF& point )
 	{
-		return Rectangle(int(const_cast<PointF&>(point).X-CTRL_POINT_RADIUS), int(const_cast<PointF&>(point).Y-CTRL_POINT_RADIUS), CTRL_POINT_RADIUS*2, CTRL_POINT_RADIUS*2);
+		return System::Drawing::Rectangle(int(const_cast<PointF&>(point).X-CTRL_POINT_RADIUS), int(const_cast<PointF&>(point).Y-CTRL_POINT_RADIUS), CTRL_POINT_RADIUS*2, CTRL_POINT_RADIUS*2);
 	}
 
 	char* CColorAnimCtrl::GetImpTypeName( void )

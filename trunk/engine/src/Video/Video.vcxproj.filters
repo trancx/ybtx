@@ -2,13 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="VideoShow">
-      <UniqueIdentifier>{2145d8be-ab11-43ab-95e7-f11e8e1ff7f7}</UniqueIdentifier>
+      <UniqueIdentifier>{a2fef2a8-844e-405e-967f-477bdaf4d98e}</UniqueIdentifier>
     </Filter>
     <Filter Include="WebBrowserControl">
-      <UniqueIdentifier>{22ebef67-7d5d-4069-b7a2-12e153864737}</UniqueIdentifier>
+      <UniqueIdentifier>{88b7b4b5-187f-4f18-845c-9c66b732c799}</UniqueIdentifier>
     </Filter>
     <Filter Include="FlashControl">
-      <UniqueIdentifier>{65f82187-d8ad-42be-a337-9d19304610b3}</UniqueIdentifier>
+      <UniqueIdentifier>{6e89f1d5-6309-481c-aada-9ccc37d1b613}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +107,6 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

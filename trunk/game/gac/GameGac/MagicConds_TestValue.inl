@@ -4,6 +4,7 @@
 #include "CMagicOpArg.h"
 #include "TPropertyHolder_inl.inl"
 #include "CCfgCalc.inl"
+#include "FighterProperty.inl"
 
 class CSkillInstNull;
 

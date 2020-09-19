@@ -2,25 +2,25 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="接口">
-      <UniqueIdentifier>{8409f8c8-c9ae-4236-8c18-2ea265fbda02}</UniqueIdentifier>
+      <UniqueIdentifier>{330e1183-c14a-45f9-a61d-6932993bcc11}</UniqueIdentifier>
     </Filter>
     <Filter Include="同步">
-      <UniqueIdentifier>{62bc3159-ab51-4335-ac5b-a581bac2dd40}</UniqueIdentifier>
+      <UniqueIdentifier>{aa88c636-a73f-4814-978c-96d78ad70e1e}</UniqueIdentifier>
     </Filter>
     <Filter Include="同步\加解密">
-      <UniqueIdentifier>{ed0f9a9a-037d-43d3-a800-7fe3ec034460}</UniqueIdentifier>
+      <UniqueIdentifier>{ada8f3b8-1393-4010-a07c-5b8e2e951bfe}</UniqueIdentifier>
     </Filter>
     <Filter Include="框架">
-      <UniqueIdentifier>{93cd052a-a457-4b08-97fa-2474d82027e2}</UniqueIdentifier>
+      <UniqueIdentifier>{0be1c45d-6f55-4a7e-82ff-0398773627a4}</UniqueIdentifier>
     </Filter>
     <Filter Include="公共">
-      <UniqueIdentifier>{86087713-6d7b-4247-b332-f5e39bade1d2}</UniqueIdentifier>
+      <UniqueIdentifier>{de9bb6c4-4e05-4f74-80c3-a27598b47871}</UniqueIdentifier>
     </Filter>
     <Filter Include="异步">
-      <UniqueIdentifier>{0ec14684-b7f4-46b3-a1d6-ecdcc1813e88}</UniqueIdentifier>
+      <UniqueIdentifier>{d98373e7-6f80-4894-aa07-50d1e632908b}</UniqueIdentifier>
     </Filter>
     <Filter Include="异步\多线程">
-      <UniqueIdentifier>{7e876aa6-8764-4b50-85c5-3037bfef9358}</UniqueIdentifier>
+      <UniqueIdentifier>{e10b8253-10c9-4a6b-94a7-83e28edb8ff2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -35,6 +35,7 @@ namespace sqr
 		};
 
 		bool operator==(const TSqrAllocator<T, AllocObject>& )const throw();
+		bool operator!=(const TSqrAllocator<T, AllocObject>& )const throw();
 		
 		pointer allocate(size_type size);
 		

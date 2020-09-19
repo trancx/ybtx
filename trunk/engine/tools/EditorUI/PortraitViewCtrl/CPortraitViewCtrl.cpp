@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CPortraitViewCtrl.h"
 #include "PortraitView\PortraitViewCtrlImp.h"
+#include "dthelp.h"
 
 #pragma region Windows Form Designer generated code
 void CPortraitViewCtrl::InitializeComponent( void )

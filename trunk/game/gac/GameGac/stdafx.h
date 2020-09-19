@@ -36,3 +36,5 @@ using namespace std;
 using namespace sqr;
 
 // TODO: reference additional headers your program requires here
+#include "CColor.inl"
+#include "CColor4.inl"

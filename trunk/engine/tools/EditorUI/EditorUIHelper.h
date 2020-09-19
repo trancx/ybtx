@@ -27,6 +27,6 @@ namespace sqr_tools
 				GetPropertiesSupported( ITypeDescriptorContext^ context ) override;
 
 		virtual PropertyDescriptorCollection^ 
-				GetProperties( ITypeDescriptorContext^ context, Object^ value, array<Attribute^>^ attributes ) override;
+				GetProperties( ITypeDescriptorContext^ context, Object^ value, cli::array<Attribute^>^ attributes ) override;
 	};
 }

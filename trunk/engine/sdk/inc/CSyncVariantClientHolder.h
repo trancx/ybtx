@@ -8,7 +8,7 @@ namespace sqr
 	class CSyncVariantClient;
 	class CSyncVariantClientHolder
 		: public virtual CStaticObject
-		, private CCypherVariantHolderForDecode
+		, public CCypherVariantHolderForDecode
 	{
 		friend class CCoreObjectFollower;
 	public:

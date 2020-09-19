@@ -14,6 +14,7 @@
 #include "CLock.inl"
 #include "CodeCvs.h"
 #include "UtfCvs.h"
+#include <stdio.h>
 
 #ifndef _WIN32
 #include <sys/stat.h>
@@ -231,6 +232,8 @@ namespace sqr
 	{
 		wstring szPkgName(pkg_name);
 		szPkgName += L".pkg";
+
+		printf("start to load package %ls\n\n", szPkgName.c_str());
 
 		SearchPathList	pathList		= GetSearchList(szAlias);
 		int				ret				= eFE_SUCCESS;

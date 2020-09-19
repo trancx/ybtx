@@ -3,6 +3,7 @@
 #include "CEditUnitPropHelp.h"
 #include "CEditEffectManager.h"
 #include "StringHelper.h"
+#include "CEffectMallocObject.h"
 
 CEditEffectProp::CEditEffectProp( CBaseEffectGroup* pEffectGroup, IEffectManager* pEffectMgr, const EString& szName )
 :CEffectProp(pEffectGroup,pEffectMgr,szName)
@@ -210,7 +211,7 @@ void CEditEffectProp::ClearEditEffects()
 {
 	EffectPool::iterator it,eit = m_EffectSet.end();
 	for( it = m_EffectSet.begin() ;it != eit;++it )
-		SafeRelease(*it);
+		(*it)->Release();
 	m_EffectSet.clear();
 }
 

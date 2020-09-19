@@ -6,17 +6,16 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="FormUI">
-      <UniqueIdentifier>{92a877b6-4a8e-4bbf-a413-d0f3af59bfc8}</UniqueIdentifier>
+      <UniqueIdentifier>{fdd8ca9b-21ae-4ae4-adbe-41362b8d9041}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main">
-      <UniqueIdentifier>{a837fe09-03a8-4a4d-83c3-ad2192d04e94}</UniqueIdentifier>
+      <UniqueIdentifier>{15c4f6ce-ab41-4e4b-8a54-c7015efa70db}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.ico">
+    <Image Include="app.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -41,6 +40,9 @@
     <ClInclude Include="stdafx.h">
       <Filter>Main</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ModelEditorForm.resx">

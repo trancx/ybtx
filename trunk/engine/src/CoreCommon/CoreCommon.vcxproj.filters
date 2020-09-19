@@ -2,46 +2,46 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="网络协议">
-      <UniqueIdentifier>{c3c93a09-924f-4a79-9d3b-9d7d44a27854}</UniqueIdentifier>
+      <UniqueIdentifier>{ef1ebf77-2cf8-495a-8755-3abecbec3e3d}</UniqueIdentifier>
     </Filter>
     <Filter Include="寻路">
-      <UniqueIdentifier>{04bbe319-48de-48ee-b10c-074c0deaab98}</UniqueIdentifier>
+      <UniqueIdentifier>{cada631c-60d6-4158-ae3b-8680aa936de8}</UniqueIdentifier>
     </Filter>
     <Filter Include="框架">
-      <UniqueIdentifier>{00d00567-13a2-4d00-acf2-e222acc8255a}</UniqueIdentifier>
+      <UniqueIdentifier>{f7f44901-c716-47f6-971b-3f8f0fc24a7e}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景实例">
-      <UniqueIdentifier>{571bc70b-ada4-48ce-9653-b51508fdd93a}</UniqueIdentifier>
+      <UniqueIdentifier>{de740c78-297b-4188-a03a-806f77e395b8}</UniqueIdentifier>
     </Filter>
     <Filter Include="连接">
-      <UniqueIdentifier>{48b3684e-80b4-421f-a3ce-d960ba0646c3}</UniqueIdentifier>
+      <UniqueIdentifier>{39fd4bae-62d6-46db-860e-5fd1ca4472c4}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象">
-      <UniqueIdentifier>{030e279e-bd21-4618-92b3-2188607c3bf0}</UniqueIdentifier>
+      <UniqueIdentifier>{2387ae93-b07a-4755-b05d-511c1ecf9fb2}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象\事件">
-      <UniqueIdentifier>{d2611230-b6ac-4410-bd8f-f521fa52b1d6}</UniqueIdentifier>
+      <UniqueIdentifier>{821d8165-e897-4c66-b417-8e53dbe07aae}</UniqueIdentifier>
     </Filter>
     <Filter Include="消息">
-      <UniqueIdentifier>{cfae5836-6a13-4295-b5e7-3b81c69efdc8}</UniqueIdentifier>
+      <UniqueIdentifier>{ba3b8517-547b-41c1-a603-53bbaabfe0d2}</UniqueIdentifier>
     </Filter>
     <Filter Include="消息\App Event">
-      <UniqueIdentifier>{02c99204-6e1d-4040-becb-21f3e3783f85}</UniqueIdentifier>
+      <UniqueIdentifier>{85b88aeb-5a55-4ed0-a145-02c56ed92c57}</UniqueIdentifier>
     </Filter>
     <Filter Include="状态机">
-      <UniqueIdentifier>{4890cf23-a692-4730-951d-f0d3cc962627}</UniqueIdentifier>
+      <UniqueIdentifier>{f9b4da35-ad30-4d9d-aa45-d28df2d90f84}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景数据">
-      <UniqueIdentifier>{fc1d957b-db09-4b63-94d4-5e77ce3fed7c}</UniqueIdentifier>
+      <UniqueIdentifier>{7b4da641-b435-4372-9cf4-59a4c8b07817}</UniqueIdentifier>
     </Filter>
     <Filter Include="时间">
-      <UniqueIdentifier>{50f388fe-30b2-4c2d-8d08-4365c2feeb8a}</UniqueIdentifier>
+      <UniqueIdentifier>{fa7c0c6f-e804-4c95-b650-0f189520e5b9}</UniqueIdentifier>
     </Filter>
     <Filter Include="文件监测">
-      <UniqueIdentifier>{70f9cbd3-2a91-4c71-9517-ccd0465b3b12}</UniqueIdentifier>
+      <UniqueIdentifier>{2346712d-1562-4e8e-ac84-e604eba2d17f}</UniqueIdentifier>
     </Filter>
     <Filter Include="数据同步">
-      <UniqueIdentifier>{146f8842-0743-4517-be22-d3bb71dfb88f}</UniqueIdentifier>
+      <UniqueIdentifier>{bc332e4f-5679-4c51-979f-bfe35572deb3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

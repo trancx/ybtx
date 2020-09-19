@@ -2,6 +2,7 @@
 //
 
 #include "stdafx.h"
+#include <Windows.h>
 
 #include "CPatcher.h"
 #include "CBaseDiff.h"

@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CBoneBoxEditCtrl.h"
 #include "BoneBoxEditCtrl/CBoneBoxEditCtrlImp.h"
+#include "dthelp.h"
 
 #define BoneBoxEditCtrlImp ((CBoneBoxEditCtrlImp*)GetCoreCtrl())
 

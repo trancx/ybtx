@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CBoneBoxListCtrl.h"
 #include "BoneBoxListCtrl/CBoneBoxListCtrlImp.h"
+#include "dthelp.h"
 
 #define BoneBoxListCtrlImp ((CBoneBoxListCtrlImp*)GetCoreCtrl())
 

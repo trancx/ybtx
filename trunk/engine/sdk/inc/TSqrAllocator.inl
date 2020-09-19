@@ -30,6 +30,12 @@ namespace sqr
 	bool TSqrAllocator<T, AllocObject>::operator==(const TSqrAllocator<T, AllocObject>& )const throw()
 	{
 		return true; 
+	}
+
+	template<typename T, typename AllocObject> 
+	bool TSqrAllocator<T, AllocObject>::operator!=(const TSqrAllocator<T, AllocObject>& )const throw()
+	{
+		return false; 
 	} 
 
 	template<typename T, typename AllocObject> 

@@ -16,19 +16,31 @@
 #include "CAppConfigClient.h"
 #include "CodeCvs.h"
 #include "CGameClientProxyBank.h"
-
+#include "ErrLogHelper.h"
+#include "CLog.h"
+#include "CPathMgr.h"
+#include "stdio.h"
 
 DEFINITION_OF_OPERATOR_NEW
 
-
-SQRENTRY int SqrMain(int argc, wchar_t* argv[])
+// SQRENTRY int SqrMain(int argc, wchar_t* argv[])
+//int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+ int main(int argc, wchar_t* argv[])
 {
 	SQR_TRY
-	{
-#ifdef _WIN32
+	{	
+		printf("asdasdasdahdhasdhashdahsdha\n\n\n\n\n\n");
+		SetErrLogEnabled(true);
 		wchar_t curPath[MAX_PATH];
 		_wgetcwd(curPath, _countof(curPath));
+		//设定log路径，以后所有的log，包括err log，简易log，内存泄露都会写入此路径下面
+		printf("%ws\n\n\n\n\n\n", curPath);
+		wstring log =  L"mylog.txt";
+		SetLogPath(curPath);
 
+		//在var game目录下面创建gas的err log
+		SetErrLogFileName(log.c_str());
+#ifndef _WIN32
 		// 临时解决vs2005文件系统的一个bug
 		wstring dummy_file = wstring(curPath) + L"/___file_fix___";
 		vector<FILE*>	fileVec(512, 0);
@@ -49,6 +61,8 @@ SQRENTRY int SqrMain(int argc, wchar_t* argv[])
 			CScriptAppClient Runner("etc/gac/GacConfig.xml","etc/gac/GacSceneConfig.xml");
 
 			CScript* pScript = NULL;
+
+
 #ifndef _DEBUG
 			ConfirmNoDebuger();
 #endif
@@ -59,10 +73,10 @@ SQRENTRY int SqrMain(int argc, wchar_t* argv[])
 			//通过命令行的会把命令本身也传递过来，而通过CreateProcess创建的进程就可以不传递第一个参数
 
 			ostringstream strm;
-
+			//int argc = 2;
 			if(argc>1)
 			{
-				strm<<"g_strSelServerInfo=\""<<utf16_to_utf8(argv[1])<<"\"\n";
+				strm<<"g_strSelServerInfo=\""<< "124.71.184.116:52520"<<"\"\n";
 			}
 
 			strm<<"g_sSettingPath=\""<<Runner.GetCfgFilePath(NULL)<<"\"\n";
@@ -83,9 +97,10 @@ SQRENTRY int SqrMain(int argc, wchar_t* argv[])
 
 			string gac_path = pScript->GetLoadPath("gac");
 			string gac_main = gac_path + string("framework/main_frame/GacMain");
+			printf("gac main = %s\n", gac_main.c_str());
 			sResult=Runner.Run( gac_main.c_str() );
 
-			SetErrLogEnabled(false);
+			SetErrLogEnabled(true);
 
 			if(!sResult.empty())
 			{

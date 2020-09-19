@@ -28,13 +28,13 @@ public:
 	virtual int						GetTrackNum()					{ return m_EditTracks.size(); }
 	virtual CEditTrack&				GetEditTrack( int Num )				
 	{
-		assert(!m_EditTracks.empty());
+		Ast(!m_EditTracks.empty());
 		return m_EditTracks[Num]; 
 	}
 
 	virtual CEditTrack*				GetEditTrackPtr( int Num )				
 	{
-		assert(!m_EditTracks.empty());
+		Ast(!m_EditTracks.empty());
 		return &(m_EditTracks[Num]); 
 	}
 

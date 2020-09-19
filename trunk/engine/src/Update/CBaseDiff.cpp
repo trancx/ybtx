@@ -2,8 +2,11 @@
 #include "CBaseDiff.h"
 #include "PatchCommonDef.h"
 #include "PatchFileProcess.h"
-#include <io.h>
 #include <Windows.h>
+#include <io.h>
+
+
+
 
 #define  Min(x, y)  ( x > y ? y : x )
 

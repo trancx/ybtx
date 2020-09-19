@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CLogCtrl.h"
 #include "LogImp/CLogImp.h"
+#include "dthelp.h"
 
 char* CLogCtrl::GetImpTypeName(void)
 {

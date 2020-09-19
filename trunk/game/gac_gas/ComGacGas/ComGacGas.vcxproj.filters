@@ -2,37 +2,37 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="战斗">
-      <UniqueIdentifier>{7e30397f-0b0a-4501-a27a-7bec66a923be}</UniqueIdentifier>
+      <UniqueIdentifier>{56bb96b9-75c4-4f78-9ddf-4ab177d4520d}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\技能">
-      <UniqueIdentifier>{73994470-45d1-4566-a059-01cf4e355e77}</UniqueIdentifier>
+      <UniqueIdentifier>{96a7b011-bdf3-4e0c-8964-09042183419b}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\公共">
-      <UniqueIdentifier>{8d33a3ff-04d2-4bbd-8b2b-02aee5586e55}</UniqueIdentifier>
+      <UniqueIdentifier>{2a9cfedd-967d-446a-a154-bab43b8e6ea2}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\对象">
-      <UniqueIdentifier>{8686f3c5-8d90-4a6d-ac73-e7aedadc9d7c}</UniqueIdentifier>
+      <UniqueIdentifier>{52294123-a512-4c62-bc71-64affc58797a}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\属性">
-      <UniqueIdentifier>{25d988c5-53fc-4419-9881-fce52d93873e}</UniqueIdentifier>
+      <UniqueIdentifier>{bd452064-e478-46e7-8cd1-34661e2b011c}</UniqueIdentifier>
     </Filter>
     <Filter Include="连接">
-      <UniqueIdentifier>{b68ca727-541a-4698-8b01-e2004690ed9d}</UniqueIdentifier>
+      <UniqueIdentifier>{f9d8f364-73b8-4fd9-81cb-6f7cf6b6dd41}</UniqueIdentifier>
     </Filter>
     <Filter Include="动作">
-      <UniqueIdentifier>{0d58977c-4255-4253-97e3-8c40010dea27}</UniqueIdentifier>
+      <UniqueIdentifier>{67cf8d4e-a8bb-4637-9f08-454bc0d1115c}</UniqueIdentifier>
     </Filter>
     <Filter Include="角色">
-      <UniqueIdentifier>{9cb82f90-b4bc-46c0-8b64-053156b81edc}</UniqueIdentifier>
+      <UniqueIdentifier>{a6d35cc2-5479-4af2-b699-8e0489e45c56}</UniqueIdentifier>
     </Filter>
     <Filter Include="网络协议">
-      <UniqueIdentifier>{4dbb908e-3ab6-491e-a6a2-6c5f82fd4826}</UniqueIdentifier>
+      <UniqueIdentifier>{c7e9d58a-ed96-4b83-a88e-671bfd29cdfb}</UniqueIdentifier>
     </Filter>
     <Filter Include="内存池">
-      <UniqueIdentifier>{25fc7aeb-908b-461c-946a-6331ad402236}</UniqueIdentifier>
+      <UniqueIdentifier>{5be8c239-f927-4faa-9107-1deb6b246cd0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Npc">
-      <UniqueIdentifier>{2c78f5c8-9c10-4073-baa4-e4ac6dd483a1}</UniqueIdentifier>
+      <UniqueIdentifier>{a624351f-4ba3-479e-bc8d-ed8dd9c787a0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

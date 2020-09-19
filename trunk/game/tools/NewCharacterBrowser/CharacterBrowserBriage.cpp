@@ -1,7 +1,7 @@
 #pragma once
 
 #include "StdAfx.h"
-
+#include "CSqrAllocPool.h"
 //BRIAGE
 #include "CharacterBrowserBriage.h"
 #include "CEditorConfig.h"
@@ -12,9 +12,7 @@
 #include "CharacterBrowserContext.h"
 #include "BaseHelper.h"
 #include "GTRenderMgr.h"
-//---------------------------------
-#include "TSqrAllocator.inl"
-//---------------------------------
+
 
 namespace sqr
 {

@@ -48,7 +48,7 @@ namespace sqr
 	private:	
 		char		m_szPoolName[256];
 
-		typedef deque<CThreadAllocPool*,TMallocAllocator<CThreadAllocPool*> >	PoolDeq_t;
+		typedef deque<CThreadAllocPool*, TMallocAllocator<CThreadAllocPool*> >	PoolDeq_t;
 		
 		HTLSKEY				m_Key;
 		mutable HLOCK		m_lkDeqPool;

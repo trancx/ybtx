@@ -2,13 +2,13 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="框架">
-      <UniqueIdentifier>{984e18b8-6364-46b4-aeb0-ba184c516482}</UniqueIdentifier>
+      <UniqueIdentifier>{36fc3cb4-ab34-49ae-aefa-39cc83a5f8a7}</UniqueIdentifier>
     </Filter>
     <Filter Include="框架\战斗">
-      <UniqueIdentifier>{acce0972-1265-46e0-be92-3ca0013fd06b}</UniqueIdentifier>
+      <UniqueIdentifier>{4194cfcc-a189-4bfc-b88e-5286b4eabc36}</UniqueIdentifier>
     </Filter>
     <Filter Include="连接">
-      <UniqueIdentifier>{8e2ed630-be84-47ec-a0b7-c93c74a36d84}</UniqueIdentifier>
+      <UniqueIdentifier>{7a1fd931-6760-423a-9305-2857295b97ee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -41,4 +41,6 @@ using namespace std;
 using namespace CPPUNIT_NS;
 using namespace sqr;
 
+#include "CColor.inl"
+#include "CColor4.inl"
 // TODO: reference additional headers your program requires here

@@ -5,6 +5,7 @@
 #include "CVertexAniMesh.h"
 #include "TSqrAllocator.inl"
 #include "CColor.inl"
+#include "CColor.h"
 
 //CVector3f CShadowFilter::st_LightVector;
 CShadowFilter::CShadowFilter(CRenderGroup* pRenderGroup)

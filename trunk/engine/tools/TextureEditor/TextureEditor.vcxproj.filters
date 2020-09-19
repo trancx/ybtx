@@ -100,31 +100,27 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\bmp.ico">
+    <Image Include="res\bmp.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\jpg.ico">
+    </Image>
+    <Image Include="res\jpg.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\tex.ico">
+    </Image>
+    <Image Include="res\tex.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TextureEditor.ico">
+    </Image>
+    <Image Include="res\TextureEditor.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TextureEditor.rc2">
+    </Image>
+    <Image Include="res\TextureEditorDoc.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\TextureEditorDoc.ico">
+    </Image>
+    <Image Include="res\tga.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\tga.ico">
+    </Image>
+    <Image Include="res\Toolbar.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\Toolbar.bmp">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TextureEditor.rc">
@@ -132,6 +128,14 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuildStep Include="res\TextureEditor.manifest" />
+    <None Include="res\TextureEditor.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\TextureEditor.manifest" />
   </ItemGroup>
 </Project>

@@ -40,3 +40,6 @@ namespace sqr_tools{}
 using namespace std;
 using namespace sqr;
 using namespace sqr_tools;
+
+#include "CColor.inl"
+#include "ccolor4.inl"

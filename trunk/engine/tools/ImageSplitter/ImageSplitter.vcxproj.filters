@@ -10,13 +10,13 @@
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="DirectX9">
-      <UniqueIdentifier>{84195807-8440-4a3b-b870-f6d0020733ba}</UniqueIdentifier>
+      <UniqueIdentifier>{c61bde1b-c2e8-4f6c-9c57-c9f8912441e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{239018ca-fb52-4bd3-a8ad-04c7787063e6}</UniqueIdentifier>
+      <UniqueIdentifier>{a8581a32-ee27-452d-ade5-6261949566d4}</UniqueIdentifier>
     </Filter>
     <Filter Include="ImageSplitter">
-      <UniqueIdentifier>{594325f8-f757-409c-ac29-704cfa3fa4fe}</UniqueIdentifier>
+      <UniqueIdentifier>{53fa6dd4-4737-45bf-84cd-806f18937c88}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +75,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

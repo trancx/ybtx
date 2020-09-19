@@ -79,46 +79,28 @@ void CCallStackInfo::GetStack( size_t uBegin, size_t uEnd )
 	m_stNextSymbolPos = 0;
 
 #ifdef _WIN32
-
-	CONTEXT context;
-	RtlCaptureContext( &context );
-	
 	STACKFRAME64 sf;
 	memset(&sf,0,sizeof(sf));
 
+	unsigned _Eip, _Esp, _Ebp;
+	_asm
+	{
+		call		popeax;
+	popeax:
+		pop			EAX;
+		mov			_Eip, EAX;
+		mov			_Esp, ESP;
+		mov			_Ebp, EBP;
+	}
+
 	// 初始化stackframe结构
-	sf.AddrPC.Offset		= context.Eip;
-	sf.AddrPC.Mode			= AddrModeFlat;
-	sf.AddrStack.Offset		= context.Esp;
-	sf.AddrStack.Mode		= AddrModeFlat;
-	sf.AddrFrame.Offset		= context.Ebp;
-	sf.AddrFrame.Mode		= AddrModeFlat;
-	DWORD dwMachineType		= IMAGE_FILE_MACHINE_I386;
-
-
-	//#ifdef _WIN32
-	//unsigned _Eip,_Esp,_Ebp;
-	//_asm
-	//{
-	//	call		popeax;
-	//popeax:
-	//	pop			EAX;
-	//	mov			_Eip, EAX;
-	//	mov			_Esp, ESP;
-	//	mov			_Ebp, EBP;
-	//}
-
-	//STACKFRAME64 sf;
-	//memset(&sf,0,sizeof(sf));
-
-	//// 初始化stackframe结构
-	//sf.AddrPC.Offset		= _Eip;
-	//sf.AddrPC.Mode			= AddrModeFlat;
-	//sf.AddrStack.Offset		= _Esp;
-	//sf.AddrStack.Mode		= AddrModeFlat;
-	//sf.AddrFrame.Offset		= _Ebp;
-	//sf.AddrFrame.Mode		= AddrModeFlat;
-	//DWORD dwMachineType		= IMAGE_FILE_MACHINE_I386;
+	sf.AddrPC.Offset = _Eip;
+	sf.AddrPC.Mode = AddrModeFlat;
+	sf.AddrStack.Offset = _Esp;
+	sf.AddrStack.Mode = AddrModeFlat;
+	sf.AddrFrame.Offset = _Ebp;
+	sf.AddrFrame.Mode = AddrModeFlat;
+	DWORD dwMachineType = IMAGE_FILE_MACHINE_I386;
 
 	HANDLE hThread = ::GetCurrentThread();	
 	HANDLE hProcess=GetCurrentProcess();

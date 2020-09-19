@@ -6,7 +6,7 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="Utility">
-      <UniqueIdentifier>{e61847e8-3f08-467a-a960-05d482d029e0}</UniqueIdentifier>
+      <UniqueIdentifier>{b1d4e60d-d8b2-4627-ad7e-b15a2edff867}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +60,6 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

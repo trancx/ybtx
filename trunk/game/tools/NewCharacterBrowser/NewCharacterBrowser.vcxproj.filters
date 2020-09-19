@@ -14,16 +14,16 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="Context">
-      <UniqueIdentifier>{5dbf86e3-1de9-4995-bda8-35dd2bcfb1d8}</UniqueIdentifier>
+      <UniqueIdentifier>{4f79a386-c71d-4313-8281-b65bd8716001}</UniqueIdentifier>
     </Filter>
     <Filter Include="Camera">
-      <UniqueIdentifier>{44a488ec-3a51-4139-9e49-318eabe72829}</UniqueIdentifier>
+      <UniqueIdentifier>{3ef4de93-5fb3-4916-8eb4-54b2aa22101e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main">
-      <UniqueIdentifier>{2fde2464-0e49-48cc-9bba-9d67c71ae4a3}</UniqueIdentifier>
+      <UniqueIdentifier>{e5179a08-bdeb-4b3d-a2d2-f0f205b87142}</UniqueIdentifier>
     </Filter>
     <Filter Include="FormUI">
-      <UniqueIdentifier>{a95aef44-c2c9-4bc5-8b2d-647fc4ee023c}</UniqueIdentifier>
+      <UniqueIdentifier>{4cf67211-a45d-4459-b324-393092a7982a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -124,15 +124,19 @@
     <None Include="CCharacter.inl">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="app.ico">
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CDefineScaleDlg.resx">

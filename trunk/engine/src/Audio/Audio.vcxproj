@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -14,14 +14,17 @@
     <ProjectGuid>{CD208F4A-E7DE-40F6-9B73-A2C4FE250C6A}</ProjectGuid>
     <RootNamespace>Audio</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -38,17 +41,15 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -74,70 +75,72 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>/Oy- %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>..\..\include;..\..\sdk\inc;..\..\..\implib\inc;..\..\..\implib\inc\fmod;..\..\..\implib\inc\fmoddesigner;..\..\..\implib\inc\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;AUDIO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\sdk\inc;..\..\..\implib\inc;..\..\..\implib\inc\fmod;..\..\..\implib\inc\fmoddesigner;..\..\..\implib\inc\tinyxml;%(AdditionalIncludeDirectories);../../../dxsdk_mar2008\Lib/x86;../../../dxsdk_mar2008\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;AUDIO_EXPORTS;%(PreprocessorDefinitions);_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TIXML_USE_STL
+</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Lib>
-      <AdditionalDependencies>x3daudio.lib;Dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>x3daudio.lib;Dxerr.lib;%(AdditionalDependencies);legacy_stdio_definitions.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\ybtx-master\trunk\dxsdk_mar2008\Lib\x86</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\IAudioModule.h" />
+    <ClInclude Include="..\..\sdk\inc\CAudioMallocObject.h" />
+    <ClInclude Include="..\..\sdk\inc\IAudioEmitter.h" />
+    <ClInclude Include="..\..\sdk\inc\IAudioListener.h" />
+    <ClInclude Include="..\..\sdk\inc\IAudioPlayer.h" />
+    <ClInclude Include="..\..\sdk\inc\IAudioSystem.h" />
     <ClInclude Include="CAudioAdapterInfo.h" />
+    <ClInclude Include="CAudioEmitter.h" />
     <ClInclude Include="CAudioEngine.h" />
+    <ClInclude Include="CAudioListener.h" />
+    <ClInclude Include="CAudioModule.h" />
+    <ClInclude Include="CAudioPkgChecker.h" />
+    <ClInclude Include="CAudioPlayer.h" />
+    <ClInclude Include="CAudioSystem.h" />
     <ClInclude Include="CCue.h" />
     <ClInclude Include="CCueProperty.h" />
     <ClInclude Include="CSoundBank.h" />
     <ClInclude Include="CWave.h" />
     <ClInclude Include="CWaveProperty.h" />
     <ClInclude Include="CWindowsVersionEnum.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SoundState.h" />
+    <ClInclude Include="stdafx.h" />
     <ClInclude Include="XACTAudioEngine.h" />
     <ClInclude Include="XACTCue.h" />
     <ClInclude Include="XACTSoundBank.h" />
     <ClInclude Include="XACTWave.h" />
-    <ClInclude Include="..\..\sdk\inc\IAudioEmitter.h" />
-    <ClInclude Include="..\..\sdk\inc\IAudioListener.h" />
-    <ClInclude Include="..\..\include\IAudioModule.h" />
-    <ClInclude Include="..\..\sdk\inc\IAudioPlayer.h" />
-    <ClInclude Include="..\..\sdk\inc\IAudioSystem.h" />
-    <ClInclude Include="CAudioEmitter.h" />
-    <ClInclude Include="CAudioListener.h" />
-    <ClInclude Include="CAudioModule.h" />
-    <ClInclude Include="CAudioPlayer.h" />
-    <ClInclude Include="CAudioSystem.h" />
-    <ClInclude Include="CAudioPkgChecker.h" />
-    <ClInclude Include="resource.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="..\..\sdk\inc\CAudioMallocObject.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CAudioEmitter.cpp" />
     <ClCompile Include="CAudioEngine.cpp" />
+    <ClCompile Include="CAudioListener.cpp" />
+    <ClCompile Include="CAudioMallocObject.cpp" />
+    <ClCompile Include="CAudioModule.cpp" />
+    <ClCompile Include="CAudioPkgChecker.cpp" />
+    <ClCompile Include="CAudioPlayer.cpp" />
+    <ClCompile Include="CAudioSystem.cpp" />
     <ClCompile Include="CCue.cpp" />
     <ClCompile Include="CSoundBank.cpp" />
     <ClCompile Include="CWave.cpp" />
-    <ClCompile Include="XACTAudioEngine.cpp" />
-    <ClCompile Include="XACTCue.cpp" />
-    <ClCompile Include="XACTSoundBank.cpp" />
-    <ClCompile Include="XACTWave.cpp" />
-    <ClCompile Include="CAudioEmitter.cpp" />
-    <ClCompile Include="CAudioListener.cpp" />
-    <ClCompile Include="CAudioModule.cpp" />
-    <ClCompile Include="CAudioPlayer.cpp" />
-    <ClCompile Include="CAudioSystem.cpp" />
-    <ClCompile Include="CAudioPkgChecker.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="CAudioMallocObject.cpp" />
+    <ClCompile Include="XACTAudioEngine.cpp" />
+    <ClCompile Include="XACTCue.cpp" />
+    <ClCompile Include="XACTSoundBank.cpp" />
+    <ClCompile Include="XACTWave.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Audio.rc" />

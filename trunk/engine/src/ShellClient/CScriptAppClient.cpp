@@ -26,9 +26,11 @@ typedef TScriptAppGCTick<CGCStepTickTraitsClient>		CGCStepTickClient;
 
 
 template class TBaseScriptApp<CScriptAppClient>;
-
+// gacconfig gacSceneConfig.xml
 CScriptAppClient::CScriptAppClient( const char* szConfig, const char* szGfkConfig)
 {
+	//parent 读取默认的congfig，非常傻逼的写法。。
+
 	CLogThreadMgr::Init();
 
 	ipkgstream strmGacConfig(L"", szConfig);
@@ -36,17 +38,19 @@ CScriptAppClient::CScriptAppClient( const char* szConfig, const char* szGfkConfi
 		GenErr("Can't open Gac Config file.");
 	new CComputerInfo();
 
-	ErrLogHeadMsg("OS",CComputerInfo::GetInst()->GetOSInfo().c_str());
-	ErrLogHeadMsg("HD",CComputerInfo::GetInst()->GetHDInfo().c_str());
-	ErrLogHeadMsg("CPU",CComputerInfo::GetInst()->GetCpuInfo().c_str());
+//	ErrLogHeadMsg("OS",CComputerInfo::GetInst()->GetOSInfo().c_str());
+//	ErrLogHeadMsg("HD",CComputerInfo::GetInst()->GetHDInfo().c_str());
+	//ErrLogHeadMsg("CPU",CComputerInfo::GetInst()->GetCpuInfo().c_str());
 	//win7 下有bug暂时屏蔽
 	//ErrLogHeadMsg("VIDEO",CComputerInfo::GetInst()->GetAudioCardInfo().c_str());
-	ErrLogHeadMsg("DX",CComputerInfo::GetInst()->GetDirectInfo().c_str());
-	ErrLogHeadMsg("MEM",CComputerInfo::GetInst()->GetMemInfo().c_str());
+//	ErrLogHeadMsg("DX",CComputerInfo::GetInst()->GetDirectInfo().c_str());
+//	ErrLogHeadMsg("MEM",CComputerInfo::GetInst()->GetMemInfo().c_str());
 
+	// 这里加载全部的config，包裹语言等等。。 TRANCE
 	new CAppConfigClient( strmGacConfig, szGfkConfig );
 
 	//如果打开了pkg file检查开关，同时存在pkg文件，那么我们可以写log
+	// 所有的open 都回到 CPkgFileOpen 那里会处理pkg文件。
 	if(CAppConfigClient::Inst()->PkgFileUsed())
 	{
 		SetErrLogEnabled(PkgFileUsed());
@@ -83,7 +87,7 @@ CScriptAppClient::CScriptAppClient( const char* szConfig, const char* szGfkConfi
 	CreateMainVM();
 
 	RegisterCoreScript();
-
+	// 这里似乎解决了渲染之类的东西
 	CAppClient::Init();
 }
 

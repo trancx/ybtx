@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CKeyFrameCtrl.h"
 #include "KeyFrameCtrl/CKeyFrameCtrlImp.h"
+#include "dthelp.h"
 
 #define KeyFrameCtrlImp ((CKeyFrameCtrlImp*)GetCoreCtrl())
 

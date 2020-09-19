@@ -6,50 +6,50 @@
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Source Files\XMLParser">
-      <UniqueIdentifier>{612cc058-ccd1-4e2a-a1f7-491c8a0ad29c}</UniqueIdentifier>
+      <UniqueIdentifier>{bb3f320b-2be1-4f93-9884-bbeed4b7bde3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Control">
-      <UniqueIdentifier>{609b6c49-9e24-48ab-b3c0-cbeb3005443d}</UniqueIdentifier>
+      <UniqueIdentifier>{9aa157e8-50ec-45ba-98b7-9cfbd9d8d3be}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\BaseData">
-      <UniqueIdentifier>{856aae19-eee1-4dd4-b307-def54f507573}</UniqueIdentifier>
+      <UniqueIdentifier>{48aaae57-b1d1-4fee-8b4d-3df373535ca6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Misc">
-      <UniqueIdentifier>{88f7156d-5a2a-4f29-a2d8-6ac5ff71367c}</UniqueIdentifier>
+      <UniqueIdentifier>{f9648acb-d769-4f09-8ec6-5d43140ed855}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\GUIEffect">
-      <UniqueIdentifier>{10c99cbf-9721-4274-be32-30af9d43ed5e}</UniqueIdentifier>
+      <UniqueIdentifier>{cd9b773b-6d62-4c0f-a97f-93455f946d4f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Corder">
-      <UniqueIdentifier>{4ef8776e-a4d9-49a6-ad80-f0cd50288a50}</UniqueIdentifier>
+      <UniqueIdentifier>{9d47b0d0-ffd2-403a-bbbd-eaad45f1ee16}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\CallBack">
-      <UniqueIdentifier>{4d1fd9a0-2383-430b-abd9-64196910724d}</UniqueIdentifier>
+      <UniqueIdentifier>{e0cc0cc4-86d1-45f6-8b77-b63accb73307}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Header Files\XMLParser">
-      <UniqueIdentifier>{f029ec37-bb85-42f6-b5b1-ff86aa9ff732}</UniqueIdentifier>
+      <UniqueIdentifier>{0c2e8970-f663-4ec2-b7fd-5ae276cc1202}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Control">
-      <UniqueIdentifier>{bf0ef121-ea55-4caf-b08c-8443b4f6c11c}</UniqueIdentifier>
+      <UniqueIdentifier>{fc65d172-9efe-4d6d-8914-ec9a6f48aa9d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\BaseData">
-      <UniqueIdentifier>{fa0a4ced-176e-4a09-b953-de873553408b}</UniqueIdentifier>
+      <UniqueIdentifier>{c1a6480a-7c46-44e4-ab28-d5cc61a3bcce}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Misc">
-      <UniqueIdentifier>{b9eb7beb-fce2-46e9-9288-317be6585ad5}</UniqueIdentifier>
+      <UniqueIdentifier>{219df2d3-20fc-4fbd-8dce-8e47e30fe0ab}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\GUIEffect">
-      <UniqueIdentifier>{5d95165e-7dcc-4076-a2d1-e46689a9882f}</UniqueIdentifier>
+      <UniqueIdentifier>{02d6233a-d81a-40b5-9cbd-7af50f008578}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Corder">
-      <UniqueIdentifier>{4e5e27aa-9a31-4d90-951b-36d02b1a991b}</UniqueIdentifier>
+      <UniqueIdentifier>{74fe5ffe-b2f7-44d4-b4ed-ef8cb15951a2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\CallBack">
-      <UniqueIdentifier>{ae06b93a-9e21-4003-ba66-3435eca3772a}</UniqueIdentifier>
+      <UniqueIdentifier>{50bf24da-9aa6-41c8-856a-125d5cda3e7d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

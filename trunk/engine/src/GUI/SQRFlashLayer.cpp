@@ -4,6 +4,7 @@
 #include "CGraphic.h"
 #include "SQRGUIManager.h"
 
+
 SQRFlashLayer::SQRFlashLayer(void){}
 
 SQRFlashLayer::SQRFlashLayer(UIString flashTex, const CFRect& rt, SQRWnd* pChildWnd, 

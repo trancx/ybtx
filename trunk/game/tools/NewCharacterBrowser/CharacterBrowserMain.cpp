@@ -4,11 +4,19 @@
 #include "CharacterBrowserForm.h"
 #include "CharacterBrowserBriage.h"
 #include "IApplication.h"
+#include "ICtrlImpFactory.h"
 using namespace CharacterBrowser;
 
-[STAThreadAttribute]
-int WINAPI WinMain(HINSTANCE hinst,HINSTANCE hpre, LPSTR lpCmd, int nShowCmd)
+//[STAThreadAttribute]
+//int WINAPI WinMain(HINSTANCE hinst,HINSTANCE hpre, LPSTR lpCmd, int nShowCmd)
+int main(void)
 {
+	wchar_t curPath[MAX_PATH];
+	_wgetcwd(curPath, _countof(curPath));
+	//设定log路径，以后所有的log，包括err log，简易log，内存泄露都会写入此路径下面
+	printf("%ws\n\n\n\n\n\n", curPath);
+	//_wchdir(L"../../..");
+	printf("asdasdasads\n");
 	IApplication::InitApp();
 
  	//////////////////////////////////////////////////////////////////////////

@@ -2,26 +2,26 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Core">
-      <UniqueIdentifier>{03bfb396-6a3e-44c9-ae25-3cb1ac3b21ba}</UniqueIdentifier>
+      <UniqueIdentifier>{3099847f-af2d-4153-9577-10ab709e55fd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core\XACT">
-      <UniqueIdentifier>{ec8a0f21-0688-43c8-b7de-0a9379933c09}</UniqueIdentifier>
+      <UniqueIdentifier>{c26c7adb-a2ca-49ed-8814-fa01698504de}</UniqueIdentifier>
     </Filter>
     <Filter Include="Interface">
-      <UniqueIdentifier>{f38d343b-684b-41d8-bc9a-3e8f8cdb75e1}</UniqueIdentifier>
+      <UniqueIdentifier>{b6eacf56-759d-49c7-be57-56042bbf00ef}</UniqueIdentifier>
     </Filter>
     <Filter Include="Implement">
-      <UniqueIdentifier>{fb93d16a-600b-4783-ac07-b6294c2a9020}</UniqueIdentifier>
+      <UniqueIdentifier>{daabf387-b32d-4c59-8149-4af28c953685}</UniqueIdentifier>
     </Filter>
     <Filter Include="Misc">
-      <UniqueIdentifier>{480075f1-0bb2-491f-ab36-1384f321fedc}</UniqueIdentifier>
+      <UniqueIdentifier>{b4af7a4b-6873-468a-ae23-d0cc919573ae}</UniqueIdentifier>
     </Filter>
     <Filter Include="Misc\资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
     </Filter>
     <Filter Include="Malloc">
-      <UniqueIdentifier>{694c28ac-6ed7-427a-a54d-985da3c56a6b}</UniqueIdentifier>
+      <UniqueIdentifier>{10d8395f-aab2-4829-9ce6-ec042671aa3a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

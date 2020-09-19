@@ -72,11 +72,11 @@ long NetSendToGameServer(const char * pBuffer,int nLen)
 //
 int	StartApexClient()
 {
-	m_uApexNetTime++;
+	// m_uApexNetTime++;
 
 	//启动ApexClient;	NetSendToGameServer 是ApexClient与GameServer发消息函数
 	//					pfRec				是Apex 提供的接受函数;
-	long    re= CHCStart(NetSendToGameServer,pfRec);
+	// long    re= CHCStart(NetSendToGameServer,pfRec);
 	return 0;
 }
 
@@ -86,7 +86,7 @@ int	StartApexClient()
 int	StopApexClient()
 {
 	//停止 ApecClient
-	CHCEnd();
+	// CHCEnd();
 	return 0;
 }
 

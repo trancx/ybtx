@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -7,10 +7,6 @@
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Template|Win32">
-      <Configuration>Template</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
@@ -22,12 +18,14 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
     <CLRSupport>false</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -44,22 +42,17 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
@@ -92,7 +85,6 @@
       <AdditionalDependencies>winmm.lib;cppunit.lib;tinyxml.lib;Imm32.lib;ws2_32.lib;thinkgear.lib;Psapi.lib;STRMBASE.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\..\implib\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
@@ -100,6 +92,8 @@
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
@@ -136,9 +130,10 @@
       <ShowProgress>NotSet</ShowProgress>
       <AdditionalLibraryDirectories>..\..\..\implib\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
@@ -163,6 +158,11 @@
     <ClCompile Include="GUIEditor.cpp" />
     <ClCompile Include="GUIEditorDlg.cpp" />
     <ClCompile Include="GUIEditorHelper.cpp" />
+    <ClCompile Include="GUIPicSaver.cpp" />
+    <ClCompile Include="GUIResWinData.cpp" />
+    <ClCompile Include="PathBrowser\CEditorConfig.cpp" />
+    <ClCompile Include="PathBrowser\DirectoryDialog.cpp" />
+    <ClCompile Include="PathBrowser\PathBrowser.cpp" />
     <ClCompile Include="SelectSound.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -173,13 +173,10 @@
     <ClCompile Include="WndStyle.cpp" />
     <ClCompile Include="WndStyleEditor.cpp" />
     <ClCompile Include="WndStyleRender.cpp" />
-    <ClCompile Include="PathBrowser\CEditorConfig.cpp" />
-    <ClCompile Include="PathBrowser\DirectoryDialog.cpp" />
-    <ClCompile Include="PathBrowser\PathBrowser.cpp" />
-    <ClCompile Include="GUIPicSaver.cpp" />
-    <ClCompile Include="GUIResWinData.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\sdk\inc\IGUIManager.h" />
+    <ClInclude Include="..\..\src\GUI\SQRGUIManager.h" />
     <ClInclude Include="CBasePropList.h" />
     <ClInclude Include="CEditCommand.h" />
     <ClInclude Include="CEmoticonEditor.h" />
@@ -198,74 +195,74 @@
     <ClInclude Include="GUIEditor.h" />
     <ClInclude Include="GUIEditorDlg.h" />
     <ClInclude Include="GUIEditorHelper.h" />
-    <ClInclude Include="..\..\sdk\inc\IGUIManager.h" />
+    <ClInclude Include="GUIPicSaver.h" />
+    <ClInclude Include="GUIResWinData.h" />
+    <ClInclude Include="PathBrowser\CEditorConfig.h" />
+    <ClInclude Include="PathBrowser\DirectoryDialog.h" />
+    <ClInclude Include="PathBrowser\pathbrowser.h" />
+    <ClInclude Include="PathBrowser\PathBrowserRes.h" />
+    <ClInclude Include="Resource.h" />
     <ClInclude Include="SelectSound.h" />
-    <ClInclude Include="..\..\src\GUI\SQRGUIManager.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="TreeCtrlEx.h" />
     <ClInclude Include="WndAreaRenderer.h" />
     <ClInclude Include="WndStyle.h" />
     <ClInclude Include="WndStyleEditor.h" />
     <ClInclude Include="WndStyleRender.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="PathBrowser\CEditorConfig.h" />
-    <ClInclude Include="PathBrowser\DirectoryDialog.h" />
-    <ClInclude Include="PathBrowser\pathbrowser.h" />
-    <ClInclude Include="PathBrowser\PathBrowserRes.h" />
-    <ClInclude Include="GUIPicSaver.h" />
-    <ClInclude Include="GUIResWinData.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="res\Arrow.cur" />
+    <None Include="res\Button.cur" />
     <None Include="res\Chart.cur" />
-    <None Include="res\Chart.ico" />
-    <None Include="res\clock.ico" />
+    <None Include="res\CheckButton.cur" />
+    <None Include="res\ComboBox.cur" />
     <None Include="res\cur00001.cur" />
-    <None Include="res\cwnd.ico" />
+    <None Include="res\Edit.cur" />
     <None Include="res\editor_t.cur" />
     <None Include="res\editor_w.cur" />
-    <None Include="res\GUIEditor.ico" />
     <None Include="res\GUIEditor.rc2" />
-    <None Include="res\ico00001.ico" />
-    <None Include="res\icon1.ico" />
-    <None Include="res\icon2.ico" />
-    <None Include="res\rich.cur" />
-    <None Include="res\Rich.ico" />
-    <None Include="res\spin1.ico" />
-    <None Include="res\sqrwnd.ico" />
-    <None Include="res\Texture.ico" />
-    <None Include="res\texture1.ico" />
-    <None Include="res\Wnd.ico" />
-    <None Include="res\WndGroupNor.ico" />
-    <None Include="res\WndGroupSel.ico" />
-    <None Include="res\wndmove1.ico" />
-    <None Include="res\Arrow.cur" />
-    <None Include="res\Arrow.ico" />
-    <None Include="res\bitmap1.bmp" />
-    <None Include="res\Button.cur" />
-    <None Include="res\Button.ico" />
-    <None Include="res\CheckButton.cur" />
-    <None Include="res\CheckButton.ico" />
-    <None Include="res\ComboBox.cur" />
-    <None Include="res\ComboBox.ico" />
-    <None Include="res\Edit.cur" />
-    <None Include="res\Edit.ico" />
     <None Include="res\Icon.cur" />
-    <None Include="res\Icon.ico" />
-    <None Include="res\icon5.ico" />
     <None Include="res\List.cur" />
-    <None Include="res\List.ico" />
     <None Include="res\ListCtrl.cur" />
-    <None Include="res\ListCtrl.ico" />
     <None Include="res\Progress.cur" />
-    <None Include="res\Progress.ico" />
+    <None Include="res\rich.cur" />
     <None Include="res\Scroll.cur" />
-    <None Include="res\Scroll.ico" />
     <None Include="res\Spin.cur" />
-    <None Include="res\Spin.ico" />
     <None Include="res\Static.cur" />
-    <None Include="res\Static.ico" />
     <None Include="res\TreeCtrl.cur" />
-    <None Include="res\TreeCtrl.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Arrow.ico" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\Button.ico" />
+    <Image Include="res\Chart.ico" />
+    <Image Include="res\CheckButton.ico" />
+    <Image Include="res\clock.ico" />
+    <Image Include="res\ComboBox.ico" />
+    <Image Include="res\cwnd.ico" />
+    <Image Include="res\Edit.ico" />
+    <Image Include="res\GUIEditor.ico" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\Icon.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\icon5.ico" />
+    <Image Include="res\List.ico" />
+    <Image Include="res\ListCtrl.ico" />
+    <Image Include="res\Progress.ico" />
+    <Image Include="res\Rich.ico" />
+    <Image Include="res\Scroll.ico" />
+    <Image Include="res\Spin.ico" />
+    <Image Include="res\spin1.ico" />
+    <Image Include="res\sqrwnd.ico" />
+    <Image Include="res\Static.ico" />
+    <Image Include="res\Texture.ico" />
+    <Image Include="res\texture1.ico" />
+    <Image Include="res\TreeCtrl.ico" />
+    <Image Include="res\Wnd.ico" />
+    <Image Include="res\WndGroupNor.ico" />
+    <Image Include="res\WndGroupSel.ico" />
+    <Image Include="res\wndmove1.ico" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GUIEditor.rc" />

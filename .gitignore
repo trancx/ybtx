@@ -1,0 +1,10 @@
+**/*.obj
+**/*.log
+**/Release
+**/Debug
+**/Template
+**/Backup
+**/ipch
+*.sdf
+*.db
+**/.vs

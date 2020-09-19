@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CAnimationGroupEditCtrl.h"
 #include "AnimationGroupEditCtrl/CAnimationGroupEditImp.h"
+#include "dthelp.h"
 //#include "ContextMsg.h"
 
 #define AnimationGroupEditImp ((CAnimationGroupEditImp*)GetCoreCtrl())

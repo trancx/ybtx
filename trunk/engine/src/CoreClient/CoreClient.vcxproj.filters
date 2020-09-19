@@ -2,52 +2,52 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="框架">
-      <UniqueIdentifier>{a2d4c344-88d4-4ab9-b6b0-18d606570e91}</UniqueIdentifier>
+      <UniqueIdentifier>{58db7a70-2b96-485d-954b-60aa8eae5bb5}</UniqueIdentifier>
     </Filter>
     <Filter Include="框架\安全">
-      <UniqueIdentifier>{56d45ad8-235c-435e-91f7-b8bbbf641b55}</UniqueIdentifier>
+      <UniqueIdentifier>{e28bdbeb-c5da-475b-a84e-9f3229f6779b}</UniqueIdentifier>
     </Filter>
     <Filter Include="框架\调试信息">
-      <UniqueIdentifier>{8ce4713e-303c-463e-8269-782a4ac83411}</UniqueIdentifier>
+      <UniqueIdentifier>{04938d7a-95b2-4a6a-8651-4f2c7a528790}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景数据">
-      <UniqueIdentifier>{31bfa28b-9aa4-4163-a7c3-2a659782e928}</UniqueIdentifier>
+      <UniqueIdentifier>{76848c82-924b-4d9f-93da-fc7bdf18eefb}</UniqueIdentifier>
     </Filter>
     <Filter Include="主窗口">
-      <UniqueIdentifier>{289eed71-f9cf-4caf-91f3-df3f1a4c8d56}</UniqueIdentifier>
+      <UniqueIdentifier>{c8db9242-f41c-49b1-9b41-b5989d202633}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景实例">
-      <UniqueIdentifier>{e288ce35-3830-488a-b606-77f7a1d7772e}</UniqueIdentifier>
+      <UniqueIdentifier>{c87d2bde-2bb7-4d75-842e-bd4bbc14907f}</UniqueIdentifier>
     </Filter>
     <Filter Include="时间">
-      <UniqueIdentifier>{3478a22e-bf49-4388-a516-dea24888df98}</UniqueIdentifier>
+      <UniqueIdentifier>{c7348ea7-bfd9-4cfc-a177-f8bb181fe1e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象">
-      <UniqueIdentifier>{12eaf9b0-0232-430c-8302-8ef4b384f64c}</UniqueIdentifier>
+      <UniqueIdentifier>{7abfaf38-10d1-4a43-969d-e297fe2a734c}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象\回调接口">
-      <UniqueIdentifier>{3f78e31a-d768-411b-ae03-b2eaaea6d3b6}</UniqueIdentifier>
+      <UniqueIdentifier>{c1917c2c-bbfc-4e0b-8902-b26d88ea0b0a}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象\回调事件">
-      <UniqueIdentifier>{647ec7b3-6dee-4123-83c4-2e2171110911}</UniqueIdentifier>
+      <UniqueIdentifier>{872d2783-9810-4539-806e-08d131d86845}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象\主动对象">
-      <UniqueIdentifier>{9cb359be-72d8-4bcf-88b2-6d9f69c20d51}</UniqueIdentifier>
+      <UniqueIdentifier>{58f82a89-4f42-4fe3-8a23-31e82422c62d}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象\表演对象">
-      <UniqueIdentifier>{d2348684-2d60-4a6d-b858-d7432a5c794a}</UniqueIdentifier>
+      <UniqueIdentifier>{ebb8ead5-69d4-4a0e-bb12-c708f962bd61}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象\跟随对象">
-      <UniqueIdentifier>{786398c8-fc99-4b2b-a32a-24dbaa71968b}</UniqueIdentifier>
+      <UniqueIdentifier>{82cd4d52-950d-43a1-9762-65489754ca63}</UniqueIdentifier>
     </Filter>
     <Filter Include="对象\跟随对象\命令延迟">
-      <UniqueIdentifier>{3cd4508e-cf36-4bb1-98ff-243c3ad9f8d8}</UniqueIdentifier>
+      <UniqueIdentifier>{0959455d-d763-4d52-bd79-681c0905dcbb}</UniqueIdentifier>
     </Filter>
     <Filter Include="连接">
-      <UniqueIdentifier>{ca9eaf04-5c6c-4fc3-9273-fb8279de54f5}</UniqueIdentifier>
+      <UniqueIdentifier>{a7fc59fe-aab0-4f8f-97d4-a8a6ac18c7e2}</UniqueIdentifier>
     </Filter>
     <Filter Include="数据同步">
-      <UniqueIdentifier>{90676ddd-1a57-456d-a66b-4fba138f0551}</UniqueIdentifier>
+      <UniqueIdentifier>{ea02d046-bcab-492a-9b9c-fce182a6bba5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

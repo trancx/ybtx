@@ -16,7 +16,7 @@ namespace sqr
 {
 
 	//------------------------------------------------------------------------------
-	inline SHADER_HANDLE
+	SHADER_HANDLE
 	CWaterMgr::EffectTypeToID( CWaterMgr::WaterEffectType type )
 	{
 		SHADER_HANDLE handle;

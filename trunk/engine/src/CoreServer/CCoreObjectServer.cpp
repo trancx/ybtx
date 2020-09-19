@@ -455,7 +455,7 @@ EStopMovingResult CCoreObjectServer::StopMoving()
 void CCoreObjectServer::Watch(IWatchHandler* pHandler, CCoreObjectServer* pTarget, float fPixelDistThreshold)
 {
 	pHandler->m_uID = pHandler->m_uID == 0 ? GetNextPosObserverHandlerID() : pHandler->m_uID;
-	if(m_mapPosObserverHandler.insert(make_pair<uint32, IObjPosObserverHandler*>(pHandler->m_uID, pHandler)).second)
+	if(m_mapPosObserverHandler.insert(make_pair(pHandler->m_uID, pHandler)).second)
 		(new CCoreObjWatchJob(GetGlobalID(), pHandler->m_uID, pTarget->GetGlobalID(), fPixelDistThreshold))->Add();
 	//GetSynCoreObj()->Watch(pHandler, pTarget->GetSynCoreObj(), fPixelDistThreshold);
 	//cout<<GetGlobalID()<<"  Wathch "<<pTarget->GetGlobalID()<<endl;

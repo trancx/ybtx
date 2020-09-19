@@ -2,6 +2,7 @@
 #include "ClrMsgDefine.h"
 #include "CPieceUnitEditCtrl.h"
 #include "PieceUnitEditCtrl\CPieceUnitEditImp.h"
+#include "dthelp.h"
 
 #define PieceUnitEditImp ((CPieceUnitEditImp*)GetCoreCtrl())
 

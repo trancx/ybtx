@@ -135,7 +135,7 @@ CGraphic::~CGraphic()
 		SafeRelease(m_pSysTexture[i]);
 
 	for ( GraphicManageTexList::iterator it = m_gfkManageTexList.begin(); it!=m_gfkManageTexList.end(); ++it )
-		SafeRelease(*it);
+		(*it)->Release();
 	m_gfkManageTexList.clear();
 
 	CVertexDeclaration::RELEASE_ALL_VERDECL();

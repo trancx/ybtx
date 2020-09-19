@@ -4,6 +4,8 @@
 #include "CGpuProgramMgr.h"
 #include "CRenderGroup.h"
 #include "CLightSystem.h"
+#include "CColor.inl"
+#include "CColor4.inl"
 
 CShowPassFilter::CShowPassFilter(CRenderGroup* pGroup)
 : m_pParentGroup(pGroup)

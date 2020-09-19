@@ -37,15 +37,6 @@ CEditorConfig::CEditorConfig()
 		m_CfgXml.SaveFile(m_CfgFileName);
 		IsOpen=false;
 	}	
-	
-	if( !CPathSetImp::HasInst())
-		CPathSetImp::Create();
-
-	//创建图形引擎和数据资源
-	new CGraphic(eRCT_DX9);
-	CDataSources* pSource = CDataSources::GetInst();
-	CDataSources::SetNull();
-	new CEditDataSources(pSource);
 }
 
 CEditorConfig::~CEditorConfig()

@@ -84,7 +84,7 @@ namespace sqr
 	class CTestSuiteVariant;
 
 	class COMMON_API CCypherVariantHolderForDecode
-		: protected CCypherVariantHolder
+		: public CCypherVariantHolder
 	{
 		friend class CTestSuiteVariant;
 	protected:

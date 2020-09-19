@@ -6,6 +6,7 @@
 #include "TSqrAllocator.inl"
 #include "CodeCvs.h"
 #include "CGpuProgramMgr.h"
+#include "CColor.inl"
 
 namespace sqr
 {

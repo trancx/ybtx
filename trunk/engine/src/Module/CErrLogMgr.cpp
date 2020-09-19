@@ -24,7 +24,7 @@ CErrLogMgr::~CErrLogMgr()
 
 void CErrLogMgr::SetErrLogEnabled(bool bEnabled)
 {
-	m_bErrLogEnabled = bEnabled;
+	m_bErrLogEnabled = true;
 	if(CatchErrorEnabled()&&m_bErrLogEnabled)
 		CErrLogThreadMgr::Init();
 	else if(CErrLogThreadMgr::Inst())

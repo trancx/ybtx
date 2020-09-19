@@ -1,6 +1,6 @@
 #pragma once
-#include "TSqrAllocObject.h"
-#include "TSqrAllocator.h"
+#include "TSqrAllocObject.inl"
+#include "TSqrAllocator.inl"
 #include <fstream>
 #include <string>
 #include <vector>

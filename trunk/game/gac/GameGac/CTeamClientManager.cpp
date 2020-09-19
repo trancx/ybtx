@@ -6,6 +6,7 @@
 #include "CSyncVariantClient.h"
 #include "ITeamClientManagerHandler.h"
 #include "TSqrAllocator.inl"
+#include "FighterProperty.inl"
 
 CSyncSceneInfo::CSyncSceneInfo(uint32 uEntityID)
 :m_uEntityID(uEntityID)

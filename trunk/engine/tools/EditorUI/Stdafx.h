@@ -16,5 +16,6 @@
 typedef unsigned long       DWORD;
 typedef unsigned char       BYTE;
 using namespace std;
+using namespace sqr;
 namespace sqr_tools{}
 using namespace sqr_tools;

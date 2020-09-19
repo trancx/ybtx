@@ -2,190 +2,193 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="战斗">
-      <UniqueIdentifier>{3633b989-ea63-4c8d-9482-d3cc8613ae71}</UniqueIdentifier>
+      <UniqueIdentifier>{e8786761-40b3-4fb5-a33b-0e0d0ec42d09}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\魔法">
-      <UniqueIdentifier>{dba749a3-6f19-4550-814d-dfb4a8b8a96b}</UniqueIdentifier>
+      <UniqueIdentifier>{72058e37-85a8-4498-9128-c55a0cfb51a1}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\魔法\Cfg">
-      <UniqueIdentifier>{422ed52c-8df4-424e-8125-1a97357d9c8b}</UniqueIdentifier>
+      <UniqueIdentifier>{c58dcd3d-9b99-4179-aac7-2414b9f7f833}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\对象">
-      <UniqueIdentifier>{8f925245-52b2-4adb-a80d-08c9cfa77b23}</UniqueIdentifier>
+      <UniqueIdentifier>{a47599b6-823e-435c-a5f7-83165bbf53e7}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态">
-      <UniqueIdentifier>{1722dbe3-6fa4-4075-a44e-13015a8555ff}</UniqueIdentifier>
+      <UniqueIdentifier>{c58b32d4-8b6b-4805-b978-b269acf6fe78}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态\魔法状态">
-      <UniqueIdentifier>{b389816e-40f5-4a31-bb41-566b6d1ed89d}</UniqueIdentifier>
+      <UniqueIdentifier>{c031f686-1b05-46b3-b59c-ee7d7f5098b3}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态\公共">
-      <UniqueIdentifier>{b3633163-12fe-44c4-92c2-91bff92a7455}</UniqueIdentifier>
+      <UniqueIdentifier>{e809f25b-f27c-4793-8045-eb0b6e3058d6}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态\其它状态">
-      <UniqueIdentifier>{ed0efb51-987f-4c44-a7c7-dd9377dbc31d}</UniqueIdentifier>
+      <UniqueIdentifier>{96aae928-af86-457e-aed9-c5303d7bac28}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态\其它状态\特殊状态">
-      <UniqueIdentifier>{b8f6b9ed-3ea7-4370-87ae-4939b9e428d7}</UniqueIdentifier>
+      <UniqueIdentifier>{a08bf207-e325-43a6-9e4e-722e2d4870f6}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态\其它状态\可触发状态">
-      <UniqueIdentifier>{f6ad4c39-869d-48dd-916d-ea879bba1318}</UniqueIdentifier>
+      <UniqueIdentifier>{54e4741c-95ed-424d-838e-0fef414b1c10}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态\其它状态\可触发状态\伤害变更状态">
-      <UniqueIdentifier>{cfd0b56c-206b-4b90-a196-4229f54f0557}</UniqueIdentifier>
+      <UniqueIdentifier>{5a90cbd3-fed3-4c0b-b4b3-6198087d15cb}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态\其它状态\可触发状态\触发器状态">
-      <UniqueIdentifier>{1a1c576a-7347-45a1-8ddc-5b7f80e11b70}</UniqueIdentifier>
+      <UniqueIdentifier>{42064f5c-bf36-4574-b119-ca53d5642277}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态\其它状态\可触发状态\积累触发状态">
-      <UniqueIdentifier>{952824b9-892e-4ae3-aa2b-999fcf262091}</UniqueIdentifier>
+      <UniqueIdentifier>{ea65896c-1729-43ba-b169-a8b5cd3da174}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\流程">
-      <UniqueIdentifier>{2889d685-7d95-41a6-ab18-21f70f71e54c}</UniqueIdentifier>
+      <UniqueIdentifier>{53de6e7c-fa8f-4ccf-8975-0e3613bdf07d}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\效果">
-      <UniqueIdentifier>{68b458e0-ef7a-4bc4-bf66-22af7e203030}</UniqueIdentifier>
+      <UniqueIdentifier>{a141e3fe-5032-4d5f-a0de-646eb2f0018d}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\效果\操作">
-      <UniqueIdentifier>{773cf0ca-d4db-4e9e-b2d3-0f03583dcb1c}</UniqueIdentifier>
+      <UniqueIdentifier>{b30bc753-17b6-494e-8fb9-20f76f5c583f}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\效果\条件">
-      <UniqueIdentifier>{a562673f-a637-447a-b5fb-4714690607bb}</UniqueIdentifier>
+      <UniqueIdentifier>{082529b4-6188-4b30-b0dd-d5b8429e51f7}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\公共">
-      <UniqueIdentifier>{c7730f92-c454-41e5-b959-6f05dc7462bc}</UniqueIdentifier>
+      <UniqueIdentifier>{e83e611c-f55b-42dc-a8eb-886e22b843f3}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\技能">
-      <UniqueIdentifier>{b9947f1b-8e5b-4f12-aa63-0f3a3da1616e}</UniqueIdentifier>
+      <UniqueIdentifier>{60dbbfdd-a8e3-4695-911e-0cfb06fd207f}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\普攻">
-      <UniqueIdentifier>{49e19341-5de9-4b33-805f-274a27189ab4}</UniqueIdentifier>
+      <UniqueIdentifier>{42f4e6c6-a41c-42c0-8aae-a891d9227137}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\属性">
-      <UniqueIdentifier>{62ae81e5-e8a9-4fd4-972a-f68dc13c28c9}</UniqueIdentifier>
+      <UniqueIdentifier>{b455587c-94b5-44ef-a40b-9ce57ee4eeed}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\集合">
-      <UniqueIdentifier>{26e63a22-7066-4fa2-bcc7-2477fd435beb}</UniqueIdentifier>
+      <UniqueIdentifier>{4a7c558f-a8f8-4795-a872-5b185432dbd7}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\测试">
-      <UniqueIdentifier>{a25e6055-3b84-4cac-ab51-83fc02d92635}</UniqueIdentifier>
+      <UniqueIdentifier>{26ae68dd-0885-4a4c-8f42-cd8f5baa2feb}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\爆魂">
-      <UniqueIdentifier>{ac472578-cdd1-46a9-8916-926797989ede}</UniqueIdentifier>
+      <UniqueIdentifier>{94eba77a-438e-4688-83e4-524dc5615494}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\统计">
-      <UniqueIdentifier>{b35ab892-57ba-4a76-931b-9fdc625ca256}</UniqueIdentifier>
+      <UniqueIdentifier>{f2ae77d4-eedd-4f7e-ba8f-364213e05959}</UniqueIdentifier>
     </Filter>
     <Filter Include="框架">
-      <UniqueIdentifier>{d3691e3e-3761-4bb8-9ea2-a24d8d0f605a}</UniqueIdentifier>
+      <UniqueIdentifier>{e2cf65d5-c4a8-4798-959d-a2bf5b2173ae}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC">
-      <UniqueIdentifier>{75697e08-b34a-4676-8517-44adcfe4841e}</UniqueIdentifier>
+      <UniqueIdentifier>{6f77ff6f-a813-4b4f-96c8-bdae0fcbf5c6}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\状态机">
-      <UniqueIdentifier>{14262ea3-8b5f-4bca-8dad-bc693a436f03}</UniqueIdentifier>
+      <UniqueIdentifier>{c5dbf7b1-c37e-444d-970c-da18f50f7db2}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\构造">
-      <UniqueIdentifier>{5eeb1a82-15a9-480e-9952-006c3b9ebdaa}</UniqueIdentifier>
+      <UniqueIdentifier>{710dc877-c2eb-4f72-bc06-01a032879290}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\表格数据">
-      <UniqueIdentifier>{f8603b2f-e5da-4133-b904-37bae91a30fb}</UniqueIdentifier>
+      <UniqueIdentifier>{6dd3bf5a-ffb8-4847-8541-5ac50150d2eb}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\对象">
-      <UniqueIdentifier>{1a53d353-d688-43d0-97e7-9a63030acd56}</UniqueIdentifier>
+      <UniqueIdentifier>{65871f7a-c845-46ce-8922-8f2d9c9bbb8b}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\对象\普通">
-      <UniqueIdentifier>{305d8013-5847-47d1-b0af-65b7e788a031}</UniqueIdentifier>
+      <UniqueIdentifier>{53cd8937-660c-4e55-89f3-1374f91ce521}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\对象\召唤兽">
-      <UniqueIdentifier>{0655331b-6b07-4f29-ae47-dd84dc51a2cc}</UniqueIdentifier>
+      <UniqueIdentifier>{964d28c8-cba9-48f9-a397-feeb520086ac}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\对象\个性">
-      <UniqueIdentifier>{233237d9-1e42-47b3-8fff-9c1eb9ac4f07}</UniqueIdentifier>
+      <UniqueIdentifier>{07c8cf3a-6329-4cd7-a2bb-ea13f58e787f}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\对象\团队">
-      <UniqueIdentifier>{9b0be3fb-8fcb-4dbf-b57f-9d36da97139a}</UniqueIdentifier>
+      <UniqueIdentifier>{3bf8b550-e87b-4a3d-9a4f-f8563027ff9b}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\仇恨管理">
-      <UniqueIdentifier>{37d654d7-b8d5-4da5-922a-5d4b1aab0334}</UniqueIdentifier>
+      <UniqueIdentifier>{77ef630f-6c03-438b-8555-283b8c21fdeb}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\仇恨管理\内存池">
-      <UniqueIdentifier>{7c16925d-fc8e-43a6-a10c-281183212a8a}</UniqueIdentifier>
+      <UniqueIdentifier>{009e19be-2cc2-4f2e-b126-2674473cd5a5}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\技能规则">
-      <UniqueIdentifier>{e1143706-06b2-4c37-aa5b-2b6dc96a61a7}</UniqueIdentifier>
+      <UniqueIdentifier>{4024ebf0-b07a-44ed-851b-c5b023a414e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\技能规则\规则">
-      <UniqueIdentifier>{b37be281-abf4-4e83-8679-fe039d319130}</UniqueIdentifier>
+      <UniqueIdentifier>{fb359ce2-5f19-4772-a613-5fcb64c57823}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\技能规则\定义">
-      <UniqueIdentifier>{df93e3b0-1216-4ce9-b945-eb25eda5cfce}</UniqueIdentifier>
+      <UniqueIdentifier>{84159238-a6ee-4ec6-abe5-14a2b27b7d6f}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\技能规则\触发">
-      <UniqueIdentifier>{4e38dfb5-3a1b-473b-be40-d43b2684c5c7}</UniqueIdentifier>
+      <UniqueIdentifier>{20d24c53-b04c-4e10-a8b5-6c4fdea9fa24}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\技能规则\管理">
-      <UniqueIdentifier>{8647ec61-0084-4284-88b8-2aa97fbb8d37}</UniqueIdentifier>
+      <UniqueIdentifier>{363681bd-1aed-4d44-b415-8fb9137fbc68}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\技能规则\目标">
-      <UniqueIdentifier>{b31fcea0-540b-4e35-8c6f-737de11c0ac5}</UniqueIdentifier>
+      <UniqueIdentifier>{8ee7141c-9965-4569-9f97-180aeff9181a}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\属性">
-      <UniqueIdentifier>{9f78efe5-bbd7-466e-a310-54b258caa6c8}</UniqueIdentifier>
+      <UniqueIdentifier>{5836a06a-2f25-4c37-9913-fc6e8254ba30}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\队列管理">
-      <UniqueIdentifier>{3a5214fd-4f98-4159-ac34-13b19d0182ab}</UniqueIdentifier>
+      <UniqueIdentifier>{5191eb50-794d-413c-adfc-d350cea83016}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\召唤兽管理">
-      <UniqueIdentifier>{23fe0205-a7e0-4940-9a85-72bf8afabd00}</UniqueIdentifier>
+      <UniqueIdentifier>{1e094c02-a121-4ee9-b0bf-5f3e798175d8}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\Npc消息">
-      <UniqueIdentifier>{081525c4-f3e8-491a-9352-5d115e3fa9f4}</UniqueIdentifier>
+      <UniqueIdentifier>{784ec8e0-b510-47fd-a709-481b84cd6afe}</UniqueIdentifier>
     </Filter>
     <Filter Include="NPC\警戒管理">
-      <UniqueIdentifier>{ce6b40b3-4edf-43dc-91d4-251d6f6693ae}</UniqueIdentifier>
+      <UniqueIdentifier>{50670be8-c4d5-490b-94ff-8a5c5ea29cb6}</UniqueIdentifier>
     </Filter>
     <Filter Include="角色">
-      <UniqueIdentifier>{50ce68d6-fc39-4508-8aa9-8a7dc96ba5b6}</UniqueIdentifier>
+      <UniqueIdentifier>{95ccd458-3cb2-4da8-a147-ac420a17990c}</UniqueIdentifier>
     </Filter>
     <Filter Include="动作">
-      <UniqueIdentifier>{b0d51628-488e-42fb-8fe8-9311cd801050}</UniqueIdentifier>
+      <UniqueIdentifier>{190dce58-2237-4425-883f-ae7cb7e9e92d}</UniqueIdentifier>
     </Filter>
     <Filter Include="交互对象">
-      <UniqueIdentifier>{2ab0d991-36b3-41a2-9ebd-0a870178ece2}</UniqueIdentifier>
+      <UniqueIdentifier>{b9cffea3-88bb-4224-b818-38cc0afcbe6b}</UniqueIdentifier>
     </Filter>
     <Filter Include="游戏实体">
-      <UniqueIdentifier>{1575630f-1439-48d4-a8b5-cd8476987f92}</UniqueIdentifier>
+      <UniqueIdentifier>{efc973c6-65b8-4dcc-8c87-066eee8d8caf}</UniqueIdentifier>
     </Filter>
     <Filter Include="连接">
-      <UniqueIdentifier>{77d99f16-64e5-4585-9305-0187fa23d98e}</UniqueIdentifier>
+      <UniqueIdentifier>{db0a1e95-99cc-43af-a125-cdfedfd43ebb}</UniqueIdentifier>
     </Filter>
     <Filter Include="AOI分层">
-      <UniqueIdentifier>{0410edbe-b902-4b3c-9355-dd20737edd57}</UniqueIdentifier>
+      <UniqueIdentifier>{7629d4eb-16a9-4695-8a69-5cc3aae5a8b8}</UniqueIdentifier>
     </Filter>
     <Filter Include="反外挂">
-      <UniqueIdentifier>{c0b0146a-e2ac-4fda-93e9-4354fe2eaf87}</UniqueIdentifier>
+      <UniqueIdentifier>{4c690ae7-b3ce-4b28-9cdc-0bd8170dbaad}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景">
-      <UniqueIdentifier>{f9117e1e-1566-4f62-854b-f44d4a932a86}</UniqueIdentifier>
+      <UniqueIdentifier>{97386bae-d5b3-47d9-bf9b-4df97dbabe40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="统计">
+      <UniqueIdentifier>{083670c9-970b-4afb-b68c-e98869d7fba3}</UniqueIdentifier>
     </Filter>
     <Filter Include="YY">
-      <UniqueIdentifier>{3df9bf0e-8d3f-4ab4-802b-b1bf776560f8}</UniqueIdentifier>
+      <UniqueIdentifier>{d9d1b1f5-b428-4af6-894b-9568f5800780}</UniqueIdentifier>
     </Filter>
     <Filter Include="WeiBo">
-      <UniqueIdentifier>{0dda4195-5de1-43cb-b9d9-79243a39e9fd}</UniqueIdentifier>
+      <UniqueIdentifier>{fe5bbbf8-d634-4d77-bcdc-99fb6fb0bfbc}</UniqueIdentifier>
     </Filter>
     <Filter Include="WeiBo\wb">
-      <UniqueIdentifier>{b0a59d47-11c8-4363-9f59-a15f3a795a73}</UniqueIdentifier>
+      <UniqueIdentifier>{fa0f1835-975f-4091-a3e0-b4c4013aed19}</UniqueIdentifier>
     </Filter>
     <Filter Include="WeiBo\wb\callback">
-      <UniqueIdentifier>{4265d2d6-14e7-447f-834f-1eda81b13760}</UniqueIdentifier>
+      <UniqueIdentifier>{f20dd729-3f95-4f1b-a692-0c52856bc56f}</UniqueIdentifier>
     </Filter>
     <Filter Include="WeiBo\头文件">
-      <UniqueIdentifier>{c52b55b3-e4c9-473f-a1c9-f606695f77eb}</UniqueIdentifier>
+      <UniqueIdentifier>{1ba10431-868f-4bf6-9c77-3893cff99d74}</UniqueIdentifier>
     </Filter>
     <Filter Include="WeiBo\源文件">
-      <UniqueIdentifier>{6c19334e-2b79-4f5c-9f39-1d17990eb656}</UniqueIdentifier>
+      <UniqueIdentifier>{deac6537-2728-4d0a-bd7d-73dc95db8011}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -826,7 +829,7 @@
       <Filter>场景</Filter>
     </ClCompile>
     <ClCompile Include="CCpuUsageMgr.cpp">
-      <Filter>战斗\统计</Filter>
+      <Filter>统计</Filter>
     </ClCompile>
     <ClCompile Include="CYYServer.cpp">
       <Filter>YY</Filter>
@@ -1512,7 +1515,7 @@
       <Filter>场景</Filter>
     </ClInclude>
     <ClInclude Include="CCpuUsageMgr.h">
-      <Filter>战斗\统计</Filter>
+      <Filter>统计</Filter>
     </ClInclude>
     <ClInclude Include="CYYServer.h">
       <Filter>YY</Filter>

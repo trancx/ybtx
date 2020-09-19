@@ -12,6 +12,8 @@
 #include "CCtrlImpFactory.h"
 #include "CmdMgr.h"
 #include "../../src/CoreCommon/TTimeSystem.inl"
+#include "PathManager\CPathManager.h"
+#include "CEditDataSources.h"
 
 CEditTimeSystem::CEditTimeSystem(uint32 uBaseCyc)
 :Parent_t(uBaseCyc){}
@@ -34,6 +36,13 @@ CEditToolApp::CEditToolApp(void)
 		CEventState::Create();
 
 	CEditorConfig::GetInst()->InitEditorConfig();
+	if (!CPathSetImp::HasInst())
+		CPathSetImp::Create();
+	//创建图形引擎和数据资源
+	new CGraphic(eRCT_DX9);
+	CDataSources* pSource = CDataSources::GetInst();
+	CDataSources::SetNull();
+	new CEditDataSources(pSource);
 	CCtrlImpFactory::Create();
 	CCmdMgr::Create();
 }

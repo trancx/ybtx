@@ -2,94 +2,94 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="框架">
-      <UniqueIdentifier>{2620bb8f-1792-4c42-8ce4-cd161d85d473}</UniqueIdentifier>
+      <UniqueIdentifier>{5f6ec040-3423-409e-9189-6cddd8145db3}</UniqueIdentifier>
     </Filter>
     <Filter Include="特效">
-      <UniqueIdentifier>{2fbc8ea9-b721-4540-9452-87ec42c64144}</UniqueIdentifier>
+      <UniqueIdentifier>{ca86d481-74cd-46c0-a250-ab6926c88373}</UniqueIdentifier>
     </Filter>
     <Filter Include="特效\内存池">
-      <UniqueIdentifier>{0e5182ba-0518-4d4d-9948-7e213350a301}</UniqueIdentifier>
+      <UniqueIdentifier>{b547d22a-d020-4887-be96-3afe17cc0831}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗">
-      <UniqueIdentifier>{4cab60d9-b723-4959-87a8-c57b5c94324d}</UniqueIdentifier>
+      <UniqueIdentifier>{ac215597-09df-47c0-bbdc-7ef746e1dab0}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\魔法">
-      <UniqueIdentifier>{e4ebce73-fc07-475f-af7e-103371cbe9da}</UniqueIdentifier>
+      <UniqueIdentifier>{75f786bc-3713-467c-a787-cbcc001d9a53}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\效果">
-      <UniqueIdentifier>{7e4eb1cd-4f97-49a0-98ec-b16b262535b0}</UniqueIdentifier>
+      <UniqueIdentifier>{5657c7e0-7c70-40c6-bb40-611ea910441b}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\效果\操作">
-      <UniqueIdentifier>{389a1135-05e4-4495-93bc-aa3209e4a3ee}</UniqueIdentifier>
+      <UniqueIdentifier>{bf07e1b4-0053-4f89-aa7a-787b44ca812d}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\效果\操作\条件">
-      <UniqueIdentifier>{d85ecf34-a798-4632-91f1-74fa975d423b}</UniqueIdentifier>
+      <UniqueIdentifier>{ed5893d5-7ec9-4e8a-bee9-274b2b3fabee}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\属性">
-      <UniqueIdentifier>{746a98db-6126-49df-91a1-676f0401a7a7}</UniqueIdentifier>
+      <UniqueIdentifier>{1621488e-083a-43d2-bc95-0c06bff8d4a5}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\技能">
-      <UniqueIdentifier>{9dbca115-7116-4f58-9424-5af79a059cf1}</UniqueIdentifier>
+      <UniqueIdentifier>{6e5cc61c-e032-441e-9542-24b6b8d8e733}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\状态">
-      <UniqueIdentifier>{87431cf6-aa76-4c59-905c-3fc9a108bc70}</UniqueIdentifier>
+      <UniqueIdentifier>{7d296e66-db37-4a03-a2c0-d4d568fad18f}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\流程">
-      <UniqueIdentifier>{df58a950-2cb0-4d82-9168-b53560080e9b}</UniqueIdentifier>
+      <UniqueIdentifier>{bee8e46a-e89a-40b0-9ebf-5af66e3daeb5}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\公共">
-      <UniqueIdentifier>{7f09c90e-ea8d-4fc5-8e7b-528d3f6577b9}</UniqueIdentifier>
+      <UniqueIdentifier>{856130c0-b702-4c5f-b357-956614b37b5a}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\普攻">
-      <UniqueIdentifier>{f00a910e-ae8c-4936-a291-467a7e8392c6}</UniqueIdentifier>
+      <UniqueIdentifier>{4db8a6bf-0d9c-4996-9a57-43c8b5eca4f2}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\对象">
-      <UniqueIdentifier>{8df7c77c-a6f5-401c-8e5b-9814bbabd6d0}</UniqueIdentifier>
+      <UniqueIdentifier>{08ef26ff-4097-4013-bf86-de407e710da5}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\队伍">
-      <UniqueIdentifier>{159062b8-d2dd-4918-b4d6-d40f3b6baa1d}</UniqueIdentifier>
+      <UniqueIdentifier>{4464647d-7b06-4912-bc09-8be2068a9041}</UniqueIdentifier>
     </Filter>
     <Filter Include="战斗\爆魂">
-      <UniqueIdentifier>{f395fb1c-da53-4483-bb87-8b759497a981}</UniqueIdentifier>
+      <UniqueIdentifier>{198857cf-f788-4a4a-bc36-e88b4afd92b4}</UniqueIdentifier>
     </Filter>
     <Filter Include="动作">
-      <UniqueIdentifier>{3ef06dcb-b4fa-4f11-9d12-f71dc696315d}</UniqueIdentifier>
+      <UniqueIdentifier>{6238870c-b2d4-454a-b205-cd3412d6d7d6}</UniqueIdentifier>
     </Filter>
     <Filter Include="连接">
-      <UniqueIdentifier>{9fe193a7-7b54-45f1-948e-aad755c15020}</UniqueIdentifier>
+      <UniqueIdentifier>{8d3d2dc2-4305-429a-b562-7d7240b90e50}</UniqueIdentifier>
     </Filter>
     <Filter Include="游戏实体">
-      <UniqueIdentifier>{9ba5f781-a893-4a4d-90ef-3ce114002e49}</UniqueIdentifier>
+      <UniqueIdentifier>{905cc003-be16-48ee-93df-574a44c6f19a}</UniqueIdentifier>
     </Filter>
     <Filter Include="交互对象">
-      <UniqueIdentifier>{10853068-222d-46c3-b19e-a2347884e2ed}</UniqueIdentifier>
+      <UniqueIdentifier>{3307c2d6-5bb6-4534-8be3-4373086fecbb}</UniqueIdentifier>
     </Filter>
     <Filter Include="音效">
-      <UniqueIdentifier>{53859648-9188-496b-bb2e-82e41ba81639}</UniqueIdentifier>
+      <UniqueIdentifier>{53ee25ba-f0ef-4182-aae9-aaae0719dc47}</UniqueIdentifier>
     </Filter>
     <Filter Include="反外挂">
-      <UniqueIdentifier>{91e0d0d3-4dc0-4921-a34a-05a169f91d97}</UniqueIdentifier>
+      <UniqueIdentifier>{ee5782f3-c00b-4945-ae00-4c7a2f9303d9}</UniqueIdentifier>
     </Filter>
     <Filter Include="界面">
-      <UniqueIdentifier>{ca2d331a-0706-4bb6-ae00-305f90b6cd14}</UniqueIdentifier>
+      <UniqueIdentifier>{0e99dc8b-66da-4388-a2a8-eed5115278a1}</UniqueIdentifier>
     </Filter>
     <Filter Include="界面\地图">
-      <UniqueIdentifier>{63eea527-2745-42d4-9d60-5b199417e313}</UniqueIdentifier>
+      <UniqueIdentifier>{0fcfcdd4-2b61-4a31-9774-00d8bd590f78}</UniqueIdentifier>
     </Filter>
     <Filter Include="界面\公告板">
-      <UniqueIdentifier>{41714c58-123e-4f4d-abc1-86e0c318fe37}</UniqueIdentifier>
+      <UniqueIdentifier>{e4a92702-9f31-44c9-aea7-5b101357bbbf}</UniqueIdentifier>
     </Filter>
     <Filter Include="界面\血条">
-      <UniqueIdentifier>{446bcdfd-7331-4538-b112-92a1aa994d9e}</UniqueIdentifier>
+      <UniqueIdentifier>{fcfc9172-2c70-42bb-ae2f-7ffb88ebf8b8}</UniqueIdentifier>
     </Filter>
     <Filter Include="场景">
-      <UniqueIdentifier>{3d33d951-d043-456a-91b0-f675e5928251}</UniqueIdentifier>
+      <UniqueIdentifier>{28e6c030-48f2-4172-8606-c422298d5155}</UniqueIdentifier>
     </Filter>
     <Filter Include="角色">
-      <UniqueIdentifier>{f5af4f60-57a3-40c4-9b72-1867b7e65a5b}</UniqueIdentifier>
+      <UniqueIdentifier>{edb5c5c8-d180-4072-a334-784562f28c4c}</UniqueIdentifier>
     </Filter>
     <Filter Include="模型">
-      <UniqueIdentifier>{90944122-2299-46ce-89f8-382ec9a8f686}</UniqueIdentifier>
+      <UniqueIdentifier>{8eb8274b-7fa0-4582-9dec-b7c09c599567}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

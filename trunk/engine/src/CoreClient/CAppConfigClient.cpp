@@ -32,7 +32,7 @@ CAppConfigClient::CAppConfigClient(istream& strmConfig, const string& SceneConfi
 	m_pSceneConfig = new CSceneConfigClient( SceneConfig,m_pIniFile );
 
 	CLangCfg::Create();
-	CLangCfg::GetInst()->LoadConfig("./LangConfig.xml");
+	CLangCfg::GetInst()->LoadConfig("./lang/LangConfig.xml");
 	CFontCfg::Create();
 	CFontCfg::GetInst()->LoadFongConfig(CLangCfg::GetInst()->GetLanFolder(0));
 

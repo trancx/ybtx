@@ -11,6 +11,8 @@
 #include "BaseHelper.h"
 #include "TSqrAllocator.inl"
 #include "CRenderPipeline.h"
+
+
 namespace sqr
 {
 

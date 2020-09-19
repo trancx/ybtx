@@ -80,7 +80,7 @@ const char * CXmlReadAndWrite::XmlReadByNumber(uint32 NodeNumber)
 		{
 			pNode = pNode->NextSibling();
 		}
-		*pString = pNode->GetValue();
+		*pString = pNode->ValueStr();
 	}
 	SQR_CATCH(exp)
 	{
@@ -118,7 +118,7 @@ const char * CXmlReadAndWrite::XmlReadLastNode()
 	{
 		TiXmlNode * pRoot = m_tDoc->RootElement();
 		TiXmlNode * pNode = pRoot->LastChild();
-		*pString = pNode->GetValue();
+		*pString = pNode->ValueStr();
 	}
 	SQR_CATCH(exp)
 	{
@@ -154,7 +154,7 @@ const char * CXmlReadAndWrite::XmlReadNext(const char * NodeName)
 	{
 		TiXmlNode * pRoot = m_tDoc->RootElement();
 		TiXmlNode * pNode = pRoot->FirstChild(NodeName);
-		string str = pRoot->LastChild()->GetValue();
+		string str = pRoot->LastChild()->ValueStr();
 		if(str!=NodeName)
 		{
 			*pString = pNode->ToElement()->Attribute("Next");
@@ -179,7 +179,7 @@ const char * CXmlReadAndWrite::XmlReadLast(const char * NodeName)
 	{
 		TiXmlNode * pRoot = m_tDoc->RootElement();
 		TiXmlNode * pNode = pRoot->FirstChild(NodeName);
-		string str = pRoot->FirstChild()->GetValue();
+		string str = pRoot->FirstChild()->ValueStr();
 		if(str!=NodeName)
 		{
 			*pString = pNode->ToElement()->Attribute("Last");
@@ -209,7 +209,7 @@ void CXmlReadAndWrite::XmlWrite(const char *NodeName)
 		{
 			TiXmlElement * pPreNode = pRoot->LastChild()->ToElement();
 			pPreNode->SetAttribute("Next",NodeName);
-			strLastName = pPreNode->GetValue();
+			strLastName = pPreNode->ValueStr();
 		}
 		TiXmlElement * pNode = new TiXmlElement(NodeName);
 		pRoot->LinkEndChild(pNode);

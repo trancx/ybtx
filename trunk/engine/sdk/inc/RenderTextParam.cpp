@@ -2,6 +2,8 @@
 #include "RenderTextParam.h"
 #include "CodeCvs.h"
 #include "TSqrAllocator.inl"
+#include "CColor.inl"
+#include "CColor4.inl"
 
 
 namespace sqr

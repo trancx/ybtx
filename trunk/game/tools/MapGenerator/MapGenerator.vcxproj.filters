@@ -46,17 +46,21 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\MapGenerator.ico">
+    <Image Include="res\MapGenerator.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\MapGenerator.rc2">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MapGenerator.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MapGenerator.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

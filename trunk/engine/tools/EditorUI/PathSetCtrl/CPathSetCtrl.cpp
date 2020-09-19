@@ -3,6 +3,7 @@
 #include "PathManager/CPathManager.h"
 #include "OpenDirectoryDialog/OpenDirectoryDialog.h"
 #include <string>
+#include "dthelp.h"
 
 void CPathSetCtrl::Update(void)
 {

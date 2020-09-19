@@ -66,7 +66,7 @@ namespace sqr_tools
 		return true;
 	}
 
-	PropertyDescriptorCollection^ PropertySorterConverter::GetProperties( ITypeDescriptorContext^ context, Object^ value, array<Attribute^>^ attributes )
+	PropertyDescriptorCollection^ PropertySorterConverter::GetProperties( ITypeDescriptorContext^ context, Object^ value, cli::array<Attribute^>^ attributes )
 	{
 		PropertyDescriptorCollection^ pdc = TypeDescriptor::GetProperties(value, attributes);
 		ArrayList^ orderdProperties = gcnew ArrayList();
@@ -93,6 +93,6 @@ namespace sqr_tools
 			propertyNames->Add(pop->Name);
 		}
 
-		return pdc->Sort((array<String^>^)propertyNames->ToArray(String::typeid));
+		return pdc->Sort((cli::array<String^>^)(propertyNames)->ToArray(String::typeid));
 	}
 }

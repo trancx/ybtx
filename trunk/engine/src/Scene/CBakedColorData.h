@@ -39,7 +39,9 @@ public:
 		typedef CBakeStlAllocator<U> other; 
 	};
 
-	bool operator==( const CBakeStlAllocator<T>& )const throw() { return true; };
+	bool operator==( const CBakeStlAllocator<T>& )const throw() { return true; }
+
+	bool operator!=(const CBakeStlAllocator<T>&)const throw() { return false; };
 
 	pointer allocate( size_type n )
 	{

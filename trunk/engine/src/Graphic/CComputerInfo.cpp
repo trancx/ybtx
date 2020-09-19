@@ -561,8 +561,8 @@ string CComputerInfo::GetOSInfo()
 			hr = pclsObj->Get(L"CSDVersion", 0, &vtProp, 0, 0);
 			tcode = _com_util::ConvertBSTRToString(vtProp.bstrVal);
 			OSServPack = tcode;
-			GfkSafeDelete(tcode);
-			VariantClear(&vtProp);
+//			GfkSafeDelete(tcode);
+//			VariantClear(&vtProp);
 		}
 	}
 	//////////////////////////////////////////////////////////////////////////

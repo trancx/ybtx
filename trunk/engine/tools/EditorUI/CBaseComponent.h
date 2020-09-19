@@ -3,6 +3,7 @@ using namespace System;
 using namespace System::ComponentModel;
 using namespace System::Collections;
 #include "CContextCom.h"
+#include "CEditContext.h"
 
 namespace sqr_tools
 {

@@ -272,7 +272,8 @@ void CXACTCue::Update()
 		Flag = 1;
 
 		// listener
-		X3DAUDIO_LISTENER x3dListener = { 0 };
+		X3DAUDIO_LISTENER x3dListener;
+		memset(&x3dListener, 0, sizeof(X3DAUDIO_LISTENER));
 		x3dListener.pCone = NULL;
 		x3dListener.OrientFront = (X3DAUDIO_VECTOR&)audioEngine->GetListenerOrientFront();
 		x3dListener.OrientTop = (X3DAUDIO_VECTOR&)audioEngine->GetListenerOrientTop();

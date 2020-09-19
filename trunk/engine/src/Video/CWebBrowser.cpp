@@ -5,6 +5,7 @@
 #include "CodeCvs.h"
 #include "CFindWindow.h"
 #include "IWebBrowserEventProc.h"
+#include <assert.h>
 
 #define ASSERT assert
 

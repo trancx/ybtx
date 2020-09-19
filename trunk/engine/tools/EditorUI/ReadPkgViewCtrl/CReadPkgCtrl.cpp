@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CReadPkgCtrl.h"
 #include "ReadPkgCtrl\ReadPkgCtrlImp.h"
+#include "dthelp.h"
 
 void CReadPkgCtrl::InitListViewCtrl()
 {
@@ -34,7 +35,7 @@ System::Void CReadPkgCtrl::readPkgButton_Click( System::Object^ sender, System::
 	openFileDialog->ShowDialog();
 
 	vector<string> pkgs;
-	array<String^>^ resultFiles = openFileDialog->FileNames;
+	cli::array<String^>^ resultFiles = openFileDialog->FileNames;
 	int nLen = resultFiles->Length;
 	for ( int i = 0; i < nLen; ++i )
 	{

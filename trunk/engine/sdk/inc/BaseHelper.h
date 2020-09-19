@@ -112,7 +112,7 @@ namespace sqr
 		if (NULL!=p)
 		{
 			Type t = p;
-			p=NULL;
+			p = NULL;
 			t->Release();
 		}
 	}
@@ -146,7 +146,7 @@ namespace sqr
 	{
 		for (typename Type::iterator it = Container.begin(); it != Container.end(); ++it)
 		{
-			SafeRelease(*it);
+			(*it)->Release();
 		}
 		Container.clear();
 	}

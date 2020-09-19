@@ -4,7 +4,7 @@
 #include "MapEffectCtrl/MapEffectCtrlImp.h"
 #include "ContextCtrl/CContextCtrl.h"
 #include "dthelp.h"
-
+#include "CEditContext.h"
 
 #define  USE_OLD_RESOURCEDIR_NOTCODER
 bool bIs3D = true;
@@ -47,7 +47,7 @@ System::Void CTileViewCtrl::importReset_button_Click( System::Object^ sender, Sy
 	if( openFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK )
 	{
 		vector<string> resets;
-		array<String^>^ resultFiles = openFileDialog->FileNames;
+		cli::array<String^>^ resultFiles = openFileDialog->FileNames;
 		int nLen = resultFiles->Length;
 
 		for ( int i = 0; i < nLen; ++i )
@@ -569,7 +569,7 @@ void CTileViewCtrl::CreatTerrainSingleModelUnit(  )
 		String^clrGroupName = pGroupNode->Text;
 		std::string strGroupName = MagStringToUnmagString(clrGroupName);
 
-		array<String^>^ resultFiles = openFileDialog->FileNames;
+		cli::array<String^>^ resultFiles = openFileDialog->FileNames;
 		int nLen = resultFiles->Length;
 
 		for ( int i = 0; i < nLen; ++i )
@@ -610,7 +610,7 @@ void CTileViewCtrl::CreatTerraiMultiModelUnit()
 		String^clrGroupName = pGroupNode->Text;
 		std::string strGroupName = MagStringToUnmagString(clrGroupName);
 
-		array<String^>^ resultFiles = openFileDialog->FileNames;
+		cli::array<String^>^ resultFiles = openFileDialog->FileNames;
 		int nLen = resultFiles->Length;
 		if( nLen == 0 )
 			return;
@@ -665,7 +665,7 @@ void CTileViewCtrl::CreatTerrainTextureUnit( )
 		String^clrGroupName = pGroupNode->Text;
 		std::string strGroupName = MagStringToUnmagString(clrGroupName);
 
-		array<String^>^ resultFiles = openFileDialog->FileNames;
+		cli::array<String^>^ resultFiles = openFileDialog->FileNames;
 		int nLen = resultFiles->Length;
 
 		for ( int i = 0; i < nLen; ++i )

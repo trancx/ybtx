@@ -36,34 +36,33 @@
 #define _getcwd getcwd
 #endif
 
-
-#define  BUFLEN  1024
+#define BUFLEN 1024
 
 const wstring CFG_PKG_NAME = L"config";
 
-HTLSKEY			CBaseScriptApp::m_tlsCfgKey				= 0;
-HTLSKEY			CBaseScriptApp::m_tlsStrIndexKey		= 0;
-HTLSKEY			CBaseScriptApp::m_tlsStr64IndexKey	= 0;
-const wstring	CBaseScriptApp::LANGUAGE_FOLDER_NAME	= L"language";
+HTLSKEY CBaseScriptApp::m_tlsCfgKey = 0;
+HTLSKEY CBaseScriptApp::m_tlsStrIndexKey = 0;
+HTLSKEY CBaseScriptApp::m_tlsStr64IndexKey = 0;
+const wstring CBaseScriptApp::LANGUAGE_FOLDER_NAME = L"language";
 
-static FTW_RESULT IsUsingPkgFile( const wchar_t* szFileName, const struct _stat *, FTW_FLAG eFlag, void *pContext )
-{	
-	if( eFlag == _FTW_DIR )
+static FTW_RESULT IsUsingPkgFile(const wchar_t *szFileName, const struct _stat *, FTW_FLAG eFlag, void *pContext)
+{
+	if (eFlag == _FTW_DIR)
 		return _FTW_IGNORE;
 
-	if( eFlag == _FTW_FILE) 
+	if (eFlag == _FTW_FILE)
 	{
 		wstring str(szFileName);
-		if(str.find(L".pkg") != wstring::npos)
+		if (str.find(L".pkg") != wstring::npos)
 		{
-			*(bool*)pContext = true;
+			*(bool *)pContext = true;
 			return _FTW_STOP;
 		}
 	}
 	return _FTW_CONTINUNE;
 }
 
-static void ErrorCallBackFunc(CError& exp)
+static void ErrorCallBackFunc(CError &exp)
 {
 	ostringstream strm;
 	CScript::GetStack(strm);
@@ -72,11 +71,11 @@ static void ErrorCallBackFunc(CError& exp)
 
 CBaseScriptApp::CBaseScriptApp(void)
 {
-	m_bCfgPkgFileUsed=false;
-	m_bPkgFileUsed=false;
-	m_pRootPathMgr=NULL; 
-	m_pCfgPathMgr=NULL;
-	m_pXMLPathMgr=NULL;
+	m_bCfgPkgFileUsed = false;
+	m_bPkgFileUsed = false;
+	m_pRootPathMgr = NULL;
+	m_pCfgPathMgr = NULL;
+	m_pXMLPathMgr = NULL;
 
 	InitAltSigStack();
 	SetAltSigStackEnabled(true);
@@ -84,45 +83,58 @@ CBaseScriptApp::CBaseScriptApp(void)
 	CThreadWatcherMap::Inst();
 
 #ifdef _WIN32
-	_wchdir(L"../..");
+	// _wchdir(L"../../..");
 #else
 	chdir("../..");
 #endif
 
 	LoadPkgFileConfig();
 
-	m_pRootPathMgr = new CPathMgr;
+#ifndef _WIN32
+#endif
+	wchar_t curPath[MAX_PATH];
+	_wgetcwd(curPath, _countof(curPath));
+	//设定log路径，以后所有的log，包括err log，简易log，内存泄露都会写入此路径下面
+	printf("%ws\n\n\n\n\n\n", curPath);
+	m_pRootPathMgr = new CPathMgr(curPath);
+
+	// m_pRootPathMgr = new CPathMgr(curPath);
+
+	printf("root path: %ws\n\n\n\n\n\n", m_pRootPathMgr->GetRootPath());
 
 	CPkgFile::InitTLSKey();
 
+	// 这里设置了映射就是*.pkg和具体的配置的存在关系
+	// alias = ““ 就从root这里读
 	CPkgFile::AddLoadPath(L"", m_pRootPathMgr->GetRootPath());
 
 	SetPkgFileNameMapping();
-	
-	LoadScriptSearchPathXml();	
+
+	// 脚本的映射关系
+	LoadScriptSearchPathXml();
 
 	ConfigSearchPath();
 
 	CheckIsPkgFileUsed();
-	
+
+	// 这里path改为 res 对应的目录了，所以会导致找不到。。
 	ChangeCurPathToRes();
 
-	ms_pInst=this;
+	ms_pInst = this;
 }
-
 
 CBaseScriptApp::~CBaseScriptApp(void)
 {
-	ms_pInst=NULL;
+	ms_pInst = NULL;
 
 	ReleaseMainVM();
 
-	if ( m_pRootPathMgr )
+	if (m_pRootPathMgr)
 	{
 #ifdef _WIN32
 		_wchdir(m_pRootPathMgr->GetRootPath());
 #else
-		chdir( utf16_to_utf8(m_pRootPathMgr->GetRootPath()).c_str() );
+		chdir(utf16_to_utf8(m_pRootPathMgr->GetRootPath()).c_str());
 #endif
 		delete m_pRootPathMgr;
 		m_pRootPathMgr = NULL;
@@ -149,65 +161,62 @@ CBaseScriptApp::~CBaseScriptApp(void)
 	UnitAltSigStack();
 }
 
-CScript* CBaseScriptApp::GetScript()
+CScript *CBaseScriptApp::GetScript()
 {
 	return CScript::Inst();
 }
 
-
-void CBaseScriptApp::AddRefFun(CBaseObject* pObj)
+void CBaseScriptApp::AddRefFun(CBaseObject *pObj)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return;
 	pScript->RefScriptObj(pObj);
 }
 
-
-void CBaseScriptApp::DelRefFun(CBaseObject* pObj)
+void CBaseScriptApp::DelRefFun(CBaseObject *pObj)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return;
 	pScript->UnrefScriptObj(pObj);
 }
 
-
-void CBaseScriptApp::DisbindFun(CBaseObject* pObj)
+void CBaseScriptApp::DisbindFun(CBaseObject *pObj)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return;
 	pScript->UnlinkCppObj(pObj);
 }
 
-void CBaseScriptApp::AddPvRefFun(void* pObj)
+void CBaseScriptApp::AddPvRefFun(void *pObj)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return;
 	pScript->RefScriptObj(pObj);
 }
 
-void CBaseScriptApp::DelPvRefFun(void* pObj)
+void CBaseScriptApp::DelPvRefFun(void *pObj)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return;
 	pScript->UnrefScriptObj(pObj);
 }
 
-void CBaseScriptApp::DisbindPvFun(void* pObj)
+void CBaseScriptApp::DisbindPvFun(void *pObj)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return;
 	pScript->UnlinkCppObj(pObj);
 }
 
-const char* CBaseScriptApp::GetCfgFilePath(const char* szRelaFilePath) const
-{	
-	if ( !szRelaFilePath )
+const char *CBaseScriptApp::GetCfgFilePath(const char *szRelaFilePath) const
+{
+	if (!szRelaFilePath)
 		m_szCfgFilePath = utf16_to_utf8(m_pCfgPathMgr->GetFullPath(NULL)).c_str();
 	else
 		m_szCfgFilePath = utf16_to_utf8(m_pCfgPathMgr->GetFullPath(utf8_to_utf16(szRelaFilePath).c_str()));
@@ -215,9 +224,9 @@ const char* CBaseScriptApp::GetCfgFilePath(const char* szRelaFilePath) const
 	return m_szCfgFilePath.c_str();
 }
 
-const char* CBaseScriptApp::GetRootFilePath(const char* szRelaFilePath) const
+const char *CBaseScriptApp::GetRootFilePath(const char *szRelaFilePath) const
 {
-	if ( !szRelaFilePath )
+	if (!szRelaFilePath)
 		m_szRootFilePath = utf16_to_utf8(m_pRootPathMgr->GetFullPath(NULL));
 	else
 		m_szRootFilePath = utf16_to_utf8(m_pRootPathMgr->GetFullPath(utf8_to_utf16(szRelaFilePath).c_str()));
@@ -225,9 +234,9 @@ const char* CBaseScriptApp::GetRootFilePath(const char* szRelaFilePath) const
 	return m_szRootFilePath.c_str();
 }
 
-const char* CBaseScriptApp::GetXMLFilePath(const char* szRelaFilePath) const
+const char *CBaseScriptApp::GetXMLFilePath(const char *szRelaFilePath) const
 {
-	if ( !szRelaFilePath )
+	if (!szRelaFilePath)
 		m_szXMLFilePath = utf16_to_utf8(m_pXMLPathMgr->GetFullPath(NULL));
 	else
 		m_szXMLFilePath = utf16_to_utf8(m_pXMLPathMgr->GetFullPath(utf8_to_utf16(szRelaFilePath).c_str()));
@@ -235,30 +244,29 @@ const char* CBaseScriptApp::GetXMLFilePath(const char* szRelaFilePath) const
 	return m_szXMLFilePath.c_str();
 }
 
-const wchar_t* CBaseScriptApp::GetLangFilePath()
+const wchar_t *CBaseScriptApp::GetLangFilePath()
 {
 	return m_pLangPathMgr->GetRootPath();
 }
 
-const wchar_t* CBaseScriptApp::GetGUIFilePath()
+const wchar_t *CBaseScriptApp::GetGUIFilePath()
 {
 	return m_pGUIPathMgr->GetRootPath();
 }
 
+CBaseScriptApp *CBaseScriptApp::ms_pInst = NULL;
 
-CBaseScriptApp* CBaseScriptApp::ms_pInst=NULL;
-
-CBaseScriptApp* CBaseScriptApp::Inst()
+CBaseScriptApp *CBaseScriptApp::Inst()
 {
 	return ms_pInst;
 }
 
-CScript* CBaseScriptApp::GetMainVM()
+CScript *CBaseScriptApp::GetMainVM()
 {
-	return GetScript();	
+	return GetScript();
 }
 
-CScript* CBaseScriptApp::CreateMainVM(float fCallbackGCRatio,float fNormalUnpackGCRatio,float fSerialUnpackGCRatio)
+CScript *CBaseScriptApp::CreateMainVM(float fCallbackGCRatio, float fNormalUnpackGCRatio, float fSerialUnpackGCRatio)
 {
 	InitCfgTableTlsKey();
 	InitCfgTableTlsValue();
@@ -267,15 +275,15 @@ CScript* CBaseScriptApp::CreateMainVM(float fCallbackGCRatio,float fNormalUnpack
 	InitStrIndexTlsValue();
 
 	InitStr64IndexTlsKey();
-	InitStr64IndexTlsValue();	
+	InitStr64IndexTlsValue();
 
-	if ( CatchErrorEnabled() )
+	if (CatchErrorEnabled())
 	{
-		CScript::Init(eSH_None,fCallbackGCRatio,fNormalUnpackGCRatio,fSerialUnpackGCRatio);
+		CScript::Init(eSH_None, fCallbackGCRatio, fNormalUnpackGCRatio, fSerialUnpackGCRatio);
 	}
 	else
 	{
-		CScript::Init(eSH_Debuger,fCallbackGCRatio,fNormalUnpackGCRatio,fSerialUnpackGCRatio);
+		CScript::Init(eSH_Debuger, fCallbackGCRatio, fNormalUnpackGCRatio, fSerialUnpackGCRatio);
 	}
 
 	SetAddRefFunction(&AddRefFun);
@@ -286,14 +294,13 @@ CScript* CBaseScriptApp::CreateMainVM(float fCallbackGCRatio,float fNormalUnpack
 	SetDelPvRefFunction(&DelPvRefFun);
 	SetDisbindPvFunction(&DisbindPvFun);
 
-
 	SetCallBackDataFunc(&GetCallBackData);
 	SetCallBackAttrFunc(&GetCallBackAttr);
 	SetClassCallBackFunc(&CallClassCallBack);
 
 	SetErrorCallBackFunc(ErrorCallBackFunc);
 
-	CScript* pScript = GetScript();
+	CScript *pScript = GetScript();
 
 	SetScriptLoadPath(pScript);
 
@@ -328,28 +335,28 @@ void CBaseScriptApp::ReleaseMainVM()
 	CScript::Unit();
 }
 
-void* CBaseScriptApp::GetCallBackData(CBaseObject* pObject, const char* szFunName)
+void *CBaseScriptApp::GetCallBackData(CBaseObject *pObject, const char *szFunName)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return NULL;
 
 	return pScript->GetCallBackData(pObject, szFunName);
 }
 
-void  CBaseScriptApp::GetCallBackAttr(void* pCall, size_t& stBufSize, size_t*& pParamOffset, 
-									  size_t& iRetOffset)
+void CBaseScriptApp::GetCallBackAttr(void *pCall, size_t &stBufSize, size_t *&pParamOffset,
+									 size_t &iRetOffset)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return;
 
 	pScript->GetCallBackAttr(pCall, stBufSize, pParamOffset, iRetOffset);
 }
 
-bool CBaseScriptApp::CallClassCallBack(void* pCall, CBaseObject* pObject, char* pDataBuf)
+bool CBaseScriptApp::CallClassCallBack(void *pCall, CBaseObject *pObject, char *pDataBuf)
 {
-	CScript* pScript=Inst()->GetScript();
+	CScript *pScript = Inst()->GetScript();
 	if (!pScript)
 		return false;
 
@@ -364,7 +371,7 @@ void CBaseScriptApp::InitCfgTableTlsValue()
 
 void CBaseScriptApp::UnInitCfgTableTlsValue()
 {
-	string *pString = (string*)TLS_GetValue(m_tlsCfgKey);
+	string *pString = (string *)TLS_GetValue(m_tlsCfgKey);
 	delete pString;
 	pString = 0;
 	TLS_SetValue(m_tlsCfgKey, 0);
@@ -380,17 +387,19 @@ void CBaseScriptApp::UnInitCfgTableTlsKey()
 	TLS_DestroyKey(m_tlsCfgKey);
 }
 
-string* CBaseScriptApp::GetCfgTableTlsData()
+string *CBaseScriptApp::GetCfgTableTlsData()
 {
-	return (string*)TLS_GetValue(m_tlsCfgKey);
+	return (string *)TLS_GetValue(m_tlsCfgKey);
 }
 
-CXmlConfig* CBaseScriptApp::LoadCfgFile( const string& cfg_file_name, const string& root_name )
+CXmlConfig *CBaseScriptApp::LoadCfgFile(const string &cfg_file_name, const string &root_name)
 {
+	wchar_t curPath[128];
+	_wgetcwd(curPath, _countof(curPath));
 	ipkgstream file_strm(L"", cfg_file_name.c_str());
 	if (!file_strm)
 		GenErr(string("Can't open ") + cfg_file_name);
-	CXmlConfig *pXmlCfg = new CXmlConfig( root_name.c_str() , file_strm );
+	CXmlConfig *pXmlCfg = new CXmlConfig(root_name.c_str(), file_strm);
 	file_strm.close();
 	return pXmlCfg;
 }
@@ -422,15 +431,15 @@ void CBaseScriptApp::InitStrIndexTlsValue()
 
 void CBaseScriptApp::UnInitStrIndexTlsValue()
 {
-	string *pString = (string*)TLS_GetValue(m_tlsStrIndexKey);
+	string *pString = (string *)TLS_GetValue(m_tlsStrIndexKey);
 	delete pString;
 	pString = 0;
 	TLS_SetValue(m_tlsStrIndexKey, 0);
 }
 
-string* CBaseScriptApp::GetStrIndexTlsData()
+string *CBaseScriptApp::GetStrIndexTlsData()
 {
-	return (string*)TLS_GetValue(m_tlsStrIndexKey);
+	return (string *)TLS_GetValue(m_tlsStrIndexKey);
 }
 
 void CBaseScriptApp::InitStrIndexTlsKey()
@@ -450,14 +459,14 @@ void CBaseScriptApp::InitStr64IndexTlsValue()
 }
 void CBaseScriptApp::UnInitStr64IndexTlsValue()
 {
-	string *pString = (string*)TLS_GetValue(m_tlsStr64IndexKey);
+	string *pString = (string *)TLS_GetValue(m_tlsStr64IndexKey);
 	delete pString;
 	pString = 0;
 	TLS_SetValue(m_tlsStr64IndexKey, 0);
 }
-string* CBaseScriptApp::GetStr64IndexTlsData()
+string *CBaseScriptApp::GetStr64IndexTlsData()
 {
-	return (string*)TLS_GetValue(m_tlsStr64IndexKey);
+	return (string *)TLS_GetValue(m_tlsStr64IndexKey);
 }
 
 void CBaseScriptApp::InitStr64IndexTlsKey()
@@ -477,34 +486,33 @@ bool CBaseScriptApp::PkgFileUsed()
 
 void CBaseScriptApp::LoadScriptSearchPathXml()
 {
-	CXmlConfig*		pXmlSearchDir	= LoadCfgFile( "etc/common/SearchDir.xml", "search_dir" );
 
-	TiXmlNode*		pLoadPath = pXmlSearchDir->Get<TiXmlElement*>("load_path");
+	CXmlConfig *pXmlSearchDir = LoadCfgFile("etc/common/SearchDir.xml", "search_dir");
 
-	const wchar_t* szRootPath = m_pRootPathMgr->GetRootPath();
+	TiXmlNode *pLoadPath = pXmlSearchDir->Get<TiXmlElement *>("load_path");
 
-	TiXmlNode* pNode = pLoadPath->FirstChild("path"); 
-	while(pNode)
+	const wchar_t *szRootPath = m_pRootPathMgr->GetRootPath();
+
+	TiXmlNode *pNode = pLoadPath->FirstChild("path");
+	while (pNode)
 	{
-		TiXmlElement* pElement = pNode->ToElement();
+		TiXmlElement *pElement = pNode->ToElement();
 		if (pElement)
 		{
-			TiXmlAttribute* attribute = pElement->FirstAttribute();
+			TiXmlAttribute *attribute = pElement->FirstAttribute();
 			AddScriptLoadPath(attribute->Value(), pElement->GetText());
 			wstring alias = utf8_to_utf16(attribute->Value());
 			CPkgFile::AddLoadPath(alias.c_str(), szRootPath);
 		}
 		pNode = pNode->NextSibling();
-
 	}
-	
-	SafeDelete(pXmlSearchDir);		
+
+	SafeDelete(pXmlSearchDir);
 }
 
 void CBaseScriptApp::CheckIsPkgFileUsed()
 {
-	wstring cfg_path	= wstring(m_pRootPathMgr->GetRootPath()) 
-						+ L"/" + CPkgFile::PkgFileMapping(L"cfg") + L".pkg";
+	wstring cfg_path = wstring(m_pRootPathMgr->GetRootPath()) + L"/" + CPkgFile::PkgFileMapping(L"cfg") + L".pkg";
 
 	bool bResPkgUsed = false;
 	FileTreeWalk(m_pResPathMgr->GetCurPath(), IsUsingPkgFile, &bResPkgUsed);
@@ -517,7 +525,7 @@ void CBaseScriptApp::ChangeCurPathToRes()
 #ifdef _WIN32
 	_wchdir(m_pResPathMgr->GetCurPath());
 #else
-	chdir( utf16_to_utf8(m_pResPathMgr->GetCurPath()).c_str() );
+	chdir(utf16_to_utf8(m_pResPathMgr->GetCurPath()).c_str());
 #endif
 }
 
@@ -526,7 +534,7 @@ void CBaseScriptApp::ConfigSearchPath()
 	const char DEFAULT_SEARCH_PATH_NODE[128] = "default";
 
 	// 加载搜索路径配置文件
-	CXmlConfig* pXmlDirectory = LoadCfgFile( "etc/common/Directory.xml", "directory" );
+	CXmlConfig *pXmlDirectory = LoadCfgFile("etc/common/Directory.xml", "directory");
 	string setting_path = pXmlDirectory->Get<string>(DEFAULT_SEARCH_PATH_NODE, "setting_path");
 	string xml_path = pXmlDirectory->Get<string>(DEFAULT_SEARCH_PATH_NODE, "xml_path");
 	string gui_path = pXmlDirectory->Get<string>(DEFAULT_SEARCH_PATH_NODE, "gui_path");
@@ -540,18 +548,18 @@ void CBaseScriptApp::ConfigSearchPath()
 	AddLoadPath("shd", utf16_to_utf8(m_pRootPathMgr->GetRootPath()).c_str(), false);
 
 	// 创建各路径管理器
-	m_pCfgPathMgr	= new CPathMgr( setting_path.c_str() );
-	m_pXMLPathMgr	= new CPathMgr( xml_path.c_str() );
-	m_pGUIPathMgr	= new CPathMgr( gui_path.c_str() );
-	m_pLangPathMgr	= new CPathMgr( lang_path.c_str() );
-	m_pResPathMgr	= new CPathMgr();
-	m_pResPathMgr->SetCurPath( utf8_to_utf16(res_path).c_str() );
+	m_pCfgPathMgr = new CPathMgr(setting_path.c_str());
+	m_pXMLPathMgr = new CPathMgr(xml_path.c_str());
+	m_pGUIPathMgr = new CPathMgr(gui_path.c_str());
+	m_pLangPathMgr = new CPathMgr(lang_path.c_str());
+	m_pResPathMgr = new CPathMgr();
+	// 把路径设置为 res 目录下？
+	m_pResPathMgr->SetCurPath(utf8_to_utf16(res_path).c_str());
 
-	SafeDelete(pXmlDirectory);	
+	SafeDelete(pXmlDirectory);
 }
 
-
-void CBaseScriptApp::AddScriptLoadPath(const char* szAliasPath, const char* szPath)
+void CBaseScriptApp::AddScriptLoadPath(const char *szAliasPath, const char *szPath)
 {
 	Ast(szAliasPath);
 	Ast(szPath);
@@ -559,22 +567,21 @@ void CBaseScriptApp::AddScriptLoadPath(const char* szAliasPath, const char* szPa
 	m_ScriptLoadPath[szAliasPath] = szPath;
 }
 
-void CBaseScriptApp::SetScriptLoadPath(CScript* pScript)
+void CBaseScriptApp::SetScriptLoadPath(CScript *pScript)
 {
 	map<string, string>::iterator iter = m_ScriptLoadPath.begin();
-	while(iter != m_ScriptLoadPath.end())
+	while (iter != m_ScriptLoadPath.end())
 	{
 		pScript->SetLoadPath(iter->first.c_str(), iter->second.c_str());
 		++iter;
 	}
-
 }
 
-void CBaseScriptApp::AddLoadPath(const string& szAliasPath, const string& szPath, bool UseScript)
+void CBaseScriptApp::AddLoadPath(const string &szAliasPath, const string &szPath, bool UseScript)
 {
 	wstring sPath = utf8_to_utf16(szPath);
 	replace(sPath.begin(), sPath.end(), L'\\', L'/');
-	
+
 	wstring sAliasPath = utf8_to_utf16(szAliasPath);
 
 	//取path的第一个子串，以/分隔的，作为其pkg name
@@ -584,13 +591,13 @@ void CBaseScriptApp::AddLoadPath(const string& szAliasPath, const string& szPath
 	{
 		sPkgName = sPkgName.substr(0, pos);
 	}
-	
-	const wchar_t* szPkgName = CPkgFile::GetPkgName(sPkgName.c_str());
+
+	const wchar_t *szPkgName = CPkgFile::GetPkgName(sPkgName.c_str());
 
 	//如果存在对应的包名，则填入的路径是一个包，我们按照包的方式处理
 	if (szPkgName)
 	{
-		if ( wstring(szPkgName) == CFG_PKG_NAME )
+		if (wstring(szPkgName) == CFG_PKG_NAME)
 		{
 			m_bCfgPkgFileUsed = true;
 		}
@@ -599,7 +606,7 @@ void CBaseScriptApp::AddLoadPath(const string& szAliasPath, const string& szPath
 		CPkgFile::AddLoadPath(sAliasPath.c_str(), m_pRootPathMgr->GetRootPath());
 
 		//如果这项配置被脚本库使用，那么我们将其加入脚本库的搜索路径里面
-		if (UseScript)  
+		if (UseScript)
 		{
 			AddScriptLoadPath(szAliasPath.c_str(), szPath.c_str());
 		}
@@ -619,7 +626,7 @@ void CBaseScriptApp::AddLoadPath(const string& szAliasPath, const string& szPath
 			CPkgFile::AddLoadPath(sAliasPath.c_str(), sRootPath.c_str());
 		}
 
-		if (UseScript) 
+		if (UseScript)
 		{
 			AddScriptLoadPath(szAliasPath.c_str(), "");
 		}
@@ -634,9 +641,9 @@ void CBaseScriptApp::LoadPkgFileConfig()
 	如果有该文件，那我们就优先读取包外
 	*/
 
-	ifstream fsPkgConfig( "etc/common/PkgConfig.xml", ios::binary );
+	ifstream fsPkgConfig("etc/common/PkgConfig.xml", ios::binary);
 
-	if( fsPkgConfig )
+	if (fsPkgConfig)
 	{
 		EnableReadPkgOnly(false);
 	}
@@ -645,7 +652,6 @@ void CBaseScriptApp::LoadPkgFileConfig()
 		EnableReadPkgOnly(true);
 	}
 }
-
 
 bool CBaseScriptApp::GetIsCfgPkgUsed()
 {

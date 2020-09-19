@@ -19,7 +19,6 @@
 #include "cppunit/extensions/HelperMacros.h"
 #include "cppunit/TestSuite.h"
 
-
 using namespace CPPUNIT_NS;
 using namespace sqr;
 using namespace std;

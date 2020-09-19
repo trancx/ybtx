@@ -12,7 +12,7 @@ System::Void CSetViewCtrl::insertReset_button_Click( System::Object^ sender, Sys
 
 	if( openFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK )
 	{
-		array<String^>^ resultFiles = openFileDialog->FileNames;
+		cli::array<String ^>^ resultFiles = openFileDialog->FileNames;
 		int nLen = resultFiles->Length;
 		CSetViewCtrlImp *pImp = NULL;
 		pImp = (CSetViewCtrlImp*)m_pCtrl;

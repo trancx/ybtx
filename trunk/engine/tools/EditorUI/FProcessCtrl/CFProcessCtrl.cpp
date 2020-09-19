@@ -2,6 +2,7 @@
 #include "FProcessCtrl\CFProcessCtrl.h"
 #include "FileProcessCtrl\FileProcessCtrlImp.h"
 #include "ProgressCtrl/CProgressCtrlImp.h"
+#include "dthelp.h"
 
 void CFProcessCtrl::InitCtrlValue()
 {

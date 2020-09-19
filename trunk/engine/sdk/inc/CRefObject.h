@@ -130,8 +130,8 @@ int32 CRefObject::AddRef()
 inline
 void CRefObject::Release()
 {
-	string msg = "引用计数异常, 对象可能已经被释放" +this->m_sRefInfo;
-	AstMsg(this->refCount > 0, msg);
+	// string msg = "引用计数异常, 对象可能已经被释放" +this->m_sRefInfo;
+	// AstMsg(this->refCount > 0, msg);
 #ifndef _WIN32
 	pthread_mutex_lock(&m_Lock);
 	--this->refCount;

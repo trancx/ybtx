@@ -21,6 +21,7 @@
 #include "IDbConnectionMgr.h"
 #include "IDbThreadScriptHandler.h"
 #include "TraceHelper.h"
+#include <algorithm>
 
 
 template class TTrThreadMsgBuffer<CScriptThreadTraits>;

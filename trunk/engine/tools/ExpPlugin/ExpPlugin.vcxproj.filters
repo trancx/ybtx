@@ -6,10 +6,10 @@
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Source Files\HardwareBuffer">
-      <UniqueIdentifier>{8905a856-1543-414e-b1ce-0f3b9abed6ad}</UniqueIdentifier>
+      <UniqueIdentifier>{17575eca-fc4c-4f1f-b589-f973429c2f47}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Mesh">
-      <UniqueIdentifier>{2ff2f50b-bf80-4473-9ccf-020f8e415131}</UniqueIdentifier>
+      <UniqueIdentifier>{049c2487-d1dc-47a0-9654-d1ffbd1e22b5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
@@ -151,11 +151,13 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="BoneFix.htm" />
-    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ExpPlugin.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

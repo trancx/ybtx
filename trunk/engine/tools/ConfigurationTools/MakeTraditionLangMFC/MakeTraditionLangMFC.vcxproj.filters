@@ -67,17 +67,21 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\MakeTraditionLangMFC.ico">
+    <Image Include="res\MakeTraditionLangMFC.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\MakeTraditionLangMFC.rc2">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MakeTraditionLangMFC.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MakeTraditionLangMFC.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

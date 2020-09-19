@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -18,10 +18,12 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
@@ -36,19 +38,17 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -66,6 +66,8 @@
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
@@ -86,60 +88,62 @@
       <AdditionalLibraryDirectories>..\..\..\implib\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="CCfgColChecker.inl" />
     <None Include="lua\CoreServer.lua" />
     <None Include="lua\LoadCheckModule.lua" />
     <None Include="lua\ThreadCoreServer.lua" />
-    <None Include="CCfgColChecker.inl" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CheckSkillCfg.cpp" />
     <ClCompile Include="CBaseMagicOp.cpp" />
-    <ClCompile Include="CCfgMagicEffCheck.cpp" />
-    <ClCompile Include="CCfgMagicOp.cpp" />
-    <ClCompile Include="CCfgColChecker.cpp" />
-    <ClCompile Include="CCfgRelChecker.cpp" />
-    <ClCompile Include="CCfgSkillBaseCheck.cpp" />
-    <ClCompile Include="CCfgTempVarCheck.cpp" />
     <ClCompile Include="CCfgAllStateCheck.cpp" />
+    <ClCompile Include="CCfgAureMagicCheck.cpp" />
+    <ClCompile Include="CCfgBarrierMagicCheck.cpp" />
+    <ClCompile Include="CCfgBaseCheck.cpp" />
+    <ClCompile Include="CCfgBattleArrayMagicCheck.cpp" />
+    <ClCompile Include="CCfgBloodCheck.cpp" />
+    <ClCompile Include="CCfgBulletMagicCheck.cpp" />
+    <ClCompile Include="CCfgBurstSoulCheck.cpp" />
+    <ClCompile Include="CCfgColChecker.cpp" />
     <ClCompile Include="CCfgCumuliTriggerStateCheck.cpp" />
     <ClCompile Include="CCfgDamageChangeStateCheck.cpp" />
     <ClCompile Include="CCfgForceNoSaveState.cpp" />
+    <ClCompile Include="CCfgMagicEffCheck.cpp" />
+    <ClCompile Include="CCfgMagicOp.cpp" />
     <ClCompile Include="CCfgMagicStateCheck.cpp" />
-    <ClCompile Include="CCfgSpecialStateCheck.cpp" />
-    <ClCompile Include="CCfgTriggerStateCheck.cpp" />
-    <ClCompile Include="CCfgAureMagicCheck.cpp" />
-    <ClCompile Include="CCfgBarrierMagicCheck.cpp" />
-    <ClCompile Include="CCfgBattleArrayMagicCheck.cpp" />
-    <ClCompile Include="CCfgBulletMagicCheck.cpp" />
-    <ClCompile Include="CCfgBurstSoulCheck.cpp" />
     <ClCompile Include="CCfgMoveMagicCheck.cpp" />
-    <ClCompile Include="CCfgPositionMagicCheck.cpp" />
-    <ClCompile Include="CCfgShockWaveMagicCheck.cpp" />
-    <ClCompile Include="CCfgTotemMagicCheck.cpp" />
-    <ClCompile Include="CCfgTransMagicCheck.cpp" />
-    <ClCompile Include="CCfgProcessCheck.cpp" />
     <ClCompile Include="CCfgNormalAttackCheck.cpp" />
-    <ClCompile Include="CCfgSkillCheck.cpp" />
-    <ClCompile Include="CCfgSkillReplaceCheck.cpp" />
-    <ClCompile Include="CCfgTalentEffCheck.cpp" />
-    <ClCompile Include="CCfgPropertyCheck.cpp" />
     <ClCompile Include="CCfgNPCAIBaseDataCheck.cpp" />
     <ClCompile Include="CCfgNPCFighterBaseDataCheck.cpp" />
     <ClCompile Include="CCfgNPCResCommonCheck.cpp" />
     <ClCompile Include="CCfgNpcServerBaseData.cpp" />
+    <ClCompile Include="CCfgPositionMagicCheck.cpp" />
+    <ClCompile Include="CCfgProcessCheck.cpp" />
+    <ClCompile Include="CCfgPropertyCheck.cpp" />
+    <ClCompile Include="CCfgRelChecker.cpp" />
     <ClCompile Include="CCfgServantDataCheck.cpp" />
+    <ClCompile Include="CCfgShockWaveMagicCheck.cpp" />
+    <ClCompile Include="CCfgSkillBaseCheck.cpp" />
+    <ClCompile Include="CCfgSkillCheck.cpp" />
+    <ClCompile Include="CCfgSkillReplaceCheck.cpp" />
     <ClCompile Include="CCfgSkillRuleCheck.cpp" />
-    <ClCompile Include="CheckNPCCfg.cpp" />
-    <ClCompile Include="CNpcEnmityTargetFilterDataCheck.cpp" />
-    <ClCompile Include="CCfgBaseCheck.cpp" />
-    <ClCompile Include="CCfgBloodCheck.cpp" />
-    <ClCompile Include="CheckBloodCfg.cpp" />
+    <ClCompile Include="CCfgSpecialStateCheck.cpp" />
+    <ClCompile Include="CCfgTalentEffCheck.cpp" />
+    <ClCompile Include="CCfgTempVarCheck.cpp" />
+    <ClCompile Include="CCfgTotemMagicCheck.cpp" />
+    <ClCompile Include="CCfgTransMagicCheck.cpp" />
+    <ClCompile Include="CCfgTriggerStateCheck.cpp" />
     <ClCompile Include="CCustomerCheck.cpp" />
+    <ClCompile Include="CheckBloodCfg.cpp" />
     <ClCompile Include="CheckConfig.cpp" />
+    <ClCompile Include="CheckNPCCfg.cpp" />
+    <ClCompile Include="CheckSkillCfg.cpp" />
+    <ClCompile Include="CNpcEnmityTargetFilterDataCheck.cpp" />
     <ClCompile Include="CRecordHelp.cpp" />
     <ClCompile Include="CRecordManager.cpp" />
     <ClCompile Include="CServerCheck.cpp" />
@@ -153,35 +157,35 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CheckSkillCfg.h" />
     <ClInclude Include="CBaseMagicOp.h" />
+    <ClInclude Include="CCfgAllMagicCheck.h" />
+    <ClInclude Include="CCfgAllStateCheck.h" />
+    <ClInclude Include="CCfgBaseCheck.h" />
+    <ClInclude Include="CCfgBloodCheck.h" />
+    <ClInclude Include="CCfgColChecker.h" />
+    <ClInclude Include="CCfgForceNoSaveState.h" />
     <ClInclude Include="CCfgMagicEffCheck.h" />
     <ClInclude Include="CCfgMagicOp.h" />
-    <ClInclude Include="CCfgColChecker.h" />
-    <ClInclude Include="CCfgRelChecker.h" />
-    <ClInclude Include="CCfgSkillBaseCheck.h" />
-    <ClInclude Include="CCfgTempVarCheck.h" />
-    <ClInclude Include="CCfgAllStateCheck.h" />
-    <ClInclude Include="CCfgForceNoSaveState.h" />
-    <ClInclude Include="CCfgAllMagicCheck.h" />
-    <ClInclude Include="CCfgProcessCheck.h" />
     <ClInclude Include="CCfgNormalAttackCheck.h" />
-    <ClInclude Include="CCfgSkillCheck.h" />
-    <ClInclude Include="CCfgSkillReplaceCheck.h" />
-    <ClInclude Include="CCfgTalentEffCheck.h" />
-    <ClInclude Include="CCfgPropertyCheck.h" />
     <ClInclude Include="CCfgNPCAIBaseDataCheck.h" />
     <ClInclude Include="CCfgNPCFighterBaseDataCheck.h" />
     <ClInclude Include="CCfgNPCResCommonCheck.h" />
     <ClInclude Include="CCfgNpcServerBaseData.h" />
+    <ClInclude Include="CCfgProcessCheck.h" />
+    <ClInclude Include="CCfgPropertyCheck.h" />
+    <ClInclude Include="CCfgRelChecker.h" />
     <ClInclude Include="CCfgServantDataCheck.h" />
+    <ClInclude Include="CCfgSkillBaseCheck.h" />
+    <ClInclude Include="CCfgSkillCheck.h" />
+    <ClInclude Include="CCfgSkillReplaceCheck.h" />
     <ClInclude Include="CCfgSkillRuleCheck.h" />
-    <ClInclude Include="CheckNPCCfg.h" />
-    <ClInclude Include="CNpcEnmityTargetFilterDataCheck.h" />
-    <ClInclude Include="CCfgBaseCheck.h" />
-    <ClInclude Include="CCfgBloodCheck.h" />
-    <ClInclude Include="CheckBloodCfg.h" />
+    <ClInclude Include="CCfgTalentEffCheck.h" />
+    <ClInclude Include="CCfgTempVarCheck.h" />
     <ClInclude Include="CCustomerCheck.h" />
+    <ClInclude Include="CheckBloodCfg.h" />
+    <ClInclude Include="CheckNPCCfg.h" />
+    <ClInclude Include="CheckSkillCfg.h" />
+    <ClInclude Include="CNpcEnmityTargetFilterDataCheck.h" />
     <ClInclude Include="CRecordHelp.h" />
     <ClInclude Include="CRecordManager.h" />
     <ClInclude Include="CScriptMgr.h" />

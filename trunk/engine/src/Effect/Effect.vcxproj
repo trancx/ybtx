@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -14,14 +14,17 @@
     <ProjectGuid>{90857B41-653B-40A4-83CD-A652D0358FD0}</ProjectGuid>
     <RootNamespace>Effect</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -38,17 +41,15 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -75,7 +76,8 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <AdditionalIncludeDirectories>..\..\..\engine\sdk\inc;..\..\include;..\..\sdk\inc;..\..\..\implib\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;EFFECT_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;EFFECT_EXPORTS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions);
+_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -122,17 +124,22 @@
     <None Include="Effect.def" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\IEffectMgrModule.h" />
+    <ClInclude Include="..\..\sdk\inc\CEffect.h" />
+    <ClInclude Include="..\..\sdk\inc\CEffectGroup.h" />
+    <ClInclude Include="..\..\sdk\inc\CEffectMallocObject.h" />
+    <ClInclude Include="..\..\sdk\inc\CEffectManager.h" />
+    <ClInclude Include="..\..\sdk\inc\EffectBase.h" />
+    <ClInclude Include="..\..\sdk\inc\IEffect.h" />
+    <ClInclude Include="..\..\sdk\inc\IEffectUnit.h" />
+    <ClInclude Include="..\..\sdk\inc\IEffectUnitProp.h" />
     <ClInclude Include="CCameraFilter.h" />
     <ClInclude Include="CCameraShake.h" />
     <ClInclude Include="CCombination.h" />
     <ClInclude Include="CDynamicLight.h" />
-    <ClInclude Include="..\..\sdk\inc\CEffect.h" />
     <ClInclude Include="CEffectClass.h" />
     <ClInclude Include="CEffectClassDesc.h" />
     <ClInclude Include="CEffectCoder.h" />
-    <ClInclude Include="..\..\sdk\inc\CEffectGroup.h" />
-    <ClInclude Include="..\..\sdk\inc\CEffectMallocObject.h" />
-    <ClInclude Include="..\..\sdk\inc\CEffectManager.h" />
     <ClInclude Include="CEffectMgrModule.h" />
     <ClInclude Include="CEffectUnit.h" />
     <ClInclude Include="CFlareSprite.h" />
@@ -147,12 +154,7 @@
     <ClInclude Include="CShake.h" />
     <ClInclude Include="CSprite.h" />
     <ClInclude Include="CTDimAudio.h" />
-    <ClInclude Include="..\..\sdk\inc\EffectBase.h" />
     <ClInclude Include="EffectCommon.h" />
-    <ClInclude Include="..\..\sdk\inc\IEffect.h" />
-    <ClInclude Include="..\..\include\IEffectMgrModule.h" />
-    <ClInclude Include="..\..\sdk\inc\IEffectUnit.h" />
-    <ClInclude Include="..\..\sdk\inc\IEffectUnitProp.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>

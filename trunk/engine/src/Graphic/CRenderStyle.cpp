@@ -9,6 +9,7 @@
 #include "SyncSystem.h"
 #include "TSqrAllocator.inl"
 #include "CColor4.inl"
+#include "CColor.inl"
 
 
 STATIC_RS::STATIC_RS()

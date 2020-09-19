@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "GraphicUtil.h"
 #include "TSqrAllocator.inl"
+#include "CColor.inl"
+#include "CColor4.inl"
 #define MAX_TRI_INDEXNUM	1024 //From D3D
 
 DEFAULT1RS::DEFAULT1RS()

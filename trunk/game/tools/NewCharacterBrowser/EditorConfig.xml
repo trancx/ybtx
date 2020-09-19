@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<scene_config>
+    <camera_config>
+        <mode_path>CameraConfig.xml</mode_path>
+    </camera_config>
+    <graph_config>
+        <lockratio>0.0</lockratio>
+        <definition>1.0</definition>
+        <showfps>0</showfps>
+        <shader_map>0</shader_map>
+        <bloom>0</bloom>
+        <refract>0</refract>
+        <baking>0</baking>
+        <effectlevel>0.900000</effectlevel>
+        <vsynchronize>0</vsynchronize>
+        <antialias>2</antialias>
+        <shadow>1</shadow>
+        <water>0</water>
+        <texquality>0</texquality>
+        <fullscreen>0</fullscreen>
+        <uiscale>1.0</uiscale>
+        <color_depth>32</color_depth>
+        <tex_h_mem>96</tex_h_mem>
+        <tex_m_mem>48</tex_m_mem>
+        <max_shader>4</max_shader>
+        <max_vid_mem>0</max_vid_mem>
+    </graph_config>
+    <audio_config>
+        <music>0.3</music>
+        <effect>0.8</effect>
+        <ambient>0.8</ambient>
+    </audio_config>
+    <system_config>
+        <screenshot>./ScreenShoot/</screenshot>
+        <lake_tex num="30">./tex/lake_</lake_tex>
+        <shader_path>./shader</shader_path>
+    </system_config>
+</scene_config>
+<dev_config>
+    <core_dump>0</core_dump>
+    <err_msg_show>1</err_msg_show>
+</dev_config>

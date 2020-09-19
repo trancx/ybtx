@@ -6,13 +6,13 @@
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="ResProcess">
-      <UniqueIdentifier>{4a171f86-fecd-4928-b676-a45ccc400433}</UniqueIdentifier>
+      <UniqueIdentifier>{d5910ddc-59df-4c8f-8c12-8310a4f0534c}</UniqueIdentifier>
     </Filter>
     <Filter Include="ResProcess\Processor">
-      <UniqueIdentifier>{aed333cf-9596-464e-b447-f9ccb4f8f294}</UniqueIdentifier>
+      <UniqueIdentifier>{c4fcb488-7dd5-4530-b317-b60c46f55ab2}</UniqueIdentifier>
     </Filter>
     <Filter Include="ResProcess\Processor\CoderProcessor">
-      <UniqueIdentifier>{9febb0be-735c-439c-aa38-9a8d5c7de48a}</UniqueIdentifier>
+      <UniqueIdentifier>{cc750c81-1a29-43d5-a38f-38342c646150}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +116,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

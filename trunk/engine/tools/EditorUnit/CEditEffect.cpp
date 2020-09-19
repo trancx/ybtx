@@ -10,6 +10,7 @@
 #include "CEditEffectBase.h"
 #include "CEditUnitPropHelp.h"
 #include "CEditEffectProp.h"
+#include "CEffectMallocObject.h"
 
 CEditEffect::CEditEffect( CEditEffectManager* pEffectMgr, CEffectProp* pEffectProp )
 : CEffect(pEffectMgr,pEffectProp)

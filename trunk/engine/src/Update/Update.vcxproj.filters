@@ -2,16 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Interface">
-      <UniqueIdentifier>{a2658a05-4b3b-494e-9a30-a5514c958500}</UniqueIdentifier>
+      <UniqueIdentifier>{ad6f85fb-2c04-42b6-92de-d32acce331bb}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{9b17c770-e882-485b-9705-1bcb5a1caec3}</UniqueIdentifier>
+      <UniqueIdentifier>{19070261-a909-4b12-ad1c-65e402b0d435}</UniqueIdentifier>
     </Filter>
     <Filter Include="patcher">
-      <UniqueIdentifier>{bd78dd3d-b302-46b3-a2a8-ead6c035b631}</UniqueIdentifier>
+      <UniqueIdentifier>{a9f2482f-4ff5-4772-8de1-802bdbbe1c5c}</UniqueIdentifier>
     </Filter>
     <Filter Include="VerifyClient">
-      <UniqueIdentifier>{24684652-df4d-4460-9abc-1db8e98062c1}</UniqueIdentifier>
+      <UniqueIdentifier>{4c8d3260-1b14-40f7-a1ce-10077ca793bc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +81,6 @@
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

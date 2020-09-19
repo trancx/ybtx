@@ -100,6 +100,8 @@
     <None Include="TScriptAppGCTick.inl">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>

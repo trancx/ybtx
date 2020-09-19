@@ -6,6 +6,7 @@
 #include "CFontRenderer.h"
 #include "CGraphic.h"
 #include "TSqrAllocator.inl"
+#include "CColor.inl"
 
 //------------------------------------------------------------------------------
 namespace sqr

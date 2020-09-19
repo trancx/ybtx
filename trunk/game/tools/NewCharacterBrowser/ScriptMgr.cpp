@@ -88,7 +88,7 @@ string CToolScriptApp::GetCfgAlias()
 
 void Init()
 {
-	_wchdir(L"etc/common");
+	//_wchdir(L"etc/common");
 	//gs_ScriptApp = new CToolScriptApp;
 	char dir[1024];
 	::GetCurrentDirectory(1024, dir);
@@ -107,7 +107,7 @@ void Init()
 	Ast(res);
 	string strCurPath = gs_ScriptApp->GetRootFilePath(NULL);
 	strCurPath = utf8_to_gbk(strCurPath);
-	strCurPath = strCurPath + "/" + "lua/LoadModelRes";
+	strCurPath = strCurPath + "/LoadModelRes";
 	//strCurPath = "\"" + strCurPath + "\"";
 	//strCurPath = "require " + strCurPath;
 	//RunLuaFile("require \"lua/LoadModelRes\"");
